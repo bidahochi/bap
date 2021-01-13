@@ -1,0 +1,20 @@
+timsquared:DescriptionBrigadelokBlue=Used by Germany in WWI<br>as a transport for solders and equipment
+
+
+
+
+<!-- ## Trains ## -->
+<!-- ## These are actually defined from the item name, so one name covers all areas ## -->
+item.HenschelBrigadelok.name=Brigadelok 0-8-0
+item.HenschelBrigadelok-E.name=Brigadelok 0-8-0 (Electric)
+item.GATX13000GallonTanker.name=GATX 13000 Gallon Tanker
+item.V.A.TLogcar.name=V.A.T Logcar
+item.UnionPacific3-bayHopper.name=UP 3-Bay Hopper
+item.Pullman'sPalace.name=Pullman's Palace
+item.BurlingtonNorthern&SantaFe3-bayHopper.name=BNSF 3-Bay Hopper
+
+
+<!-- ## Rollingstock ## -->
+<!-- ## These are actually defined from the item name, so one name covers all areas ## -->
+item.pullmanspalace.name=Pullman's Palace
+item.vatlogcar.name=V.A.T Log Car

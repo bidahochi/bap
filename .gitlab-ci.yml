@@ -1,0 +1,40 @@
+image: java:8-jdk
+
+stages:
+  - build
+
+before_script:
+#  - echo `pwd` # debug
+#  - echo "$CI_BUILD_NAME, $CI_BUILD_REF_NAME $CI_BUILD_STAGE" # debug
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+  - chmod +x ./gradlewLinux
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+build:
+  stage: build
+  script:
+    - ./gradlewLinux setupDecompWorkspace --refresh-dependencies
+    - mv build/libs/Trains-In-Motion-$CI_BUILD_TAG.jar $CI_PROJECT_DIR/builds/Trains-In-Motion-$CI_BUILD_TAG.jar
+  artifacts:
+    paths:
+      - build/libs/Trains-In-Motion-$CI_BUILD_TAG.jar
+    expire_in: 1 week
+  only:
+    changes:
+    - src*
+
+#not yet implemented by gitlab
+#release:
+#  stage: release
+#  image: inetprocess/gitlab-release
+#  description: ${CI_COMMIT_MESSAGE}
+#  assets:
+#    - name: cool-app.zip
+#      url: build/libs/Trains-In-Motion-${CI_BUILD_TAG}.jar
+
+after_script:
+  - echo "End CI"

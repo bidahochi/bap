@@ -1,0 +1,44 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+eclipse
+.classpath
+.project
+
+# idea
+out
+.idea
+*.iws
+*.iml
+*.ipr
+
+# gradle
+build
+.gradle
+
+# netbeans
+.nb-gradle-*
+
+# build
+asm
+config
+logs
+options.txt
+saves
+usernamecache.json
+crash-report
+crash-reports
+
+# other
+run
+lib
+/.nb-gradle/
+*.tmp
+src/main/java/ebf/tim/utility/DoNotInclude.java
+.debris/*
+libs/*
+/src/.debris/
+rawmodels
+forge-1.7.10-10.13.4.1558-1.7.10-changelog.txt

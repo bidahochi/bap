@@ -1,0 +1,15 @@
+[
+{
+  "modid": "trainsinmotion",
+  "name": "Trains in Motion",
+  "description": "The backend for a number of mods that add trains and rollingstock to Minecraft, such as Traincraft",
+  "version": "1.7.10.1558-1614",
+  "url": "https://github.com/EternalBlueFlame/Trains-In-Motion",
+  "updateUrl": "https://github.com/EternalBlueFlame/Trains-In-Motion/releases",
+  "authorList": ["Eternal Blue Flame"],
+  "credits": "Eternal Blue Flame | Lunar Tales | Zora no Densha | Fexcraft",
+  "logoFile": "/assets/tim/textures/items/TiM.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
