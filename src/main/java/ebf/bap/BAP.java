@@ -3,6 +3,7 @@ package ebf.bap;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import ebf.bap.entities.diesels.AlcoS2;
+import ebf.bap.entities.diesels.CF7;
 import ebf.bap.entities.freight.*;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
@@ -54,7 +55,7 @@ public class BAP {
                 , MODID, "tab.bapfortimelectric.name", null, null, null, null);
 
         creativeTabFreight.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
-                new ItemTransport(new AlcoS2(null), MODID, null)
+                new ItemTransport(new PS160(null), MODID, null)
                 , MODID, "tab.bapfortimfreight.name", null, null, null, null);
 
         creativeTabPassenger.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
@@ -65,7 +66,7 @@ public class BAP {
 
     public static GenericRailTransport[] listDiesel() {
 
-        return new GenericRailTransport[]{new AlcoS2(null)};
+        return new GenericRailTransport[]{new AlcoS2(null), new CF7(null)};
     }
 
    /* public static GenericRailTransport[] listSteam() {

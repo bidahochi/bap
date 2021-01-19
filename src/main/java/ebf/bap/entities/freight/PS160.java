@@ -52,7 +52,7 @@ public class PS160 extends GenericRailTransport {
         return TrainsInMotion.transportTypes.FREIGHT.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}//86400 pounds
+    public float weightKg(){return 39190f;}//86400 pounds, game runs in kg, so 39190 kg
 
     //Model stuff
     @Override

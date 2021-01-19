@@ -1,20 +1,36 @@
-timsquared:DescriptionBrigadelokBlue=Used by Germany in WWI<br>as a transport for solders and equipment
-
-
-
 
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
-item.HenschelBrigadelok.name=Brigadelok 0-8-0
-item.HenschelBrigadelok-E.name=Brigadelok 0-8-0 (Electric)
-item.GATX13000GallonTanker.name=GATX 13000 Gallon Tanker
-item.V.A.TLogcar.name=V.A.T Logcar
-item.UnionPacific3-bayHopper.name=UP 3-Bay Hopper
-item.Pullman'sPalace.name=Pullman's Palace
-item.BurlingtonNorthern&SantaFe3-bayHopper.name=BNSF 3-Bay Hopper
-
+item.EMDCF7.name=EMD CF7
+item.AlcoS2.name=Alco S2
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
-item.pullmanspalace.name=Pullman's Palace
-item.vatlogcar.name=V.A.T Log Car
+item.PullmanStandardPS160FootBoxcar.name=Pullman-Standard PS1 60' Boxcar
+
+<!-- ## Descriptions ## -->
+bap4tim:description.cf7.atsf=Between 1970 and 1978 the Santa Fe rebuilt 233 F3, F7, and F9 units<br>into carbody Road Switchers to increase Visibility and service life
+bap4tim:description.cf7.wcrc=The WCRC owned two CF7s, 401 and 402. 402 was sold off to NKCR<br>sometime in 1999, and was scrapped in late 2010. 401 was also sold off to NKCR/IR,<br>and is still around as of 2012.
+bap4tim:description.cf7.furrx=Fox Union Rail Resources currently owns a decent handful of CF7s,<br>this one being equiped with a 3rd party nose light.
+bap4tim:description.cf7.ane=ANE operated 12 Angle Cab CF7s numbers 1600 through 1611.<br>Many were equipped with ANE's "Radio Ear" Antenna for use in the<br>Chaoscades Mountains.
+bap4tim:description.cf7.watco2633=Watco, being a leasing company, obtained a large sum of CF7s, some of which are still around today.
+bap4tim:description.cf7.watco6=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.<br>Except this one, it burned up and died the end.
+bap4tim:description.cf7.watco7=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.
+bap4tim:description.cf7.watco11=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.
+bap4tim:description.cf7.wamx7108=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.
+bap4tim:description.cf7.cagy=the Cagy had a handful of CF7s, most being ATSF freightbonnet patches.<br>However 808 was painted in its current green and yellow paintscheme.
+bap4tim:description.cf7.fwwr=The Fort Worth and Western owned one CF7, 2473, nicknamed Tarantula.<br>It was later returned to Econorail, and never seen again since 1994.
+bap4tim:description.cf7.tcw=Twin Cities & Western #302, it got turned into a slug at some point.
+bap4tim:description.cf7.owo19=
+bap4tim:description.cf7.owo20=OWO bought this unit for scrap value from the ANE, and rebuilt it using an ex-ANE GP7B as a parts donor.
+bap4tim:description.cf7.mts=
+
+bap4tim:description.alcos2.pc=Between 1940 and 1950, ALCo built 1,502 S2 Switchers for use on North American<br>Railroads. As of 1968 the Penn Central owned a total of 120 S2s.
+
+<!-- ## Other ## -->
+menu.item.north america=North America
+item.tab.bapfortimdiesel.name=BAP Diesels
+item.tab.bapfortimsteam.name=BAP Steamers
+item.tab.bapfortimelectric.name=BAP Electrics
+item.tab.bapfortimfreight.name=BAP Freight Cars
+item.tab.bapfortimpassenger.name=BAP Passenger Cars

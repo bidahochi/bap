@@ -52,7 +52,7 @@ public class AlcoS2 extends EntityTrainCore {
         return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}
+    public float weightKg(){return 104326f;}
 
     //Model stuff
     @Override
