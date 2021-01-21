@@ -5,6 +5,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import ebf.bap.entities.diesels.AlcoS2;
 import ebf.bap.entities.diesels.CF7;
 import ebf.bap.entities.freight.*;
+import ebf.bap.entities.passengers.PEcoach;
+import ebf.bap.entities.passengers.PEobserve;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.items.TiMTab;
@@ -40,7 +42,7 @@ public class BAP {
        // TiMGenericRegistry.registerTransports(MODID, listSteam(), null);
         //TiMGenericRegistry.registerTransports(MODID, listElectric(), null);
         TiMGenericRegistry.registerTransports(MODID, listFreight(), null);
-       // TiMGenericRegistry.registerTransports(MODID, listPassenger(), null);
+        TiMGenericRegistry.registerTransports(MODID, listPassenger(), null);
 
         creativeTabDiesel.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
                 new ItemTransport(new AlcoS2(null), MODID, null)
@@ -59,7 +61,7 @@ public class BAP {
                 , MODID, "tab.bapfortimfreight.name", null, null, null, null);
 
         creativeTabPassenger.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
-                new ItemTransport(new AlcoS2(null), MODID, null)
+                new ItemTransport(new PEcoach(null), MODID, null)
                 , MODID, "tab.bapfortimpassenger.name", null, null, null, null);
 
     }
@@ -82,8 +84,8 @@ public class BAP {
         return new GenericRailTransport[]{new PS160(null)/*, new PS160(null), new PS160(null)*/};
     }
 
-   /* public static GenericRailTransport[] listPassenger() {
-        return new GenericRailTransport[]{new PS160(null)};
-    }*/
+    public static GenericRailTransport[] listPassenger() {
+        return new GenericRailTransport[]{new PEcoach(null), new PEobserve(null)};
+    }
 
 }

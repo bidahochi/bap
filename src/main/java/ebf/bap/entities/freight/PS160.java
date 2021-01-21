@@ -64,13 +64,13 @@ public class PS160 extends GenericRailTransport {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_GT.png","textures/bogies/70TonTruck_Black.png","Grand Trunk", "description.ps160_");
+                "textures/freight/ps160_GT.png","textures/bogies/70TonTruck_Black.png","Grand Trunk", "description.ps160.gt");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_IC.png","textures/bogies/70TonTruck_Black.png","Illinois Central", "description.ps160_");
+                "textures/freight/ps160_IC.png","textures/bogies/70TonTruck_Black.png","Illinois Central", "description.ps160.ic");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_Washaska1.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "Standard OWO PS160 boxcar");
+                "textures/freight/ps160_Washaska1.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "Standard OWO PS1 60' boxcar");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_Washaska2.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox White End", "Standard OWO PS160 boxcar");
+                "textures/freight/ps160_Washaska2.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox White End", "Standard OWO PS1 60' boxcar");
 
     }
     @Override

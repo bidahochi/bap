@@ -66,23 +66,23 @@ public class AlcoS2 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID, "textures/diesels/alcos2_PC.png","textures/bogies/blunttruck_Black.png","Penn Central", "description.alcos2.pc");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_NPTC.png","textures/bogies/blunttruck_Black.png","Northern Pacific Terminal Co", "description.alcos2.Grey");
+            BAP.MODID,"textures/diesels/alcos2_NPTC.png","textures/bogies/blunttruck_Black.png","Northern Pacific Terminal Co", "description.alcos2.nptc");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_GN.png","textures/bogies/blunttruck_Black.png","Great Northern", "description.alcos2.Green");
+            BAP.MODID,"textures/diesels/alcos2_GN.png","textures/bogies/blunttruck_Black.png","Great Northern", "description.alcos2.gn");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_MILW.png","textures/bogies/blunttruck_Black.png","Milwaukee Road", "description.alcos2.Orange");
+            BAP.MODID,"textures/diesels/alcos2_MILW.png","textures/bogies/blunttruck_Black.png","Milwaukee Road", "description.alcos2.milw");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_MTS.png","textures/bogies/blunttruck_Black.png","Messicrew Tenneva & Southern", "description.alcos2.Pink");
+            BAP.MODID,"textures/diesels/alcos2_MTS.png","textures/bogies/blunttruck_Black.png","Messicrew Tenneva & Southern", "description.alcos2.mts");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_FURRX.png","textures/bogies/blunttruck_Furrx.png","FurrX Patch", "description.alcos2.White");
+            BAP.MODID,"textures/diesels/alcos2_FURRX.png","textures/bogies/blunttruck_Furrx.png","FurrX Patch", "description.alcos2.furrx");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_ATSF.png","textures/bogies/blunttruck_Black.png","Atchison Topeka & Santa Fe", "description.alcos2.Blue");
+            BAP.MODID,"textures/diesels/alcos2_ATSF.png","textures/bogies/blunttruck_Black.png","Atchison Topeka & Santa Fe", "description.alcos2.atsf");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_AMTK1.png","textures/bogies/blunttruck_Black.png","Amtrak Phase 1", "description.alcos2.LightGrey");
+            BAP.MODID,"textures/diesels/alcos2_AMTK1.png","textures/bogies/blunttruck_Black.png","Amtrak Phase 1", "description.alcos2.amtk1");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_AMTK2.png","textures/bogies/blunttruck_Black.png","Amtrak Phase 2", "description.alcos2.Magenta");
+            BAP.MODID,"textures/diesels/alcos2_AMTK2.png","textures/bogies/blunttruck_Black.png","Amtrak Phase 2", "description.alcos2.amtk2");
         SkinRegistry.addSkin(this.getClass(),
-            BAP.MODID,"textures/diesels/alcos2_CP.png","textures/bogies/blunttruck_Black.png","Canadian Pacific", "description.alcos2.Red");
+            BAP.MODID,"textures/diesels/alcos2_CP.png","textures/bogies/blunttruck_Black.png","Canadian Pacific", "description.alcos2.cp");
     }
     @Override
     public String getDefaultSkin(){
