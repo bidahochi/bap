@@ -74,7 +74,7 @@ public class PEobserve extends GenericRailTransport {
     }
     @Override
     public String getDefaultSkin(){
-        return Info.modID+":"+"Polar Express Observation (Without Logo)";// for whatever reason the default skin just breaks for no reason
+        return Info.modID+":"+"Polar Express Observation (With Logo)";// for whatever reason the default skin just breaks for no reason
     }
 
     //recipe

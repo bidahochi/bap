@@ -4,6 +4,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import ebf.bap.entities.diesels.AlcoS2;
 import ebf.bap.entities.diesels.CF7;
+import ebf.bap.entities.electrics.EF1;
 import ebf.bap.entities.freight.*;
 import ebf.bap.entities.passengers.PEcoach;
 import ebf.bap.entities.passengers.PEobserve;
@@ -40,7 +41,7 @@ public class BAP {
 
         TiMGenericRegistry.registerTransports(MODID, listDiesel(), null);
        // TiMGenericRegistry.registerTransports(MODID, listSteam(), null);
-        //TiMGenericRegistry.registerTransports(MODID, listElectric(), null);
+        TiMGenericRegistry.registerTransports(MODID, listElectric(), null);
         TiMGenericRegistry.registerTransports(MODID, listFreight(), null);
         TiMGenericRegistry.registerTransports(MODID, listPassenger(), null);
 
@@ -71,14 +72,14 @@ public class BAP {
         return new GenericRailTransport[]{new AlcoS2(null), new CF7(null)};
     }
 
-   /* public static GenericRailTransport[] listSteam() {
+    public static GenericRailTransport[] listSteam() {
         return new GenericRailTransport[]{new AlcoS2(null), new AlcoS2(null),
         new AlcoS2(null)};
     }
 
     public static GenericRailTransport[] listElectric() {
-        return new GenericRailTransport[]{new AlcoS2(null)};
-    }*/
+        return new GenericRailTransport[]{new EF1(null)};
+    }
 
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{new PS160(null)/*, new PS160(null), new PS160(null)*/};
