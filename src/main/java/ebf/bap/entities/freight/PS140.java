@@ -3,7 +3,7 @@ package ebf.bap.entities.freight;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.rollingstock.ModelPS160;
+import ebf.bap.models.rollingstock.ModelPS140;
 import ebf.bap.models.trucks.Model70TonTruck;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -19,26 +19,30 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
+import train.render.models.*;
+import train.Traincraft;
+import train.library.Info;
+import train.library.ItemIDs;
 
 import java.util.List;
 import java.util.UUID;
 
-public class PS160 extends GenericRailTransport {
+public class PS140 extends GenericRailTransport {
 
-    public PS160(World worldObj) {
+    public PS140(World worldObj) {
         super(worldObj);
     }
 
-    public PS160(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public PS140(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new PS160((World)null), BAP.MODID, BAP.creativeTabFreight);
+    public static final Item thisItem = new ItemTransport(new PS140((World)null), BAP.MODID, BAP.creativeTabFreight);
 
 
     //main stats
     @Override
-    public String transportName(){return "Pullman Standard PS1 60 Foot Boxcar";}
+    public String transportName(){return "PS140";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
@@ -46,59 +50,60 @@ public class PS160 extends GenericRailTransport {
     @Override
     public boolean isFictional(){return false;}
     @Override
-    public int getInventoryRows(){return 5;}
+    public int getInventoryRows(){return 3;}
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
         return TrainsInMotion.transportTypes.FREIGHT.singleton();
     }
     @Override
-    public float weightKg(){return 39190f;}//86400 pounds, game runs in kg, so 39190 kg
+    public float weightKg(){return 20980f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelPS160()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelPS140()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}//1.875
+    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_GT.png","textures/bogies/70TonTruck_Black.png","Grand Trunk", "description.ps160.gt");
+                "textures/freight/ps140_NYC.png","textures/bogies/70TonTruck_Black.png","NYC Pacemaker", "description.ps140.nyc");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_IC.png","textures/bogies/70TonTruck_Black.png","Illinois Central", "description.ps160.ic");
+                "textures/freight/ps140_ATSF.png","textures/bogies/70TonTruck_Black.png","Atchison Topeka & Santa Fe", "description.ps140.atsf");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_Washaska1.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "description.ps160.owo1");
+                "textures/freight/ps140_CP.png","textures/bogies/70TonTruck_Black.png","Canadian Pacific", "description.ps140.cp");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_Washaska2.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox White End", "description.ps160.owo2");
+                "textures/freight/ps140_RI.png","textures/bogies/70TonTruck_Black.png","Rock Solid Island", "description.ps140.ri");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/ps140_owo.png","textures/bogies/70TonTruck_Black.png","Washaska", "description.ps140.owo");
 
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"Grand Trunk";
+        return BAP.MODID+":"+"NYC Pacemaker";
     }
 
     //recipe
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
-                null, null, null,
-                null, null, null,
-                null, null, null        };
+                new ItemStack(Blocks.planks, 4), null, null,
+                null, null, null, null, null, new ItemStack(Blocks.chest, 2)        };
     }
 
     //these are separated for being fiddly.
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{5.6f,2.1f,1.3f};}
+    public float[] getHitboxSize(){return new float[]{4f,2.1f,1.3f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.6f, -1.6f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.1f, -1.1f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Model70TonTruck(),1.6f,0f,0f),//.addSubBogie(Model,offsetX,offsetY,offsetZ)
-                new Bogie(new Model70TonTruck(),-1.6f,0f,0f),
+                new Bogie(new Model70TonTruck(),1.1f,0f,0f),
+                new Bogie(new Model70TonTruck(),-1.1f,0f,0f),
         };
     }
 
@@ -111,6 +116,5 @@ public class PS160 extends GenericRailTransport {
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
-
 
 }

@@ -54,7 +54,7 @@ public class BAP {
                 , MODID, "tab.bapfortimsteam.name", null, null, null, null);
 
         creativeTabElectric.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
-                new ItemTransport(new AlcoS2(null), MODID, null)
+                new ItemTransport(new EF1(null), MODID, null)
                 , MODID, "tab.bapfortimelectric.name", null, null, null, null);
 
         creativeTabFreight.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
@@ -82,7 +82,8 @@ public class BAP {
     }
 
     public static GenericRailTransport[] listFreight() {
-        return new GenericRailTransport[]{new PS160(null)/*, new PS160(null), new PS160(null)*/};
+        return new GenericRailTransport[]{new PS160(null), new PS150(null), new PS140(null),
+                new Highcube40foot(null), new OWO60Verticube(null), new MILW40boxcar(null)};
     }
 
     public static GenericRailTransport[] listPassenger() {

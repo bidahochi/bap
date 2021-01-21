@@ -43,7 +43,7 @@ public class CF7 extends EntityTrainCore {
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "1969-Current";}
+    public String transportYear(){return "1969-Onwards";}
     @Override
     public boolean isFictional(){return false;}
     @Override

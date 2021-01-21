@@ -7,13 +7,20 @@ item.AlcoS2.name=Alco S2
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.PullmanStandardPS160FootBoxcar.name=Pullman-Standard PS1 60' Boxcar
+item.PS140.name=Pullman-Standard PS1 40' Boxcar
+item.PS150.name=Pullman-Standard PS1 50' Boxcar
+
+item.MILW40boxcar.name= MILW 40 Foot Ribside Boxcar
+item.OWO60Verticube.name=OWO 60 Foot Verticube Boxcar
+item.40highcube.name=40 Foot Highcube Boxcar
+
 item.PEcoach.name=Polar Express Coach Car
 item.PEobserve.name=Polar Express Observation Car
 
 <!-- ## Descriptions ## -->
 bap4tim:description.cf7.atsf=Between 1970 and 1978 the Santa Fe rebuilt 233 F3, F7, and F9 units<br>into carbody Road Switchers to increase Visibility and service life
 bap4tim:description.cf7.wcrc=The WCRC owned two CF7s, 401 and 402. 402 was sold off to NKCR<br>sometime in 1999, and was scrapped in late 2010. 401 was also sold off to NKCR/IR,<br>and is still around as of 2012.
-bap4tim:description.cf7.furrx=Fox Union Rail Resources currently owns a decent handful of CF7s,<br>this one being equiped with a 3rd party nose light.
+bap4tim:description.cf7.furrx=Fox Union Rail Resources currently owns a decent handful of CF7s,<br>this one being equipped with a 3rd party nose light.
 bap4tim:description.cf7.ane=ANE operated 12 Angle Cab CF7s numbers 1600 through 1611.<br>Many were equipped with ANE's "Radio Ear" Antenna for use in the<br>Chaoscades Mountains.
 bap4tim:description.cf7.watco2633=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.
 bap4tim:description.cf7.watco6=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.<br>Except this one, it burned up and died the end.
@@ -34,6 +41,23 @@ bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
 bap4tim:description.pecoach.waw=
 bap4tim:description.pecoach.wawnt=
+
+bap4tim:description.owo60.verticube=OWO Designed the Verticube Boxcars in the early 2000's<br>to meet a growing demand for constant capacity of light objects,<br>such as Models. However, over time,<br>the Verticubes became reinforced to carry even the mightiest of loads.
+bap4tim:description.owo60.wr=A Coproate Subsidary of OWO, WR exports<br>Washaskain Spruce and other wood Products.
+bap4tim:description.owo60.biglogo=In the Late 2010s, the Railroad began to apply its<br>new Logo onto its Rollingstock.
+bap4tim:description.owo60.simple=Early on, some Verticubes were needed faster than they could be made,<br>and were shipped with minimal logos and markings.
+bap4tim:description.owo60.biglogowhite=In the Late 2010s, the Railroad began to apply its<br>new Logo onto its Rollingstock.
+bap4tim:description.owo60.whitewr=A Coproate Subsidary of OWO, WR exports Washaskain Spruce and other wood Products.
+
+bap4tim:description.milw40.fawx=The Fawx Foundry Co of Washaska bought a large surplus of MILW Ribsides<br>for Steel and Iron Product Transfer.
+
+bap4tim:description.highcube40.beep=imposter sus
+bap4tim:description.highcube40.bawx=In order to get more freight cars into circulation, the leasing<br>company BAWX was formed. Bawx railcars run under many reporting marks,<br>such as CHIPX and GENX.
+
+bap4tim:description.ps160.owo1=Standard OWO PS1 60' boxcar
+bap4tim:description.ps160.owo2=Some OWO PS1 Boxcars were painted with an elaborate<br>angle on one end.
+
+bap4tim:description.ps140.owo=Standard OWO PS1 40' Boxcar
 
 <!-- ## Other ## -->
 menu.item.north america=North America

@@ -3,7 +3,7 @@ package ebf.bap.entities.freight;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.rollingstock.ModelPS160;
+import ebf.bap.models.rollingstock.ModelOWO60Verticube;
 import ebf.bap.models.trucks.Model70TonTruck;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -19,63 +19,70 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
+import train.render.models.*;
+import train.Traincraft;
+import train.library.Info;
+import train.library.ItemIDs;
 
 import java.util.List;
 import java.util.UUID;
 
-public class PS160 extends GenericRailTransport {
+public class OWO60Verticube extends GenericRailTransport {
 
-    public PS160(World worldObj) {
+    public OWO60Verticube(World worldObj) {
         super(worldObj);
     }
 
-    public PS160(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public OWO60Verticube(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new PS160((World)null), BAP.MODID, BAP.creativeTabFreight);
+    public static final Item thisItem = new ItemTransport(new OWO60Verticube((World)null), BAP.MODID, BAP.creativeTabFreight);
 
 
     //main stats
     @Override
-    public String transportName(){return "Pullman Standard PS1 60 Foot Boxcar";}
+    public String transportName(){return "OWO 60 Verticube";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "1947-Onwards";}
+    public String transportYear(){return "Early 2000s Onwards";}
     @Override
-    public boolean isFictional(){return false;}
+    public boolean isFictional(){return true;}
     @Override
-    public int getInventoryRows(){return 5;}
+    public int getInventoryRows(){return 6;}
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
         return TrainsInMotion.transportTypes.FREIGHT.singleton();
     }
     @Override
-    public float weightKg(){return 39190f;}//86400 pounds, game runs in kg, so 39190 kg
+    public float weightKg(){return 50950f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelPS160()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelOWO60Verticube()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}//1.875
+    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};} //-0.1875
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_GT.png","textures/bogies/70TonTruck_Black.png","Grand Trunk", "description.ps160.gt");
+                "textures/freight/owo60verticube_green_logo.png","textures/bogies/70TonTruck_Black.png","OWO 'Verti-Cube'", "description.owo60.verticube");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_IC.png","textures/bogies/70TonTruck_Black.png","Illinois Central", "description.ps160.ic");
+                "textures/freight/owo60verticube_green_wr.png","textures/bogies/70TonTruck_Black.png","OWO 'Washaska Resources'", "description.owo60.wr");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_Washaska1.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "description.ps160.owo1");
+                "textures/freight/owo60verticube_green_logo_new.png","textures/bogies/70TonTruck_Black.png","OWO 'Big Logo'", "description.owo60.biglogo");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/ps160_Washaska2.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox White End", "description.ps160.owo2");
-
+                "textures/freight/owo60verticube_green_simple.png","textures/bogies/70TonTruck_Black.png","OWO 'Simple'", "description.owo60.simple");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/owo60verticube_white_logo.png","textures/bogies/70TonTruck_Black.png","OWO 'Big Logo White'", "description.owo60.biglogowhite");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/owo60verticube_white_wr.png","textures/bogies/70TonTruck_Black.png","OWO 'Washaska Resources White'", "description.owo60.whitewr");
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"Grand Trunk";
+        return BAP.MODID+":"+"OWO 'Verti-Cube'";
     }
 
     //recipe
@@ -91,13 +98,13 @@ public class PS160 extends GenericRailTransport {
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{5.6f,2.1f,1.3f};}
+    public float[] getHitboxSize(){return new float[]{5.7f,2.6f,1.3f};}
     @Override
     public float[] bogieLengthFromCenter() {return new float[]{1.6f, -1.6f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Model70TonTruck(),1.6f,0f,0f),//.addSubBogie(Model,offsetX,offsetY,offsetZ)
+                new Bogie(new Model70TonTruck(),1.6f,0f,0f),
                 new Bogie(new Model70TonTruck(),-1.6f,0f,0f),
         };
     }
@@ -111,6 +118,5 @@ public class PS160 extends GenericRailTransport {
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
-
 
 }
