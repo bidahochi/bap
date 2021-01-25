@@ -3,6 +3,9 @@
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.EMDCF7.name=EMD CF7
 item.AlcoS2.name=Alco S2
+item.B23-7.name=GE B23-7
+item.U23B.name=GE U23B
+item.EF1.name=ALCo-GE EF-1 Boxcab
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -18,7 +21,7 @@ item.PEcoach.name=Polar Express Coach Car
 item.PEobserve.name=Polar Express Observation Car
 
 <!-- ## Descriptions ## -->
-bap4tim:description.cf7.atsf=Between 1970 and 1978 the Santa Fe rebuilt 233 F3, F7, and F9 units<br>into carbody Road Switchers to increase Visibility and service life
+bap4tim:description.cf7.atsf=Between 1970 and 1978 the Santa Fe Shops in Cleburne, Texas rebuilt 233<br>F3, F7, and F9 units into carbody Road Switchers to<br>increase Visibility and service life
 bap4tim:description.cf7.wcrc=The WCRC owned two CF7s, 401 and 402. 402 was sold off to NKCR<br>sometime in 1999, and was scrapped in late 2010. 401 was also sold off to NKCR/IR,<br>and is still around as of 2012.
 bap4tim:description.cf7.furrx=Fox Union Rail Resources currently owns a decent handful of CF7s,<br>this one being equipped with a 3rd party nose light.
 bap4tim:description.cf7.ane=ANE operated 12 Angle Cab CF7s numbers 1600 through 1611.<br>Many were equipped with ANE's "Radio Ear" Antenna for use in the<br>Chaoscades Mountains.
@@ -27,15 +30,21 @@ bap4tim:description.cf7.watco6=Watco, being a leasing company, obtained a large 
 bap4tim:description.cf7.watco7=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.
 bap4tim:description.cf7.watco11=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.
 bap4tim:description.cf7.wamx7108=Watco, being a leasing company, obtained a large sum of CF7s,<br>some of which are still around today.
-bap4tim:description.cf7.cagy=the Cagy had a handful of CF7s, most being ATSF freightbonnet patches.<br>However 808 was painted in its current green and yellow paintscheme.
+bap4tim:description.cf7.cagy=the Cagy had a handful of CF7s, most being ATSF freightbonnet patches.<br>However 808 was painted into its current green and yellow paintscheme.
 bap4tim:description.cf7.fwwr=The Fort Worth and Western owned one CF7, 2473, nicknamed Tarantula.<br>It was later returned to Econorail, and never seen again since 1994.
 bap4tim:description.cf7.tcw=Twin Cities & Western #302, it got turned into a slug at some point.
 bap4tim:description.cf7.owo19=OWO bought the unit from ANE in running condition,<br>and it was the first OWO unit painted in the orange Fakebonnet.
 bap4tim:description.cf7.owo20=OWO bought this unit for scrap value from the ANE,<br>and rebuilt it using an ex-ANE GP7B as a parts donor.
-bap4tim:description.cf7.mts=Messicrew Tenneva and Southern originally owned 6 working CF7s,<br>the 2 oldest, 1233 and 1244 got into an accident and are currently used as parts locos<br>for the working 4
+bap4tim:description.cf7.mts=Messicrew Tenneva and Southern originally owned 6 working CF7s,<br>the 2 oldest, 1233 and 1244 got into an accident and are currently used<br>as parts locos for the working 4
 
 bap4tim:description.alcos2.pc=Between 1940 and 1950, ALCo built 1,502 S2 Switchers for use on North American<br>Railroads. As of 1968 the Penn Central owned a total of 120 S2s.
 bap4tim:description.alcos2.furrx=Originally, the OWO had 1 S2, #5211, but it was too light for some of the switches<br>in Fewpoint yard,and was sold to FurrX, who promptly patched it ane<br>let it rust.
+
+bap4tim:description.b23dash7.furrx=Sometime in the 1980s FurrX ordered several High-Hood B23s new from GE.
+bap4tim:description.b23dash7.furrx2=In the Early 2000s FurrX also bought up used B23s, most from BNSF.
+
+bap4tim:description.u23b.furrx=In the early 70s FurrX aquired a small amount of High-Hood U23Bs from GE.<br> This was the 2nd BAP skin ever made, and the first FurrX skin.
+bap4tim:description.u23b.furrxb=In the FurrX U23B Order, several were to be B units.<br>However, only one was built this way.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=

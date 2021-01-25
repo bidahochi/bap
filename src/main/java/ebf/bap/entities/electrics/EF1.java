@@ -60,7 +60,7 @@ public class EF1 extends EntityTrainCore {
         return TrainsInMotion.transportTypes.ELECTRIC.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}
+    public float weightKg(){return 128820f;}
 
     //Model stuff
     @Override
@@ -71,18 +71,21 @@ public class EF1 extends EntityTrainCore {
     public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),
+        /*SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID, "textures/electrics/ef1_milw_orange.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1d_black.png","MILW Orange", "description.ef1.milworange");
+        */
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID, "textures/electrics/ef1_milw_orange_b.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1d_black.png","MILW Orange B Unit", "description.ef1.milworangeb");
+                BAP.MODID, "textures/electrics/ef1_milw_orange.png",new String[]{"textures/bogies/ef1d_black.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1tp_black.png"},"MILW Orange", "description.ef1.milworange");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID, "textures/electrics/ef1_milw_black.png","textures/bogies/ef1d_black.png", "textures/bogies/ef1d_black.png","MILW Original Black", "description.ef1.milwblack");
+                BAP.MODID, "textures/electrics/ef1_milw_orange_b.png",new String[]{"textures/bogies/ef1d_black.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1tp_black.png"},"MILW Orange B Unit", "description.ef1.milworangeb");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID, "textures/electrics/ef1_milw_black_b.png","textures/bogies/ef1d_black.png", "textures/bogies/ef1d_black.png","MILW Original Black B Unit", "description.ef1.milwblackb");
+                BAP.MODID, "textures/electrics/ef1_milw_black.png",new String[]{"textures/bogies/ef1d_black.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1tp_black.png"},"MILW Original Black", "description.ef1.milwblack");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID, "textures/electrics/ef1_milw_orange_maroon.png","textures/bogies/ef1d_black.png", "textures/bogies/ef1d_black.png","MILW Orange-Maroon", "description.ef1.milworangemaroon");
+                BAP.MODID, "textures/electrics/ef1_milw_black_b.png",new String[]{"textures/bogies/ef1d_black.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1tp_black.png"},"MILW Original Black B Unit", "description.ef1.milwblackb");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID, "textures/electrics/ef1_milw_orange_maroon_b.png","textures/bogies/ef1d_black.png", "textures/bogies/ef1d_black.png","MILW Orange-Maroon B Unit", "description.ef1.milworangemaroonb");
+                BAP.MODID, "textures/electrics/ef1_milw_orange_maroon.png",new String[]{"textures/bogies/ef1d_black.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1tp_black.png"},"MILW Orange-Maroon", "description.ef1.milworangemaroon");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID, "textures/electrics/ef1_milw_orange_maroon_b.png",new String[]{"textures/bogies/ef1d_black.png","textures/bogies/ef1tp_black.png", "textures/bogies/ef1tp_black.png"},"MILW Orange-Maroon B Unit", "description.ef1.milworangemaroonb");
 
     }
     @Override
@@ -103,7 +106,7 @@ public class EF1 extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.9f,1.2f, 0.4f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{5.707499980926514f,2.1f,1.1f};}
     @Override
@@ -111,7 +114,7 @@ public class EF1 extends EntityTrainCore {
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new ModelEmpty(),-1.5f,0f,0f).addSubBogie(new ModelEmpty(),-0.0f,0f,0f).addSubBogie(new ModelEF1_driver_back(),-1.0f,0f,0f),
+                new Bogie(new ModelEF1_driver_back(),-1.5f,0f,0f),//.addSubBogie(new ModelEmpty(),-0.0f,0f,0f).addSubBogie(new ModelEF1_driver_back(),-1.0f,0f,0f),
                 new Bogie(new ModelEF1_driver_front(),1.3f,0f,0f).addSubBogie(new ModelEF1_pilot(),0.6f,0f,0f),
         };
     }

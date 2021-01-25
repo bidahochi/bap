@@ -3,7 +3,9 @@ package ebf.bap;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import ebf.bap.entities.diesels.AlcoS2;
+import ebf.bap.entities.diesels.B23;
 import ebf.bap.entities.diesels.CF7;
+import ebf.bap.entities.diesels.U23B;
 import ebf.bap.entities.electrics.EF1;
 import ebf.bap.entities.freight.*;
 import ebf.bap.entities.passengers.PEcoach;
@@ -69,7 +71,7 @@ public class BAP {
 
     public static GenericRailTransport[] listDiesel() {
 
-        return new GenericRailTransport[]{new AlcoS2(null), new CF7(null)};
+        return new GenericRailTransport[]{new AlcoS2(null), new CF7(null), new U23B(null), new B23(null)};
     }
 
     public static GenericRailTransport[] listSteam() {
