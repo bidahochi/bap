@@ -6,6 +6,8 @@ import ebf.bap.BAP;
 import ebf.bap.models.locomotives.ModelCF7;
 import ebf.bap.models.trucks.ModelBlombergB;
 import ebf.bap.models.trucks.ModelBluntTruck;
+import ebf.bap.models.trucks.ModelFB2;
+import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.api.TransportSkin;
@@ -69,7 +71,7 @@ public class CF7 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/cf7_WCRC.png","textures/bogies/blombergB_Black.png","Washington Central", "description.cf7.wcrc");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/cf7_FURRX.png","textures/bogies/blombergB_LightGrey.png","FURRX 21", "description.cf7.furrx");
+                BAP.MODID,"textures/diesels/cf7_FURRX.png","textures/bogies/typeb_LightGrey.png","FurrX", "description.cf7.furrx");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/cf7_ANE.png","textures/bogies/blombergB_Black.png","Avanste Northeastern", "description.cf7.ane");
         SkinRegistry.addSkin(this.getClass(),
@@ -91,7 +93,7 @@ public class CF7 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/cf7_OWO19.png","textures/bogies/blombergB_DarkerGrey.png","Washaska & Old Fox 19", "description.cf7.owo19");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/cf7_OWO20.png","textures/bogies/blombergB_Black.png","Washaska & Old Fox 20", "description.cf7.owo20");// needs type b trucc
+                BAP.MODID,"textures/diesels/cf7_OWO20.png","textures/bogies/typeb_Black.png","Washaska & Old Fox 20", "description.cf7.owo20");// needs type b trucc
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/cf7_MTS.png","textures/bogies/blombergB_Black.png","Messicrew Tenneva & Southern", "description.cf7.mts");
     }
@@ -117,13 +119,25 @@ public class CF7 extends EntityTrainCore {
     public float[] getHitboxSize(){return new float[]{4.899999976158142f,2.1f,1.1f};}
     @Override
     public float[] bogieLengthFromCenter() {return new float[]{1.25f, -1.25f};}
-    @SideOnly(Side.CLIENT)
+    /*@SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
                 new Bogie(new ModelBlombergB(), 1.25f,0f,0f),
                 new Bogie(new ModelBlombergB(),-1.25f,0f,0f),//this needs to be rotated 180 but like, that doesnt exist yet
         };
+    }*/
+    @SideOnly(Side.CLIENT)
+    public Bogie[] bogies(){
+
+        if(getCurrentSkin()==null || getCurrentSkin().name.equals("Washaska & Old Fox 20") || getCurrentSkin().name.equals("FurrX")) {
+            return new Bogie[]{new Bogie(new ModelTypeB(),1.25f,0f,0f),
+                    new Bogie(new ModelTypeB(),-1.25f,0f,0f)};
+        } else {
+            return new Bogie[]{new Bogie(new ModelBlombergB(),1.25f,0f,0f),
+                    new Bogie(new ModelBlombergB(),-1.25f,0f,0f)};
+        }
     }
+
     //Train specific stuff
     @Override
     public String transportFuelType(){return "diesel";}

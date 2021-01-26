@@ -12,13 +12,18 @@ item.EF1.name=ALCo-GE EF-1 Boxcab
 item.PullmanStandardPS160FootBoxcar.name=Pullman-Standard PS1 60' Boxcar
 item.PS140.name=Pullman-Standard PS1 40' Boxcar
 item.PS150.name=Pullman-Standard PS1 50' Boxcar
-
 item.MILW40boxcar.name= MILW 40 Foot Ribside Boxcar
 item.OWO60Verticube.name=OWO 60 Foot Verticube Boxcar
 item.40highcube.name=40 Foot Highcube Boxcar
 
+item.DOT11000.name=11,000 Gallon DOT 111 Tank Car
+item.DOT20600.name=20,600 Gallon DOT 111 Tank Car
+item.DOT29080.name=29,080 Gallon DOT 111 Tank Car
+
 item.PEcoach.name=Polar Express Coach Car
 item.PEobserve.name=Polar Express Observation Car
+
+item.Payload.name=TF2 Bombcart
 
 <!-- ## Descriptions ## -->
 bap4tim:description.cf7.atsf=Between 1970 and 1978 the Santa Fe Shops in Cleburne, Texas rebuilt 233<br>F3, F7, and F9 units into carbody Road Switchers to<br>increase Visibility and service life
@@ -72,7 +77,8 @@ bap4tim:description.ps140.owo=Standard OWO PS1 40' Boxcar
 menu.item.north america=North America
 menu.item.north pole=North Pole
 item.tab.bapfortimdiesel.name=BAP Diesels
-item.tab.bapfortimsteam.name=BAP Steamers
+item.tab.bapfortimsteam.name=BAP Steamers & Tenders
 item.tab.bapfortimelectric.name=BAP Electrics
 item.tab.bapfortimfreight.name=BAP Freight Cars
 item.tab.bapfortimpassenger.name=BAP Passenger Cars
+item.tab.bapfortimother.name=BAP Other Rail Oddities

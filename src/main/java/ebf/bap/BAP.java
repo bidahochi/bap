@@ -2,14 +2,12 @@ package ebf.bap;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import ebf.bap.entities.diesels.AlcoS2;
-import ebf.bap.entities.diesels.B23;
-import ebf.bap.entities.diesels.CF7;
-import ebf.bap.entities.diesels.U23B;
-import ebf.bap.entities.electrics.EF1;
 import ebf.bap.entities.freight.*;
-import ebf.bap.entities.passengers.PEcoach;
-import ebf.bap.entities.passengers.PEobserve;
+import ebf.bap.entities.diesels.*;
+import ebf.bap.entities.electrics.*;
+//import ebf.bap.entities.steamers.*;
+import ebf.bap.entities.others.*;
+import ebf.bap.entities.passengers.*;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.items.TiMTab;
@@ -18,7 +16,7 @@ import ebf.tim.registry.TiMGenericRegistry;
 @Mod(modid = BAP.MODID, version = BAP.MOD_VERSION, name = "Bida's American Pack for TiM")
 public class BAP {
     public static final String MODID = "bap4tim";
-    public static final String MOD_VERSION = "0.01_pre-alpha";
+    public static final String MOD_VERSION = "0.02_work-in-progress";
 
     private static ItemTransport tabItem;
 
@@ -27,6 +25,7 @@ public class BAP {
     public static TiMTab creativeTabElectric;
     public static TiMTab creativeTabFreight;
     public static TiMTab creativeTabPassenger;
+    public static TiMTab creativeTabOther;
 
     @Mod.Instance(MODID)
     public static BAP instance;
@@ -40,12 +39,15 @@ public class BAP {
         creativeTabElectric = new TiMTab("bap-electric", tabItem);
         creativeTabFreight = new TiMTab("bap-freight", tabItem);
         creativeTabPassenger = new TiMTab("bap-passenger", tabItem);
+        creativeTabOther = new TiMTab("bap-other", tabItem);
 
         TiMGenericRegistry.registerTransports(MODID, listDiesel(), null);
        // TiMGenericRegistry.registerTransports(MODID, listSteam(), null);
         TiMGenericRegistry.registerTransports(MODID, listElectric(), null);
         TiMGenericRegistry.registerTransports(MODID, listFreight(), null);
         TiMGenericRegistry.registerTransports(MODID, listPassenger(), null);
+        TiMGenericRegistry.registerTransports(MODID, listOther(), null);
+
 
         creativeTabDiesel.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
                 new ItemTransport(new AlcoS2(null), MODID, null)
@@ -67,6 +69,10 @@ public class BAP {
                 new ItemTransport(new PEcoach(null), MODID, null)
                 , MODID, "tab.bapfortimpassenger.name", null, null, null, null);
 
+        creativeTabOther.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
+                new ItemTransport(new BombCart(null), MODID, null)
+                , MODID, "tab.bapfortimother.name", null, null, null, null);
+
     }
 
     public static GenericRailTransport[] listDiesel() {
@@ -75,8 +81,7 @@ public class BAP {
     }
 
     public static GenericRailTransport[] listSteam() {
-        return new GenericRailTransport[]{new AlcoS2(null), new AlcoS2(null),
-        new AlcoS2(null)};
+        return new GenericRailTransport[]{new AlcoS2(null)};
     }
 
     public static GenericRailTransport[] listElectric() {
@@ -85,11 +90,15 @@ public class BAP {
 
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{new PS160(null), new PS150(null), new PS140(null),
-                new Highcube40foot(null), new OWO60Verticube(null), new MILW40boxcar(null)};
+                new Highcube40foot(null), new OWO60Verticube(null), new MILW40boxcar(null),
+                new DOT11111000(null), new DOT11120600(null), new DOT11129080(null)};
     }
 
     public static GenericRailTransport[] listPassenger() {
         return new GenericRailTransport[]{new PEcoach(null), new PEobserve(null)};
     }
 
+    public static GenericRailTransport[] listOther() {
+        return new GenericRailTransport[]{new BombCart(null)};
+    }
 }
