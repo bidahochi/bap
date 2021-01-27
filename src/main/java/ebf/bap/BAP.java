@@ -5,7 +5,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import ebf.bap.entities.freight.*;
 import ebf.bap.entities.diesels.*;
 import ebf.bap.entities.electrics.*;
-//import ebf.bap.entities.steamers.*;
+import ebf.bap.entities.steamers.*;
 import ebf.bap.entities.others.*;
 import ebf.bap.entities.passengers.*;
 import ebf.tim.entities.GenericRailTransport;
@@ -29,8 +29,7 @@ public class BAP {
 
     @Mod.Instance(MODID)
     public static BAP instance;
-
-
+    
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
 
@@ -42,7 +41,7 @@ public class BAP {
         creativeTabOther = new TiMTab("bap-other", tabItem);
 
         TiMGenericRegistry.registerTransports(MODID, listDiesel(), null);
-       // TiMGenericRegistry.registerTransports(MODID, listSteam(), null);
+        TiMGenericRegistry.registerTransports(MODID, listSteam(), null);
         TiMGenericRegistry.registerTransports(MODID, listElectric(), null);
         TiMGenericRegistry.registerTransports(MODID, listFreight(), null);
         TiMGenericRegistry.registerTransports(MODID, listPassenger(), null);
@@ -54,7 +53,7 @@ public class BAP {
                 , MODID, "tab.bapfortimdiesel.name", null, null, null, null);
 
         creativeTabSteam.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
-                new ItemTransport(new AlcoS2(null), MODID, null)
+                new ItemTransport(new Tankenstein(null), MODID, null)
                 , MODID, "tab.bapfortimsteam.name", null, null, null, null);
 
         creativeTabElectric.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
@@ -81,7 +80,7 @@ public class BAP {
     }
 
     public static GenericRailTransport[] listSteam() {
-        return new GenericRailTransport[]{new AlcoS2(null)};
+        return new GenericRailTransport[]{new Tankenstein(null)};
     }
 
     public static GenericRailTransport[] listElectric() {
@@ -101,4 +100,5 @@ public class BAP {
     public static GenericRailTransport[] listOther() {
         return new GenericRailTransport[]{new BombCart(null)};
     }
+
 }
