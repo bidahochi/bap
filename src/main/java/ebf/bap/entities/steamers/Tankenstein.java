@@ -76,8 +76,7 @@ public class Tankenstein extends EntityTrainCore {
     public String getDefaultSkin(){
         return BAP.MODID+":"+"Cyan";
     }
-
-
+    
     //recipe
     @Override
     public ItemStack[] getRecipie() {
@@ -86,7 +85,6 @@ public class Tankenstein extends EntityTrainCore {
                 new ItemStack(Items.iron_ingot, 2), null, null,
                 null, null, new ItemStack(Items.coal, 1)        };
     }
-
 
     //these are separated for being fiddly.
     @Override

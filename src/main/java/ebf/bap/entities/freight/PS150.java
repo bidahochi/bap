@@ -89,7 +89,7 @@ public class PS150 extends GenericRailTransport {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return null;}
     @Override
     public float[] getHitboxSize(){return new float[]{4.7f,2.1f,1.3f};}
     @Override

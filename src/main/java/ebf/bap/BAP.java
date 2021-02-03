@@ -29,7 +29,7 @@ public class BAP {
 
     @Mod.Instance(MODID)
     public static BAP instance;
-    
+
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
 
@@ -76,7 +76,8 @@ public class BAP {
 
     public static GenericRailTransport[] listDiesel() {
 
-        return new GenericRailTransport[]{new AlcoS2(null), new CF7(null), new U23B(null), new B23(null)};
+        return new GenericRailTransport[]{new AlcoS2(null), new CF7(null), new U23B(null), new B23(null),
+        new C424(null), new C425(null)};
     }
 
     public static GenericRailTransport[] listSteam() {
@@ -98,7 +99,7 @@ public class BAP {
     }
 
     public static GenericRailTransport[] listOther() {
-        return new GenericRailTransport[]{new BombCart(null)};
+        return new GenericRailTransport[]{new BombCart(null), new WVcaboose(null)};
     }
 
 }

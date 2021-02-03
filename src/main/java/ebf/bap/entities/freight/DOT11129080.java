@@ -94,7 +94,7 @@ public class DOT11129080 extends GenericRailTransport {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return null;}
     @Override
     public float[] getHitboxSize(){return new float[]{5.5f,2.1f,1.1f};}
     @Override

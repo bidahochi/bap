@@ -7,6 +7,8 @@ item.B23-7.name=GE B23-7
 item.U23B.name=GE U23B
 item.EF1.name=ALCo-GE EF-1 Boxcab
 item.Tankenstein0-4-0.name=Tankenstein 0-4-0
+item.C424.name=Alco C424
+item.C425.name=Alco C425
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -25,6 +27,7 @@ item.PEcoach.name=Polar Express Coach Car
 item.PEobserve.name=Polar Express Observation Car
 
 item.Payload.name=TF2 Bombcart
+item.WVcaboose.name=International Car Co. Wide Vision Caboose
 
 <!-- ## Descriptions ## -->
 bap4tim:description.cf7.atsf=Between 1970 and 1978 the Santa Fe Shops in Cleburne, Texas rebuilt 233<br>F3, F7, and F9 units into carbody Road Switchers to<br>increase Visibility and service life
@@ -46,11 +49,19 @@ bap4tim:description.cf7.mts=Messicrew Tenneva and Southern originally owned 6 wo
 bap4tim:description.alcos2.pc=Between 1940 and 1950, ALCo built 1,502 S2 Switchers for use on North American<br>Railroads. As of 1968 the Penn Central owned a total of 120 S2s.
 bap4tim:description.alcos2.furrx=Originally, the OWO had 1 S2, #5211, but it was too light for some of the switches<br>in Fewpoint yard,and was sold to FurrX, who promptly patched it ane<br>let it rust.
 
+bap4tim:description.b23dash7.up= Union Pacific ended up with 68 B23s from several railroads its ate,<br>mostly from SP and MP. some became CCRCLs, others became funny RP gensets,<br>but most were sold or scrapped.
 bap4tim:description.b23dash7.furrx=Sometime in the 1980s FurrX ordered several High-Hood B23s new from GE.
-bap4tim:description.b23dash7.furrx2=In the Early 2000s FurrX also bought up used B23s, most from BNSF.
+bap4tim:description.b23dash7.furrx2=In the Early 2000s FurrX also bought up used B23s, mostly from BNSF.
+bap4tim:description.b23dash7.bnsf=BNSF got their B23s mostly from the ATSF.<br> however #4200 came from Metro-North Commuter railroad and<br>stayed in that scheme for quite some time.
 
+bap4tim:description.u23b.sbd=General Electric build 481 U23Bs from 1968 to 1977. The Seaboard System got most of its Uboats from the L&N.
 bap4tim:description.u23b.furrx=In the early 70s FurrX aquired a small amount of High-Hood U23Bs from GE.<br> This was the 2nd BAP skin ever made, and the first FurrX skin.
 bap4tim:description.u23b.furrxb=In the FurrX U23B Order, several were to be B units.<br>However, only one was built this way.
+
+bap4tim:description.c425.pc=Built in 1964 to 1966, 91 C425s were built.<br>Penn Central came into ownership of 41 of the C425s, most from the PRR.
+bap4tim:description.c425.owo=The 'WO got its #22 from BCOL, and rebuilt it to change its form slightly.
+
+bap4tim:description.c424.owo=#21s story is a debate amongst people,<br> some think it came from the east coast like the #22 did,<br>others say it came from BN.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
@@ -73,6 +84,18 @@ bap4tim:description.ps160.owo1=Standard OWO PS1 60' boxcar
 bap4tim:description.ps160.owo2=Some OWO PS1 Boxcars were painted with an elaborate<br>angle on one end.
 
 bap4tim:description.ps140.owo=Standard OWO PS1 40' Boxcar
+
+bap4tim:description.dot11K.du=Dupont flavored tank car.
+bap4tim:description.dot11K.geng= Generic grey paintscheme.
+
+bap4tim:description.dot206K.
+bap4tim:description.dot206K.pro=Procor used these cars for chemical transport.
+
+bap4tim:description.dot290K.liqx=LIQX cars are basically the BAWX equivalent in a tank car form.
+bap4tim:description.dot290K.fkix=FKIX uses their tankers to transport lots of petrochemicals, bio-medical chemicals,<br>household chemicals, and a lot more kinds of chemicals i dont feel like listing here.
+bap4tim:description.dot290K.fkix2=FKIX's Orange Belly painted tankers are basically the same as the standard tankers,<br>but they are orange on the bottom. No specific reasoning behind that,<br>they were just made at 2 different times.
+
+bap4tim:description.wvboose.owo=OWOs only Wide Vision Caboose, #7009, was obtained from BN and remanufactured.
 
 <!-- ## Other ## -->
 menu.item.north america=North America
