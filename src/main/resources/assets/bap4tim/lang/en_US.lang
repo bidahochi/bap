@@ -9,6 +9,9 @@ item.EF1.name=ALCo-GE EF-1 Boxcab
 item.Tankenstein0-4-0.name=Tankenstein 0-4-0
 item.C424.name=Alco C424
 item.C425.name=Alco C425
+item.SW1.name=EMD SW1
+item.SW1500.name=EMD SW1500
+item.VO1000.name=BLW VO1000
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -62,6 +65,14 @@ bap4tim:description.c425.pc=Built in 1964 to 1966, 91 C425s were built.<br>Penn 
 bap4tim:description.c425.owo=The 'WO got its #22 from BCOL, and rebuilt it to change its form slightly.
 
 bap4tim:description.c424.owo=#21s story is a debate amongst people,<br> some think it came from the east coast like the #22 did,<br>others say it came from BN.
+
+bap4tim:description.sw1.snc=Seattle & North Coast owned a singular SW1, numbered 52.
+bap4tim:description.sw1.fkix=FKIX operates a lone SW1, which used to have a bell. The locomotive got into an accident,<br>and the bell fell off, leaving only a part of the frame.
+
+bap4tim:description.sw1500.drir1=Denver Rock Island 1083 was an ex-SP unit,<br>and is still in use in downtown Denver, Colorado.
+bap4tim:description.sw1500.drir2=Denver Rock Island Y1211 was an ex-SP unit,<br>and is still in use in downtown Denver, Colorado.
+bap4tim:description.sw1500.generic=This locomotive was based off of a random<br>listing for a SW1500 on some website.
+bap4tim:description.sw1500.furrx=FurrX operates a small pool of SW1500s, but most are rarely seen.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=

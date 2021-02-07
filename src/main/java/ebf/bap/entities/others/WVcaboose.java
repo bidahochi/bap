@@ -101,8 +101,8 @@ public class WVcaboose extends GenericRailTransport {
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Modelcaboosetruck(), 1.05f,-0.55f,0.35f),
-                new Bogie(new Modelcaboosetruck(),-0.75f,-0.55f,0.35f),
+                new Bogie(new Modelcaboosetruck(), 1.05f,-0.55f,0.35f),//FIX THIS
+                new Bogie(new Modelcaboosetruck(),-0.75f,-0.55f,0.35f),//TRUCKS NO CENTERED
         };
     }
 
