@@ -12,6 +12,7 @@ item.C425.name=Alco C425
 item.SW1.name=EMD SW1
 item.SW1500.name=EMD SW1500
 item.VO1000.name=BLW VO1000
+item.U36C.name=GE U36C
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->

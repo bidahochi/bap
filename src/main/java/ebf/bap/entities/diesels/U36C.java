@@ -84,7 +84,7 @@ public class U36C extends EntityTrainCore {
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"u36c_EL";
+        return BAP.MODID+":"+"Erie Lackawana";
     }
 
     //recipe
@@ -98,16 +98,16 @@ public class U36C extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-2f,1.3f, -0.35f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{6.5f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{2.2f, -2.2f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.8f, -1.8f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new ModelFB3(), 2.2f,0f,0f),
-                new Bogie(new ModelFB3(),-2.2f,0f,0f),
+                new Bogie(new ModelFB3(), 1.8f,0f,0f),
+                new Bogie(new ModelFB3(),-1.8f,0f,0f),
         };
     }
 
