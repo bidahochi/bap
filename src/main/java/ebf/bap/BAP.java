@@ -78,7 +78,7 @@ public class BAP {
 
         return new GenericRailTransport[]{new AlcoS2(null), new CF7(null), new U23B(null), new B23(null),
         new C424(null), new C425(null), new SW1(null), new SW1500(null), new U36C(null),
-        new VO1000(null)};
+        new VO1000(null), new H1044(null)};
     }
 
     public static GenericRailTransport[] listSteam() {

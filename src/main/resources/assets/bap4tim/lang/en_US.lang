@@ -13,6 +13,7 @@ item.SW1.name=EMD SW1
 item.SW1500.name=EMD SW1500
 item.VO1000.name=BLW VO1000
 item.U36C.name=GE U36C
+item.H1044.name=FM H10-44
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -74,6 +75,11 @@ bap4tim:description.sw1500.drir1=Denver Rock Island 1083 was an ex-SP unit,<br>a
 bap4tim:description.sw1500.drir2=Denver Rock Island Y1211 was an ex-SP unit,<br>and is still in use in downtown Denver, Colorado.
 bap4tim:description.sw1500.generic=This locomotive was based off of a random<br>listing for a SW1500 on some website.
 bap4tim:description.sw1500.furrx=FurrX operates a small pool of SW1500s, but most are rarely seen.
+
+bap4tim:description.h10.hd=Hallett Dock Company got HD11 from the Minneapolis, Northfield<br>and Southern Railway, and they got it from the Minnesota Western Railway.<br>HD11 is currently preserved.
+bap4tim:description.h10.up=Union Pacific owned 5, numbered from DS1300 to DS1304.
+bap4tim:description.h10.ap=Apache owned 2 H10s, numbers 100 and 200.
+bap4tim:description.h10.fur=The very first FurrX locomotive.<br>Originally from the PRR the H10 was rebuilt late after furrx obtained it into a<br>short long hood low emissions switcher.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
