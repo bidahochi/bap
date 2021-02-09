@@ -79,7 +79,7 @@ public class U36C extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/u36c_ATSF_freightbonnent.png","textures/bogies/fb3_Grey.png","ATSF Freightbonnet", "description.u36c.atsf2");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/u36c_ATSF_kodachrome.png","textures/bogies/fb3_Black.png","ATSF Kodachrome", "description.u36c.atsf3");
+                BAP.MODID,"textures/diesels/u36c_ATSF_kodachrome.png","textures/bogies/fb3_Grey.png","ATSF Kodachrome", "description.u36c.atsf3");
 
     }
     @Override

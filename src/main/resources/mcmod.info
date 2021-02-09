@@ -1,14 +1,13 @@
 [
 {
-  "modid": "trainsinmotion",
-  "name": "Trains in Motion",
-  "description": "The backend for a number of mods that add trains and rollingstock to Minecraft, such as Traincraft",
-  "version": "1.7.10.1558-1614",
-  "url": "https://github.com/EternalBlueFlame/Trains-In-Motion",
-  "updateUrl": "https://github.com/EternalBlueFlame/Trains-In-Motion/releases",
-  "authorList": ["Eternal Blue Flame"],
-  "credits": "Eternal Blue Flame | Lunar Tales | Zora no Densha | Fexcraft",
-  "logoFile": "/assets/tim/textures/items/TiM.png",
+  "modid": "bap4tim",
+  "name": "Bidahochi's (North) American Pack for TiM",
+  "description": "Technically the Successor to JCIR-TC, BAP is for everyone, and adds so, so much North American Content!",
+  "version": "0.02_work-in-progress",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/bidahochis-american-pack-for-trains-in-motion-bap",
+  "authorList": ["Bidahochi"],
+  "credits": "Eternal Blue Flame | JCRail | Peachmaster | And all the Contributers in the Discord",
+  "logoFile": "/assets/bap4tim/textures/BAPLOGO400x400.png",
   "screenshots": [],
   "dependencies": []
 }

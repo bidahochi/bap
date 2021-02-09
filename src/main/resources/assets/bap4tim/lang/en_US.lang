@@ -14,6 +14,11 @@ item.SW1500.name=EMD SW1500
 item.VO1000.name=BLW VO1000
 item.U36C.name=GE U36C
 item.H1044.name=FM H10-44
+item.SD9.name=EMD SD9
+item.GP7.name=EMD GP7
+item.GP7b.name=EMD GP7b
+item.GP7u.name=EMD GP7u
+item.GP9.name=EMD GP9
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -80,6 +85,11 @@ bap4tim:description.h10.hd=Hallett Dock Company got HD11 from the Minneapolis, N
 bap4tim:description.h10.up=Union Pacific owned 5, numbered from DS1300 to DS1304.
 bap4tim:description.h10.ap=Apache owned 2 H10s, numbers 100 and 200.
 bap4tim:description.h10.fur=The very first FurrX locomotive.<br>Originally from the PRR the H10 was rebuilt late after furrx obtained it into a<br>short long hood low emissions switcher.
+
+bap4tim:description.sd9.potb1=Port Of Tillamook Bay
+bap4tim:description.sd9.potb2=out of Port Of Tillamook Bay's vast collection of SD9s, only 2 did not<br>have dynamic breaks. One was used as a parts source and this one was<br>seldom used in general.
+bap4tim:description.sd9.bnsf=BNSF inherited quite a few SD9s from BN in its merger, however instead of<br>throwing them away like most class 1s would, they hung onto a handful for use<br>on the tight curves in the Pacific Northwest.
+bap4tim:description.sd9.wetx=Washaska Eastern Taconite bought out 8 of the defunct POTB,<br>sent them to the 'Wo for rebuilding, and then used them in their<br>open pit iron mine since then.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
