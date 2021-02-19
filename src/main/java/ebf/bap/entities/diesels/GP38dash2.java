@@ -1,12 +1,20 @@
 package ebf.bap.entities.diesels;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
+import ebf.bap.models.locomotives.ModelGP38dash2;
+import ebf.bap.models.trucks.ModelBlombergB;
+import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
+import ebf.tim.models.Bogie;
+import ebf.tim.registry.TiMItems;
+import ebf.tim.registry.TiMOres;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -34,14 +42,13 @@ public class GP38dash2 extends EntityTrainCore {
 
     public static final Item thisItem = new ItemTransport(new GP38dash2((World)null), BAP.MODID, BAP.creativeTabDiesel);
 
-/*
     //main stats
     @Override
     public String transportName(){return "GP38dash2";}
     @Override
-    public String transportcountry(){return "Undefined";}
+    public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "Undefined";}
+    public String transportYear(){return "1972-1986";}
     @Override
     public boolean isFictional(){return false;}
     @Override
@@ -51,61 +58,69 @@ public class GP38dash2 extends EntityTrainCore {
         return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}
+    public float weightKg(){return 113400f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new com.jcirmodelsquad.tcjcir.models.trains.ModelGP38dash2()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelGP38dash2()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{-1.5f, -0.155f, 0.0f}};}
+    public float[][] modelOffsets(){return new float[][]{{-0.0f, -0.0f, 0.0f}};}
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Cyan.png","Cyan", "description.gp38dash2.Cyan"));
+                BAP.MODID,"textures/diesels/gp38dash2_ARR.png","textures/bogies/blombergB_LightGrey.png","Alaska Railroad Bold Scheme", "description.gp38.ARR");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Green.png","Green", "description.gp38dash2.Green"));
+                BAP.MODID,"textures/diesels/gp38dash2_BAP.png","textures/bogies/blombergB_Black.png","Butte Anaconda & Pacific", "description.gp38.bap");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_LightGrey.png","LightGrey", "description.gp38dash2.LightGrey"));
+                BAP.MODID,"textures/diesels/gp38dash2_PC.png","textures/bogies/blombergB_Black.png","Penn Central", "description.gp38.pc");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Red.png","Red", "description.gp38dash2.Red"));
+                BAP.MODID,"textures/diesels/gp38dash2_ATSF1.png","textures/bogies/blombergB_LightGrey.png","AT&SF Freightbonnet", "description.gp30.atsf1");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Blue.png","Blue", "description.gp38dash2.Blue"));
+                BAP.MODID,"textures/diesels/gp38dash2_ATSF2.png","textures/bogies/blombergB_Black.png","AT&SF Pinstripe", "description.gp30.atsf2");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Yellow.png","Yellow", "description.gp38dash2.Yellow"));
+                BAP.MODID,"textures/diesels/gp38dash2_ATSF3.png","textures/bogies/blombergB_LightGrey.png","AT&SF Kodachrome", "description.gp30.atsf3");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Orange.png","Orange", "description.gp38dash2.Orange"));
+                BAP.MODID,"textures/diesels/gp38dash2_MKT.png","textures/bogies/blombergB_Black.png","Missouri–Kansas–Texas", "description.gp38.mkt");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Grey.png","Grey", "description.gp38dash2.Grey"));
+                BAP.MODID,"textures/diesels/gp38dash2_FURRX.png","textures/bogies/blombergB_Black.png","FurrX", "description.gp38.furrx");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Black.png","Black", "description.gp38dash2.Black"));
-        SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp38dash2_Pink.png","Pink", "description.gp38dash2.Pink"));
+                BAP.MODID,"textures/diesels/gp38dash2_WFR.png","textures/bogies/blombergB_Black.png","Wolf Fox Railroad", "description.gp38.wfr");
     }
     @Override
     public String getDefaultSkin(){
-        return Info.modID+":"+"Cyan";
+        return BAP.MODID+":"+"Alaska Railroad Bold Scheme";
     }
-
 
     //recipe
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
-                new ItemStack(ItemIDs.controls.item, 2), new ItemStack(ItemIDs.bogie.item, 3), new ItemStack(ItemIDs.steelframe.item, 2), 
-                new ItemStack(Items.ingot, 2), new ItemStack(ItemIDs.steelchimney.item, 1), new ItemStack(ItemIDs.steelcab.item, 1), 
-                new ItemStack(ItemIDs.electmotor.item, 6), new ItemStack(ItemIDs.dieselengine.item, 6), new ItemStack(ItemIDs.generator.item, 4)        };
-    }
-
+                new ItemStack(TiMItems.controlStand, 2), new ItemStack(TiMItems.wheelSteel, 4), new ItemStack(TiMItems.frameSteel, 4),
+                new ItemStack(TiMOres.ingotSteel, 2), new ItemStack(TiMItems.chimneySteelShort, 2), new ItemStack(TiMItems.cabinSteel, 2),
+                new ItemStack(TiMItems.smallElectricEngine, 4), new ItemStack(TiMItems.mediumDieselEngine, 4), new ItemStack(TiMItems.generator, 4)        };
+    }//2 3 2 2 1 1 6 6 4
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.45f,1.25f, -0.3f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{5.500000095367431f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{2.5100000381469725f, -2.5100000381469725f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.5f, -1.5f};}
+    @SideOnly(Side.CLIENT)
+    public Bogie[] bogies(){
+
+        if(getCurrentSkin()==null || getCurrentSkin().name.equals("AAAAAAAAAAAAAAAAA") || getCurrentSkin().name.equals("Placeholder Text")) {
+            return new Bogie[]{new Bogie(new ModelTypeB(),1.5f,0f,0f),
+                    new Bogie(new ModelTypeB(),-1.5f,0f,0f)};
+        } else {
+            return new Bogie[]{new Bogie(new ModelBlombergB(),1.5f,0f,0f),
+                    new Bogie(new ModelBlombergB(),-1.5f,0f,0f)};
+        }
+    }
+
     //Train specific stuff
     @Override
     public String transportFuelType(){return "diesel";}
@@ -120,16 +135,13 @@ public class GP38dash2 extends EntityTrainCore {
     @Override
     public int[] getTankCapacity(){return new int[]{7000};}
 
-
-
     //these only change in very specific use cases.
     @Override
     public boolean shouldRiderSit(){
-        return false;
+        return true;
     }
     @Override
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
-*/
 }

@@ -1,12 +1,21 @@
 package ebf.bap.entities.diesels;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
+import ebf.bap.models.locomotives.ModelMP15DCW9;
+import ebf.bap.models.trucks.ModelBlombergB;
+import ebf.bap.models.trucks.ModelFlexi2Axle;
+import ebf.bap.models.trucks.ModelTypeASmol;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
+import ebf.tim.models.Bogie;
+import ebf.tim.registry.TiMItems;
+import ebf.tim.registry.TiMOres;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -34,16 +43,15 @@ public class MP15DCW9 extends EntityTrainCore {
 
     public static final Item thisItem = new ItemTransport(new MP15DCW9((World)null), BAP.MODID, BAP.creativeTabDiesel);
 
-/*
     //main stats
     @Override
     public String transportName(){return "MP15DCW9";}
     @Override
-    public String transportcountry(){return "Undefined";}
+    public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "Undefined";}
+    public String transportYear(){return "2020";}
     @Override
-    public boolean isFictional(){return false;}
+    public boolean isFictional(){return true;}
     @Override
     public int getInventoryRows(){return 1;}
     @Override
@@ -51,45 +59,54 @@ public class MP15DCW9 extends EntityTrainCore {
         return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}
+    public float weightKg(){return 117500f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new com.jcirmodelsquad.tcjcir.models.trains.ModelMP15DCW9()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelMP15DCW9()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{-1.2f, 0.01f, 0.0f}};}
+    public float[][] modelOffsets(){return new float[][]{{-0f, 0.0f, 0.0f}};}
     @Override
     public float[][] modelRotations(){return new float[][]{{180.0f, 0.0f, -180.0f}};}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/mp15dcw-9_Orange.png","Orange", "description.mp15dcw-9.Orange"));
-        SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/mp15dcw-9_White.png","White", "description.mp15dcw-9.White"));
+                BAP.MODID,"textures/diesels/mp15dcw-9_wfr.png","textures/bogies/blombergB_Black.png","Wolf Fox Railroad", "description.mp15dcw.wfr");
+
     }
     @Override
     public String getDefaultSkin(){
-        return Info.modID+":"+"Orange";
+        return BAP.MODID+":"+"Wolf Fox Railroad";
     }
-
 
     //recipe
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
-                new ItemStack(ItemIDs.controls.item, 3), new ItemStack(ItemIDs.bogie.item, 4), new ItemStack(ItemIDs.steelframe.item, 4), 
-                new ItemStack(Items.ingot, 2), new ItemStack(ItemIDs.steelchimney.item, 2), new ItemStack(ItemIDs.steelcab.item, 2), 
-                new ItemStack(ItemIDs.electmotor.item, 4), new ItemStack(ItemIDs.dieselengine.item, 4), new ItemStack(ItemIDs.generator.item, 3)        };
-    }
-
+                new ItemStack(TiMItems.controlStand, 3), new ItemStack(TiMItems.wheelSteel, 4), new ItemStack(TiMItems.frameSteel, 4),
+                new ItemStack(TiMOres.ingotSteel, 2), new ItemStack(TiMItems.chimneySteel, 2), new ItemStack(TiMItems.cabinSteel, 2),
+                new ItemStack(TiMItems.smallElectricEngine, 4), new ItemStack(TiMItems.mediumDieselEngine, 3), new ItemStack(TiMItems.generator, 3)        };
+    }//3 4 4 2 2 2 4 4 3
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.2f,1.2f, -0.3f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{4.099999952316284f,2.1f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{4.6f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.8699999690055846f, -1.8699999690055846f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.1f, -1.1f};}
+    @SideOnly(Side.CLIENT)
+    public Bogie[] bogies(){
+
+        if(getCurrentSkin()==null || getCurrentSkin().name.equals("bitchass fucker piss fucking fucking dick piss fucking dick nut dong balls bong fuck fuck PISS piss pissing pissed piss fucking fucking piss")) {
+            return new Bogie[]{new Bogie(new ModelFlexi2Axle(),1.1f,0f,0f),
+                    new Bogie(new ModelFlexi2Axle(),-1.1f,0f,0f)};
+        } else {
+            return new Bogie[]{new Bogie(new ModelBlombergB(),1.1f,0f,0f),
+                    new Bogie(new ModelBlombergB(),-1.1f,0f,0f)};
+        }
+    }
+
     //Train specific stuff
     @Override
     public String transportFuelType(){return "diesel";}
@@ -104,16 +121,14 @@ public class MP15DCW9 extends EntityTrainCore {
     @Override
     public int[] getTankCapacity(){return new int[]{4000};}
 
-
-
     //these only change in very specific use cases.
     @Override
     public boolean shouldRiderSit(){
-        return false;
+        return true;
     }
     @Override
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
-*/
+
 }

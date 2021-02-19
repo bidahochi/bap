@@ -1,13 +1,18 @@
 package ebf.bap.entities.diesels;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
 import ebf.bap.models.locomotives.ModelGP15;
+import ebf.bap.models.trucks.ModelBlombergB;
+import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
+import ebf.tim.models.Bogie;
 import ebf.tim.registry.TiMItems;
 import ebf.tim.registry.TiMOres;
 import ebf.tim.utility.ItemStackSlot;
@@ -44,7 +49,7 @@ public class GP15 extends EntityTrainCore {
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "Undefined";}
+    public String transportYear(){return "1976-1982";}
     @Override
     public boolean isFictional(){return false;}
     @Override
@@ -54,7 +59,7 @@ public class GP15 extends EntityTrainCore {
         return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}
+    public float weightKg(){return 111600f;}
 
     //Model stuff
     @Override
@@ -66,15 +71,16 @@ public class GP15 extends EntityTrainCore {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp15_Yellow.png","Yellow", "description.gp15.Yellow"));
+                BAP.MODID,"textures/diesels/gp15_UP.png","textures/bogies/blombergB_spooki_up_trash.png","Union Pacific", "description.gp15.up");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp15_Cyan.png","Cyan", "description.gp15.Cyan"));
+                BAP.MODID,"textures/diesels/gp15_FURRX.png","textures/bogies/blombergB_Black.png","FurrX", "description.gp15.furrx");
         SkinRegistry.addSkin(this.getClass(),
-            new TransportSkin(Info.modID,"textures/trains/gp15_LightGrey.png","LightGrey", "description.gp15.LightGrey"));
+                BAP.MODID,"textures/diesels/gp15_Washaska.png","textures/bogies/blombergB_Stale_Egg.png","Washaska & Old Fox", "description.gp15.owo");
+
     }
     @Override
     public String getDefaultSkin(){
-        return Info.modID+":"+"Yellow";
+        return BAP.MODID+":"+"Union Pacific";
     }
 
     //recipe
@@ -89,11 +95,22 @@ public class GP15 extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, -0.45f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.15f,1.25f, -0.3f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{4.6f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{2.1000000119209288f, -2.1000000119209288f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.1f, -1.1f};}
+    @SideOnly(Side.CLIENT)
+    public Bogie[] bogies(){
+
+        if(getCurrentSkin()==null || getCurrentSkin().name.equals("A")) {
+            return new Bogie[]{new Bogie(new ModelTypeB(),1.1f,0f,0f),
+                    new Bogie(new ModelTypeB(),-1.1f,0f,0f)};
+        } else {
+            return new Bogie[]{new Bogie(new ModelBlombergB(),1.1f,0f,0f),
+                    new Bogie(new ModelBlombergB(),-1.1f,0f,0f)};
+        }
+    }
 
     //Train specific stuff
     @Override

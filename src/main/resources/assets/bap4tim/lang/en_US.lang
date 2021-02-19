@@ -19,6 +19,11 @@ item.GP7.name=EMD GP7
 item.GP7b.name=EMD GP7b
 item.GP7u.name=EMD GP7u
 item.GP9.name=EMD GP9
+item.GP15.name=EMD GP15-1
+item.GP30.name=EMD GP30
+item.GP38dash2.name=EMD GP38-2
+item.MP15DCW9.name=WFR MP15DCW-9
+item.NRE3gs21b.name=NRE 3gs21b Genset
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
