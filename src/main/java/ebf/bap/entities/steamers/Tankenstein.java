@@ -44,7 +44,7 @@ public class Tankenstein extends EntityTrainCore {
     @Override
     public String transportYear(){return "1929";}
     @Override
-    public boolean isFictional(){return false;}
+    public boolean isFictional(){return true;}
     @Override
     public int getInventoryRows(){return 1;}
     @Override
