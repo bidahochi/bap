@@ -24,6 +24,8 @@ item.GP30.name=EMD GP30
 item.GP38dash2.name=EMD GP38-2
 item.MP15DCW9.name=WFR MP15DCW-9
 item.NRE3gs21b.name=NRE 3gs21b Genset
+item.HH660.name=Alco HH660
+item.25Ton.name=GE 25 Tonner
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -95,6 +97,12 @@ bap4tim:description.sd9.potb1=Port Of Tillamook Bay
 bap4tim:description.sd9.potb2=out of Port Of Tillamook Bay's vast collection of SD9s, only 2 did not<br>have dynamic breaks. One was used as a parts source and this one was<br>seldom used in general.
 bap4tim:description.sd9.bnsf=BNSF inherited quite a few SD9s from BN in its merger, however instead of<br>throwing them away like most class 1s would, they hung onto a handful for use<br>on the tight curves in the Pacific Northwest.
 bap4tim:description.sd9.wetx=Washaska Eastern Taconite bought out 8 of the defunct POTB,<br>sent them to the 'Wo for rebuilding, and then used them in their<br>open pit iron mine since then.
+
+bap4tim:description.25T.ps=The so-called loneliest locomotive in the west. It sits at the far far end of the<br>golden spike monument and only gets used to move the fancy show locomotives<br>around once a year if even that.<br>Only 3 known photos of it exist on the internet afaik.
+bap4tim:description.25T.pw=Providence & worchester #150, used as a shop goat.<br>https://www.railpictures.net/photo/20126/
+
+bap4tim:description.hh660.re601=Relco obtained this unit from MILW at some point.
+bap4tim:description.hh660.re606=Relco operated this unit for some time, and it was recently<br>restored to its original owner, as Buffalo Creek #43.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
