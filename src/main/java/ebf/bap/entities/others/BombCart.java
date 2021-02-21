@@ -35,7 +35,6 @@ public class BombCart extends GenericRailTransport {
 
     public static final Item thisItem = new ItemTransport(new BombCart((World)null), BAP.MODID, BAP.creativeTabOther);
 
-
     //main stats
     @Override
     public String transportName(){return "Payload";}
@@ -86,11 +85,9 @@ public class BombCart extends GenericRailTransport {
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{0.3f,1.5f, 0f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{2.0f,2.1f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{worldObj==null?3.0f:2.0f,2.0f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{0.800000011920929f, -0.800000011920929f};}
-
-
+    public float[] bogieLengthFromCenter() {return new float[]{0.8f, -0.8f};}
 
     //these only change in very specific use cases.
     @Override

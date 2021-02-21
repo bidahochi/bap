@@ -71,7 +71,7 @@ public class GP30 extends EntityTrainCore {
     public void registerSkins(){
 
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/gp30_EMD_DEMO.png","textures/bogies/blombergB_Black.png","EMD Demonstrator", "description.gp30.emd");
+                BAP.MODID,"textures/diesels/gp30_EMD_DEMO.png","textures/bogies/blombergB_LightGrey.png","EMD Demonstrator", "description.gp30.emd");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/gp30_DRGW.png","textures/bogies/blombergB_Black.png","Denver & Rio Grande", "description.gp30.drgw");
         SkinRegistry.addSkin(this.getClass(),

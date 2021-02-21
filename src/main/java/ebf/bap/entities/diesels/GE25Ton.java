@@ -89,7 +89,7 @@ public class GE25Ton extends EntityTrainCore {
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{0.4f,0.9f, -0.4f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{2.0f,1.7f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{worldObj==null?3.0f:2.0f,1.7f,1.1f};}//2.0f,1.7f,1.1f
     @Override
     public float[] bogieLengthFromCenter() {return new float[]{0.4f, -0.4f};}
 

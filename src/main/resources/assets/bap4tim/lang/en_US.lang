@@ -104,6 +104,8 @@ bap4tim:description.25T.pw=Providence & worchester #150, used as a shop goat.<br
 bap4tim:description.hh660.re601=Relco obtained this unit from MILW at some point.
 bap4tim:description.hh660.re606=Relco operated this unit for some time, and it was recently<br>restored to its original owner, as Buffalo Creek #43.
 
+bap4tim:description.3gs21b.up=Union Pacific bought a boatload of 3GS21Bs from NRE in 2006-07.<br>They didnt last very long, having since been sidelined in 2017.
+
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
 bap4tim:description.pecoach.waw=
@@ -146,4 +148,4 @@ item.tab.bapfortimsteam.name=BAP Steamers & Tenders
 item.tab.bapfortimelectric.name=BAP Electrics
 item.tab.bapfortimfreight.name=BAP Freight Cars
 item.tab.bapfortimpassenger.name=BAP Passenger Cars
-item.tab.bapfortimother.name=BAP Other Rail Oddities
+item.tab.bapfortimother.name=BAP Other Rail Items
