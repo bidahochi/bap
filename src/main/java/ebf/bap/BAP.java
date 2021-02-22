@@ -80,7 +80,7 @@ public class BAP {
         new C424(null), new C425(null), new SW1(null), new SW1500(null), new U36C(null),
         new VO1000(null), new H1044(null), new SD9(null), new GP7(null), new GP7b(null),
         new GP7u(null), new GP9(null), new GP15(null), new GP30(null), new GP38dash2(null),
-                new MP15DCW9(null), new NRE3gs21b(null), new HH660(null), new GE25Ton(null)};
+        new MP15DCW9(null), new NRE3gs21b(null), new HH660(null), new GE25Ton(null), new SW1200(null)};
     }
 
     public static GenericRailTransport[] listSteam() {

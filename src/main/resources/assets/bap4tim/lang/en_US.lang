@@ -26,6 +26,7 @@ item.MP15DCW9.name=WFR MP15DCW-9
 item.NRE3gs21b.name=NRE 3gs21b Genset
 item.HH660.name=Alco HH660
 item.25Ton.name=GE 25 Tonner
+item.SW1200.name=EMD SW1200
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -105,6 +106,8 @@ bap4tim:description.hh660.re601=Relco obtained this unit from MILW at some point
 bap4tim:description.hh660.re606=Relco operated this unit for some time, and it was recently<br>restored to its original owner, as Buffalo Creek #43.
 
 bap4tim:description.3gs21b.up=Union Pacific bought a boatload of 3GS21Bs from NRE in 2006-07.<br>They didnt last very long, having since been sidelined in 2017.
+
+bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, number 52.<br>It was often paired with the railroads only other locomotives, a pair of NW2s.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
