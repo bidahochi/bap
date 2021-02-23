@@ -69,6 +69,10 @@ public class SW1200 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/sw1200_sp.png","textures/bogies/typeasmol_sp.png","Southern Pacific", "description.sw1200.sp");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sw1200_wvn.png","textures/bogies/typeasmol_Black.png","West Virginia Northern", "description.sw1200.wvn");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/sw1200_drgw_early.png","textures/bogies/typeasmol_Black.png","Denver & Rio Grande Western", "description.sw1200.drgw");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/sw1200_drgw_late.png","textures/bogies/typeasmol_Black.png","Denver & Rio Grande Western (Late)", "description.sw1200.drgw2");
 
     }
     @Override

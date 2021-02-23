@@ -1653,7 +1653,7 @@ public class ModelSW1200 extends ModelConverter //Same as Filename
 		bodyModel[395].setRotationPoint(-29.5F, 0F, -2F);
 
 		bodyModel[396].addShapeBox(0F, 0F, 0F, 0, 5, 5, 0F,0F, -1F, -1F, 0F, -1F, -1F, 0F, -1F, -1F, 0F, -1F, -1F, 0F, -1F, -1F, 0F, -1F, -1F, 0F, -1F, -1F, 0F, -1F, -1F); // Box 397
-		bodyModel[396].setRotationPoint(21.5F, -12F, 2F);
+		bodyModel[396].setRotationPoint(21.49F, -12F, 2F);
 
 		bodyModel[397].addBox(0F, 0F, 0F, 1, 7, 1, 0F); // Box 398
 		bodyModel[397].setRotationPoint(21.5F, -10F, 4F);
