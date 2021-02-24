@@ -107,6 +107,12 @@ bap4tim:description.hh660.re606=Relco operated this unit for some time, and it w
 
 bap4tim:description.3gs21b.up=Union Pacific bought a boatload of 3GS21Bs from NRE in 2006-07.<br>They didnt last very long, having since been sidelined in 2017.
 
+bap4tim:description.gp38.ARR=One of Alaska Railroad's main 4 axle locomotive models.
+bap4tim:description.gp38.bap=The Butte, Anaconda & Pacific owned 2 GP38s, both of which were sold to the ARR.
+bap4tim:description.gp38.pc=Penn Central Time *derails and dies*<br>remind bida to give this an actual desc.
+bap4tim:description.gp38.furrx=FurrX owns some GP38s. Not really interesting in the slightest.
+bap4tim:description.gp38.fox=owo
+
 bap4tim:description.sw1200.sp=SP and SSW owned a total of 44 SW1200's, numbers 2250-2293.
 bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, number 52.<br>It was often paired with the railroads only other locomotives, a pair of NW2s.
 bap4tim:description.sw1200.drgw=10 SW1200s were ordered by the Denver & Rio Grande Western Railroad.
@@ -136,7 +142,7 @@ bap4tim:description.ps160.owo2=Some OWO PS1 Boxcars were painted with an elabora
 bap4tim:description.ps140.owo=Standard OWO PS1 40' Boxcar
 
 bap4tim:description.dot11K.du=Dupont flavored tank car.
-bap4tim:description.dot11K.geng= Generic grey paintscheme.
+bap4tim:description.dot11K.geng=Generic grey paintscheme.
 
 bap4tim:description.dot206K.
 bap4tim:description.dot206K.pro=Procor used these cars for chemical transport.

@@ -87,6 +87,8 @@ public class GP38dash2 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/gp38dash2_FURRX.png","textures/bogies/blombergB_Black.png","FurrX", "description.gp38.furrx");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/gp38dash2_WFR.png","textures/bogies/blombergB_Black.png","Wolf Fox Railroad", "description.gp38.wfr");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/gp38dash2_fox.png","textures/bogies/blombergB_LightGrey.png","North Fox & Cascades", "description.gp38.fox");
     }
     @Override
     public String getDefaultSkin(){
@@ -104,7 +106,7 @@ public class GP38dash2 extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-1.45f,1.25f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.45f,1.25f, -0.3f}, {-1.45f,1.25f, 0.3f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{5.500000095367431f,2.1f,1.1f};}
     @Override

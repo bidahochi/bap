@@ -95,7 +95,7 @@ public class NRE3gs21b extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0,1.2f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.45f,1.4f, -0.3f}, {-1.45f,1.4f, 0.3f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{5.5f,2.1f,1.1f};}
     @Override

@@ -9,7 +9,6 @@
 
 package ebf.bap.models.locomotives; //Path where the model is located
 
-
 import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
@@ -20,7 +19,7 @@ public class ModelGP38dash2 extends ModelConverter //Same as Filename
 
 	public ModelGP38dash2() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[408];
+		bodyModel = new ModelRendererTurbo[417];
 
 		initbodyModel_1();
 
@@ -440,6 +439,15 @@ public class ModelGP38dash2 extends ModelConverter //Same as Filename
 		bodyModel[405] = new ModelRendererTurbo(this, 89, 73, textureX, textureY); // Box 296 nose cover
 		bodyModel[406] = new ModelRendererTurbo(this, 161, 73, textureX, textureY); // Box 299 nose cover
 		bodyModel[407] = new ModelRendererTurbo(this, 0, 0, textureX, textureY); // Box 407
+		bodyModel[408] = new ModelRendererTurbo(this, 111, 170, textureX, textureY); // Box 412
+		bodyModel[409] = new ModelRendererTurbo(this, 90, 172, textureX, textureY); // Box 413
+		bodyModel[410] = new ModelRendererTurbo(this, 88, 165, textureX, textureY); // Box 86
+		bodyModel[411] = new ModelRendererTurbo(this, 42, 176, textureX, textureY); // Box 364 prime base
+		bodyModel[412] = new ModelRendererTurbo(this, 42, 180, textureX, textureY); // Box 6 PRIME1-1
+		bodyModel[413] = new ModelRendererTurbo(this, 42, 180, textureX, textureY); // Box 7 PRIME1-3
+		bodyModel[414] = new ModelRendererTurbo(this, 42, 180, textureX, textureY); // Box 8 PRIME1-2
+		bodyModel[415] = new ModelRendererTurbo(this, 42, 180, textureX, textureY); // Box 9 PRIME1-4
+		bodyModel[416] = new ModelRendererTurbo(this, 42, 171, textureX, textureY); // Box 356 support cull
 
 		bodyModel[0].addBox(0F, 0F, 0F, 70, 1, 4, 0F); // Box 1
 		bodyModel[0].setRotationPoint(-35F, 0F, -11F);
@@ -1687,5 +1695,34 @@ public class ModelGP38dash2 extends ModelConverter //Same as Filename
 
 		bodyModel[407].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 407
 		bodyModel[407].setRotationPoint(1F, 0F, 0F);
+
+		bodyModel[408].addBox(0F, 0F, 0F, 1, 9, 4, 0F); // Box 412
+		bodyModel[408].setRotationPoint(-27F, -13F, 3F);
+
+		bodyModel[409].addBox(0F, 0F, 0F, 7, 8, 3, 0F); // Box 413
+		bodyModel[409].setRotationPoint(-27.1F, -12F, 1F);
+		bodyModel[409].rotateAngleY = -0.38397244F;
+
+		bodyModel[410].addShapeBox(-1F, 0F, 0F, 11, 4, 2, 0F,0F, 0F, 0F, -5F, 0F, 0F, -5F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -2F, 0F, -5F, -2F, 0F, -5F, -2F, 0F, 0F, -2F, 0F); // Box 86
+		bodyModel[410].setRotationPoint(-25.5F, -14F, 1F);
+		bodyModel[410].rotateAngleY = -0.38397244F;
+
+		bodyModel[411].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 364 prime base
+		bodyModel[411].setRotationPoint(-26.5F, -22F, 7F);
+
+		bodyModel[412].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F); // Box 6 PRIME1-1
+		bodyModel[412].setRotationPoint(-26.5F, -22.5F, 7F);
+
+		bodyModel[413].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F); // Box 7 PRIME1-3
+		bodyModel[413].setRotationPoint(-26.5F, -22.5F, 7F);
+
+		bodyModel[414].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F); // Box 8 PRIME1-2
+		bodyModel[414].setRotationPoint(-26.5F, -22.5F, 7F);
+
+		bodyModel[415].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F); // Box 9 PRIME1-4
+		bodyModel[415].setRotationPoint(-26.5F, -22.5F, 7F);
+
+		bodyModel[416].addShapeBox(0F, 0F, 0F, 3, 2, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 356 support cull
+		bodyModel[416].setRotationPoint(-27F, -21F, 7F);
 	}
 }

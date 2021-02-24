@@ -92,7 +92,7 @@ public class SW1200 extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0.9f,1.2f, -0.45f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{0.9f,1.2f, -0.3f}, {0.9f,1.2f, 0.3f}};}//{0.9f,1.2f, -0.45f} for dynamic equipped units
     @Override
     public float[] getHitboxSize(){return new float[]{4.2f,2.1f,1.1f};}
     @Override
