@@ -36,8 +36,7 @@ public class SW1200 extends EntityTrainCore {
     }
 
     public static final Item thisItem = new ItemTransport(new SW1200((World)null), BAP.MODID, BAP.creativeTabDiesel);
-
-
+    
     //main stats
     @Override
     public String transportName(){return "SW1200";}
@@ -73,6 +72,8 @@ public class SW1200 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/sw1200_drgw_early.png","textures/bogies/typeasmol_Black.png","Denver & Rio Grande Western", "description.sw1200.drgw");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sw1200_drgw_late.png","textures/bogies/typeasmol_Black.png","Denver & Rio Grande Western (Late)", "description.sw1200.drgw2");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/sw1200_cnw.png","textures/bogies/typeasmol_Black.png","Chicago Northwestern System", "description.sw1200.cnw");
 
     }
     @Override
