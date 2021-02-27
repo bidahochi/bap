@@ -27,6 +27,8 @@ item.NRE3gs21b.name=NRE 3gs21b Genset
 item.HH660.name=Alco HH660
 item.25Ton.name=GE 25 Tonner
 item.SW1200.name=EMD SW1200
+item.SD40-2.name=EMD SD40-2
+item.SD40T-2.name=EMD SD40T-2
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -36,6 +38,7 @@ item.PS150.name=Pullman-Standard PS1 50' Boxcar
 item.MILW40boxcar.name= MILW 40 Foot Ribside Boxcar
 item.OWO60Verticube.name=OWO 60 Foot Verticube Boxcar
 item.40highcube.name=40 Foot Highcube Boxcar
+item.64FootMechanicalReefer.name=Trinity 64 Foot Mechanical Reefer
 
 item.DOT11000.name=11,000 Gallon DOT 111 Tank Car
 item.DOT20600.name=20,600 Gallon DOT 111 Tank Car
@@ -118,6 +121,16 @@ bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, n
 bap4tim:description.sw1200.drgw=10 SW1200s were ordered by the Denver & Rio Grande Western Railroad.
 bap4tim:description.sw1200.drgw2=The Denver & Rio Grande Western Railroad did some modifications to their<br>SW1200s over the course of their time on the DRGW,<br>this example represents how the DRGW SW1200 looked in the later<br>years of their use.
 bap4tim:description.sw1200.cnw=The Chicago and Northwestern purchased 12 SW1200s from EMD (numbered 310 - 321),<br>they lasted until the late 1980s, when they were sold to the Elgin, Joliet & Eastern
+
+bap4tim:description.gp15.up=
+bap4tim:description.gp15.furrx=
+bap4tim:description.gp15.owo=Washaska & Old Fox inherited their lone GP15 from the North Fox & Cascades.
+
+bap4tim:description.sd40t-2.drgw=
+bap4tim:description.sd40t-2.ane=The ANE purchased many tunnel motors for the undersea tunnel just beyond the<br>Chaoscades Mountains.
+
+bap4tim:description.sd40-2.awvr=
+bap4tim:description.sd40-2.fox=
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=

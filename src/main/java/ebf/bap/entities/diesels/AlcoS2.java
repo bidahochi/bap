@@ -37,7 +37,6 @@ public class AlcoS2 extends EntityTrainCore {
 
     public static final Item thisItem = new ItemTransport(new AlcoS2((World)null), BAP.MODID, BAP.creativeTabDiesel);
 
-
     //main stats
     @Override
     public String transportName(){return "Alco S2";}
@@ -100,7 +99,6 @@ public class AlcoS2 extends EntityTrainCore {
                 new ItemStack(TiMItems.smallElectricEngine, 4), new ItemStack(TiMItems.mediumDieselEngine, 2), new ItemStack(TiMItems.generator, 3)        };
     }
 
-
     //these are separated for being fiddly.
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{1.2f,1.3f, -0.3f}};}
@@ -112,7 +110,7 @@ public class AlcoS2 extends EntityTrainCore {
     public Bogie[] bogies(){
         return new Bogie[]{
                 new Bogie(new ModelBluntTruck(), 0.9f,0f,0f),
-                new Bogie(new ModelBluntTruck(),-0.9f,0f,0f),//this needs to be rotated 180 but like, that doesnt exist yet
+                new Bogie(new ModelBluntTruck(), 0.9f,0f,0f).setRotation(0,180,0),//this needs to be rotated 180 but like, that doesnt exist yet
         };
     }
 
@@ -129,8 +127,6 @@ public class AlcoS2 extends EntityTrainCore {
     }
     @Override
     public int[] getTankCapacity(){return new int[]{3000};}
-
-
 
     //these only change in very specific use cases.
     @Override

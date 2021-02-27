@@ -79,6 +79,8 @@ public class B23 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/b23_Beansniff.png","textures/bogies/typeb_bnsf_h1.png","Burlington Northern Santa Fe H1", "description.b23dash7.bnsf");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/b23_Beansniff_furrbi.png","textures/bogies/typeb_bnsf_h1.png","BNSF FurrX Patch", "description.b23dash7.furrx2");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/b23_bnl.png","textures/bogies/fb2_Black.png","Buy N Large Lines", "description.b23dash7.bnl");
     }
     @Override
     public String getDefaultSkin(){

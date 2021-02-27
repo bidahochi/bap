@@ -2,6 +2,7 @@ package ebf.bap;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import ebf.bap.entities.freight.*;
 import ebf.bap.entities.diesels.*;
 import ebf.bap.entities.electrics.*;
@@ -40,14 +41,6 @@ public class BAP {
         creativeTabPassenger = new TiMTab("bap-passenger", tabItem);
         creativeTabOther = new TiMTab("bap-other", tabItem);
 
-        TiMGenericRegistry.registerTransports(MODID, listDiesel(), null);
-        TiMGenericRegistry.registerTransports(MODID, listSteam(), null);
-        TiMGenericRegistry.registerTransports(MODID, listElectric(), null);
-        TiMGenericRegistry.registerTransports(MODID, listFreight(), null);
-        TiMGenericRegistry.registerTransports(MODID, listPassenger(), null);
-        TiMGenericRegistry.registerTransports(MODID, listOther(), null);
-
-
         creativeTabDiesel.tabItem = tabItem = (ItemTransport) TiMGenericRegistry.RegisterItem(
                 new ItemTransport(new AlcoS2(null), MODID, null)
                 , MODID, "tab.bapfortimdiesel.name", null, null, null, null);
@@ -74,13 +67,24 @@ public class BAP {
 
     }
 
+    @Mod.EventHandler
+    public void postinit(FMLPostInitializationEvent event){
+        TiMGenericRegistry.registerTransports(MODID, listDiesel(), null);
+        TiMGenericRegistry.registerTransports(MODID, listSteam(), null);
+        TiMGenericRegistry.registerTransports(MODID, listElectric(), null);
+        TiMGenericRegistry.registerTransports(MODID, listFreight(), null);
+        TiMGenericRegistry.registerTransports(MODID, listPassenger(), null);
+        TiMGenericRegistry.registerTransports(MODID, listOther(), null);
+    }
+
     public static GenericRailTransport[] listDiesel() {
 
         return new GenericRailTransport[]{new AlcoS2(null), new CF7(null), new U23B(null), new B23(null),
-        new C424(null), new C425(null), new SW1(null), new SW1500(null), new U36C(null),
-        new VO1000(null), new H1044(null), new SD9(null), new GP7(null), new GP7b(null),
-        new GP7u(null), new GP9(null), new GP15(null), new GP30(null), new GP38dash2(null),
-        new MP15DCW9(null), new NRE3gs21b(null), new HH660(null), new GE25Ton(null), new SW1200(null)};
+                new C424(null), new C425(null), new SW1(null), new SW1500(null), new U36C(null),
+                new VO1000(null), new H1044(null), new SD9(null), new GP7(null), new GP7b(null),
+                new GP7u(null), new GP9(null), new GP15(null), new GP30(null), new GP38dash2(null),
+                new MP15DCW9(null), new NRE3gs21b(null), new HH660(null), new GE25Ton(null), new SW1200(null),
+                new SD40dash2(null), new SD40T2(null)};
     }
 
     public static GenericRailTransport[] listSteam() {
@@ -94,7 +98,7 @@ public class BAP {
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{new PS160(null), new PS150(null), new PS140(null),
                 new Highcube40foot(null), new OWO60Verticube(null), new MILW40boxcar(null),
-                new DOT11111000(null), new DOT11120600(null), new DOT11129080(null)};
+                new DOT11111000(null), new DOT11120600(null), new DOT11129080(null), new MechanicalReefer64(null)};
     }
 
     public static GenericRailTransport[] listPassenger() {

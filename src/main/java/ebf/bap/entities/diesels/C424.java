@@ -77,6 +77,8 @@ public class C424 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/c424_OWO21.png","textures/bogies/typeb_Grey.png","Washaska & Old Fox 21", "description.c424.owo");
         SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/c424_fox.png","textures/bogies/typeb_LightGrey.png","North Fox & Cascades", "description.c424.fox");
+        SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/c424_CP.png","textures/bogies/typeb_Black.png","Canadian Pacific", "description.c424.cp");
     }
     @Override

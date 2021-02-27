@@ -102,8 +102,8 @@ public class Model25Ton extends ModelConverter //Same as Filename
 		bodyModel[67] = new ModelRendererTurbo(this, 1, 38, textureX, textureY); // Box 227
 		bodyModel[68] = new ModelRendererTurbo(this, 8, 20, textureX, textureY); // Box 228
 		bodyModel[69] = new ModelRendererTurbo(this, 1, 20, textureX, textureY); // Box 229
-		bodyModel[70] = new ModelRendererTurbo(this, 116, 109, textureX, textureY); // Box 230 cull
-		bodyModel[71] = new ModelRendererTurbo(this, 116, 117, textureX, textureY); // Box 231 cull
+		bodyModel[70] = new ModelRendererTurbo(this, 116, 109, textureX, textureY, StaticModelAnimator.tagNoCull); // Box 230 cull
+		bodyModel[71] = new ModelRendererTurbo(this, 116, 117, textureX, textureY, "nocull"); // Box 231 cull
 		bodyModel[72] = new ModelRendererTurbo(this, 98, 66, textureX, textureY); // Box 232 door swing right
 		bodyModel[73] = new ModelRendererTurbo(this, 18, 81, textureX, textureY); // Box 233
 		bodyModel[74] = new ModelRendererTurbo(this, 125, 50, textureX, textureY); // Box 234
