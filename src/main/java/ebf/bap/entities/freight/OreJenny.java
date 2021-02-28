@@ -3,8 +3,9 @@ package ebf.bap.entities.freight;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.rollingstock.ModelOWO60Verticube;
+import ebf.bap.models.rollingstock.ModelOreJenny;
 import ebf.bap.models.trucks.Model70TonTruck;
+import ebf.bap.models.trucks.ModelOreJennyTrucc;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.api.TransportSkin;
@@ -12,6 +13,8 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
+import ebf.tim.registry.TiMItems;
+import ebf.tim.registry.TiMOres;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -27,85 +30,81 @@ import train.library.ItemIDs;
 import java.util.List;
 import java.util.UUID;
 
-public class OWO60Verticube extends GenericRailTransport {
+public class OreJenny extends GenericRailTransport {
 
-    public OWO60Verticube(World worldObj) {
+    public OreJenny(World worldObj) {
         super(worldObj);
     }
 
-    public OWO60Verticube(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public OreJenny(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new OWO60Verticube((World)null), BAP.MODID, BAP.creativeTabFreight);
-
+    public static final Item thisItem = new ItemTransport(new OreJenny((World)null), BAP.MODID, BAP.creativeTabFreight);
 
     //main stats
     @Override
-    public String transportName(){return "OWO 60 Verticube";}
+    public String transportName(){return "Ore Jenny";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "Early 2000s Onwards";}
+    public String transportYear(){return "1928-1930";}
     @Override
-    public boolean isFictional(){return true;}
+    public boolean isFictional(){return false;}
     @Override
-    public int getInventoryRows(){return 6;}
+    public int getInventoryRows(){return 2;}
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
         return TrainsInMotion.transportTypes.FREIGHT.singleton();
     }
     @Override
-    public float weightKg(){return 40950f;}
+    public float weightKg(){return 19731f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelOWO60Verticube()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelOreJenny()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};} //-0.1875
+    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}//{0.0f, -0.2f, 0.0f}
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/owo60verticube_green_logo.png","textures/bogies/70TonTruck_Black.png","OWO 'Verti-Cube'", "description.owo60.verticube");
+                "textures/freight/orejenny_ORGY.png","textures/bogies/orejennytrucc.png","ORGY (BAWX)", "description.jenni.orgy");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/owo60verticube_green_wr.png","textures/bogies/70TonTruck_Black.png","OWO 'Washaska Resources'", "description.owo60.wr");
+                "textures/freight/orejenny_DMIR.png","textures/bogies/orejennytrucc.png","Duluth, Missabe and Iron Range", "description.jenni.dmir");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/owo60verticube_green_logo_new.png","textures/bogies/70TonTruck_Black.png","OWO 'Big Logo'", "description.owo60.biglogo");
+                "textures/freight/orejenny_MILW.png","textures/bogies/orejennytrucc.png","Milwaukee Road (Limestone)", "description.jenni.milw");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/owo60verticube_green_simple.png","textures/bogies/70TonTruck_Black.png","OWO 'Simple'", "description.owo60.simple");
+                "textures/freight/orejenny_WETX.png","textures/bogies/orejennytrucc.png","Washaska Eastern Taconite Co", "description.jenni.wetx");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/owo60verticube_white_logo.png","textures/bogies/70TonTruck_Black.png","OWO 'Big Logo White'", "description.owo60.biglogowhite");
-        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/owo60verticube_white_wr.png","textures/bogies/70TonTruck_Black.png","OWO 'Washaska Resources White'", "description.owo60.whitewr");
+                "textures/freight/orejenny_RDX.png","textures/bogies/orejennytrucc.png","Redstone Cargo (JCIR)", "description.jenni.rer");
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"OWO 'Verti-Cube'";
+        return BAP.MODID+":"+"ORGY (BAWX)";
     }
 
     //recipe
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
-                null, null, null,
-                null, null, null,
-                null, null, null        };
+                null, new ItemStack(TiMItems.wheelSteel, 4), new ItemStack(TiMItems.frameSteel, 2),
+                new ItemStack(TiMOres.ingotSteel, 2), null, null, new ItemStack(Blocks.hopper, 3), new ItemStack(Items.iron_ingot, 2), new ItemStack(Items.iron_ingot, 2)        };
     }
 
     //these are separated for being fiddly.
     @Override
     public float[][] getRiderOffsets(){return null;}
     @Override
-    public float[] getHitboxSize(){return new float[]{5.7f,2.6f,1.3f};}
+    public float[] getHitboxSize(){return new float[]{worldObj==null?3.0f:2.2f,1.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.6f, -1.6f};}
+    public float[] bogieLengthFromCenter() {return new float[]{0.6f, -0.6f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Model70TonTruck(),1.6f,0f,0f),
-                new Bogie(new Model70TonTruck(),-1.6f,0f,0f),
+                new Bogie(new ModelOreJennyTrucc(),0.6f,0f,0f),
+                new Bogie(new ModelOreJennyTrucc(),-0.6f,0f,0f),
         };
     }
 
@@ -118,5 +117,4 @@ public class OWO60Verticube extends GenericRailTransport {
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
-
 }

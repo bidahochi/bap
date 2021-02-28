@@ -3,7 +3,7 @@ package ebf.bap.entities.freight;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.rollingstock.Model29080DOT111;
+import ebf.bap.models.rollingstock.ModelVersaLongi;
 import ebf.bap.models.trucks.Model70TonTruck;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -12,6 +12,8 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
+import ebf.tim.registry.TiMItems;
+import ebf.tim.registry.TiMOres;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -27,40 +29,39 @@ import train.library.ItemIDs;
 import java.util.List;
 import java.util.UUID;
 
-public class DOT11129080 extends GenericRailTransport {
+public class VersaLongi extends GenericRailTransport {
 
-    public DOT11129080(World worldObj) {
+    public VersaLongi(World worldObj) {
         super(worldObj);
     }
 
-    public DOT11129080(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public VersaLongi(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new DOT11129080((World)null), BAP.MODID, BAP.creativeTabFreight);
-
+    public static final Item thisItem = new ItemTransport(new VersaLongi((World)null), BAP.MODID, BAP.creativeTabFreight);
 
     //main stats
     @Override
-    public String transportName(){return "DOT29080";}
+    public String transportName(){return "VersaLongi";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "1980s";}
+    public String transportYear(){return "2009-Current";}
     @Override
     public boolean isFictional(){return false;}
     @Override
-    public int getInventoryRows(){return 0;}
+    public int getInventoryRows(){return 4;}
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
-        return TrainsInMotion.transportTypes.TANKER.singleton();
+        return TrainsInMotion.transportTypes.FREIGHT.singleton();
     }
     @Override
-    public float weightKg(){return 38237f;}
+    public float weightKg(){return 24494f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new Model29080DOT111()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelVersaLongi()};}
     @Override
     public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}
     @Override
@@ -68,46 +69,39 @@ public class DOT11129080 extends GenericRailTransport {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_Generic.png","textures/bogies/70TonTruck_Black.png","Generic Black", "description.dot290K.gen");
+                "textures/freight/versa_longi_Black.png","textures/bogies/70TonTruck_Black.png","Black", "description.versalongi.black");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_LIQX.png","textures/bogies/70TonTruck_Black.png","LIQX", "description.dot290K.liqx");
+                "textures/freight/versa_longi_LightGrey.png","textures/bogies/70TonTruck_Black.png","Light Grey", "description.versalongi.ltgrey");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_FKIX.png","textures/bogies/70TonTruck_Black.png","FKIX", "description.dot290K.fkix");
-        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_FKIX2.png","textures/bogies/70TonTruck_Black.png","FKIX Orange Belly", "description.dot290K.fkix2");
+                "textures/freight/versa_longi_owo.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox Ballast Car", "description.versalongi.grey");
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"Generic Black";
+        return BAP.MODID+":"+"Black";
     }
-
 
     //recipe
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
-                null, null, null,
-                null, null, null,
-                null, null, new ItemStack(Items.bucket, 6)        };
+                new ItemStack(TiMOres.ingotSteel, 5), new ItemStack(TiMItems.wheelSteel, 4), new ItemStack(TiMItems.frameSteel, 2),
+                new ItemStack(TiMOres.ingotSteel, 2), null, null, null, null, new ItemStack(Blocks.hopper, 3)        };
     }
-
 
     //these are separated for being fiddly.
     @Override
     public float[][] getRiderOffsets(){return null;}
     @Override
-    public float[] getHitboxSize(){return new float[]{5.5f,2.1f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{4.0f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.7f, -1.7f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.25f, -1.25f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Model70TonTruck(),1.7f,0f,0f),
-                new Bogie(new Model70TonTruck(),-1.7f,0f,0f),
+                new Bogie(new Model70TonTruck(),1.25f,0f,0f),
+                new Bogie(new Model70TonTruck(),-1.25f,0f,0f),
         };
     }
-    @Override
-    public int[] getTankCapacity(){return new int[]{110000};}
 
     //these only change in very specific use cases.
     @Override
@@ -118,5 +112,4 @@ public class DOT11129080 extends GenericRailTransport {
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
-
 }

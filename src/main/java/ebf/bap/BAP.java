@@ -98,7 +98,9 @@ public class BAP {
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{new PS160(null), new PS150(null), new PS140(null),
                 new Highcube40foot(null), new OWO60Verticube(null), new MILW40boxcar(null),
-                new DOT11111000(null), new DOT11120600(null), new DOT11129080(null), new MechanicalReefer64(null)};
+                new DOT11111000(null), new DOT11120600(null), new DOT11129080(null), new MechanicalReefer64(null),
+                new VersaLongi(null), new VersaTrans(null), new WoodchipHopper(null), new MillGondola(null),
+                new OreJenny(null)};
     }
 
     public static GenericRailTransport[] listPassenger() {

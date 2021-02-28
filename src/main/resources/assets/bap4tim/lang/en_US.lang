@@ -44,6 +44,12 @@ item.DOT11000.name=11,000 Gallon DOT 111 Tank Car
 item.DOT20600.name=20,600 Gallon DOT 111 Tank Car
 item.DOT29080.name=29,080 Gallon DOT 111 Tank Car
 
+item.WoodchipHopper.name=Thrall 59 Foot Woodchip Hopper
+item.VersaLongi.name=Versaflood Longitudinal Aggregate Hopper
+item.VersaTrans.name=Versaflood Transverse Aggregate Hopper
+item.52footMillGondola.name=52 Foot Mill Gondola
+item.OreJenny.name=1930s Ore Jenny
+
 item.PEcoach.name=Polar Express Coach Car
 item.PEobserve.name=Polar Express Observation Car
 

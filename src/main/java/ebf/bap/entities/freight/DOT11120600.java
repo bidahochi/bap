@@ -56,7 +56,7 @@ public class DOT11120600 extends GenericRailTransport {
         return TrainsInMotion.transportTypes.TANKER.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}
+    public float weightKg(){return 26762f;}
 
     //Model stuff
     @Override

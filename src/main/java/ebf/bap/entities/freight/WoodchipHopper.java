@@ -3,7 +3,7 @@ package ebf.bap.entities.freight;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.rollingstock.Model29080DOT111;
+import ebf.bap.models.rollingstock.ModelWoodchipHopper;
 import ebf.bap.models.trucks.Model70TonTruck;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -12,6 +12,8 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
+import ebf.tim.registry.TiMItems;
+import ebf.tim.registry.TiMOres;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -27,70 +29,69 @@ import train.library.ItemIDs;
 import java.util.List;
 import java.util.UUID;
 
-public class DOT11129080 extends GenericRailTransport {
+public class WoodchipHopper extends GenericRailTransport {
 
-    public DOT11129080(World worldObj) {
+    public WoodchipHopper(World worldObj) {
         super(worldObj);
     }
 
-    public DOT11129080(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public WoodchipHopper(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new DOT11129080((World)null), BAP.MODID, BAP.creativeTabFreight);
+    public static final Item thisItem = new ItemTransport(new WoodchipHopper((World)null), BAP.MODID, BAP.creativeTabFreight);
 
 
     //main stats
     @Override
-    public String transportName(){return "DOT29080";}
+    public String transportName(){return "Woodchip Hopper";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "1980s";}
+    public String transportYear(){return "1968-1969";}
     @Override
     public boolean isFictional(){return false;}
     @Override
-    public int getInventoryRows(){return 0;}
+    public int getInventoryRows(){return 6;}
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
-        return TrainsInMotion.transportTypes.TANKER.singleton();
+        return TrainsInMotion.transportTypes.FREIGHT.singleton();
     }
     @Override
-    public float weightKg(){return 38237f;}
+    public float weightKg(){return 25129f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new Model29080DOT111()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelWoodchipHopper()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}
+    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}//-0.15f
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_Generic.png","textures/bogies/70TonTruck_Black.png","Generic Black", "description.dot290K.gen");
+                "textures/freight/woodchiphopper_BAWX.png","textures/bogies/70TonTruck_Black.png","BAWX", "description.chip.bawx");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_LIQX.png","textures/bogies/70TonTruck_Black.png","LIQX", "description.dot290K.liqx");
+                "textures/freight/woodchiphopper_MILW.png","textures/bogies/70TonTruck_Black.png","Milwaukee Road", "description.chip.milw");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_FKIX.png","textures/bogies/70TonTruck_Black.png","FKIX", "description.dot290K.fkix");
+                "textures/freight/woodchiphopper_BN.png","textures/bogies/70TonTruck_Black.png","Burlington Northern", "description.chip.bn");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/dot290K_FKIX2.png","textures/bogies/70TonTruck_Black.png","FKIX Orange Belly", "description.dot290K.fkix2");
+                "textures/freight/woodchiphopper_GN.png","textures/bogies/70TonTruck_Black.png","Great Northern", "description.chip.gn");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/woodchiphopper_OWO.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "description.chip.owo");
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"Generic Black";
+        return BAP.MODID+":"+"BAWX";
     }
-
 
     //recipe
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
-                null, null, null,
-                null, null, null,
-                null, null, new ItemStack(Items.bucket, 6)        };
-    }
-
+                null, new ItemStack(TiMItems.wheelSteel, 4), new ItemStack(TiMItems.frameSteel, 4),
+                new ItemStack(TiMOres.ingotSteel, 4), new ItemStack(Blocks.log, 4), null, new ItemStack(Items.iron_ingot, 3), new ItemStack(Items.iron_ingot, 3), new ItemStack(Blocks.chest, 4)        };
+    }//044 440 334
 
     //these are separated for being fiddly.
     @Override
@@ -98,16 +99,14 @@ public class DOT11129080 extends GenericRailTransport {
     @Override
     public float[] getHitboxSize(){return new float[]{5.5f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.7f, -1.7f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.85f, -1.85f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Model70TonTruck(),1.7f,0f,0f),
-                new Bogie(new Model70TonTruck(),-1.7f,0f,0f),
+                new Bogie(new Model70TonTruck(),1.85f,0f,0f),
+                new Bogie(new Model70TonTruck(),-1.85f,0f,0f),
         };
     }
-    @Override
-    public int[] getTankCapacity(){return new int[]{110000};}
 
     //these only change in very specific use cases.
     @Override
