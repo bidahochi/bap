@@ -29,6 +29,7 @@ item.25Ton.name=GE 25 Tonner
 item.SW1200.name=EMD SW1200
 item.SD40-2.name=EMD SD40-2
 item.SD40T-2.name=EMD SD40T-2
+item.ML4000.name=KM ML4000
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -140,6 +141,10 @@ bap4tim:description.sd40t-2.ane=The ANE purchased many tunnel motors for the und
 
 bap4tim:description.sd40-2.awvr=
 bap4tim:description.sd40-2.fox=
+
+bap4tim:description.ml4000.sp=15 were built by Krauss-Maffei for the Southern Pacific Railroad,<br>these locomotives used diesel-hydraulic transmission instead of diesel-electric transmission.
+bap4tim:description.ml4000.sp2=The Southern Pacific Railroad did many modifications to their KM ML-4000 hood units<br>throughout their short lives, this example represents the four most modified units.
+bap4tim:description.ml4000.sp3=Of the 15 Southern Pacific KM ML-4000 hood units only one survived, SP 9010,<br>this example represents the current condition of SP 9010 after being<br>restored to operational condition.
 
 bap4tim:description.peobserve.waw=
 bap4tim:description.peobserve.wawnt=
