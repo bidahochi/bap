@@ -89,6 +89,8 @@ public class GP38dash2 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/gp38dash2_WFR.png","textures/bogies/blombergB_Black.png","Wolf Fox Railroad", "description.gp38.wfr");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/gp38dash2_fox.png","textures/bogies/blombergB_LightGrey.png","North Fox & Cascades", "description.gp38.fox");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/gp38dash2_BN.png","textures/bogies/blombergB_Black.png","Burlington Northern", "description.gp38.bn");
     }
     @Override
     public String getDefaultSkin(){

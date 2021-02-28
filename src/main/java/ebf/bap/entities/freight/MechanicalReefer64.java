@@ -66,7 +66,14 @@ public class MechanicalReefer64 extends GenericRailTransport {
                 "textures/freight/reefer_64_tropicana.png","textures/bogies/70TonTruck_Black.png","Tropicana Juice", "description.reef64.trop");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
                 "textures/freight/reefer_64_OWO.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "description.reef64.owo");
-
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/reefer_64_cryotrans.png","textures/bogies/70TonTruck_Black.png","Cryotrans", "description.reef64.cryo1");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/reefer_64_cryotrans_frenchfry.png","textures/bogies/70TonTruck_Black.png","Cryotrans (McCain)", "description.reef64.cryo2");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/reefer_64_cryotrans_wotincarnation.png","textures/bogies/70TonTruck_Black.png","Cryotrans (Carnation)", "description.reef64.cryo3");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/reefer_64_cryotrans_caveindouch.png","textures/bogies/70TonTruck_Black.png","Cryotrans (Cavendish)", "description.reef64.cryo4");
     }
     @Override
     public String getDefaultSkin(){

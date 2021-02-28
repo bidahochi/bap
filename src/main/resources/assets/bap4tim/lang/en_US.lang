@@ -75,6 +75,8 @@ bap4tim:description.cf7.mts=Messicrew Tenneva and Southern originally owned 6 wo
 
 bap4tim:description.alcos2.pc=Between 1940 and 1950, ALCo built 1,502 S2 Switchers for use on North American<br>Railroads. As of 1968 the Penn Central owned a total of 120 S2s.
 bap4tim:description.alcos2.furrx=Originally, the OWO had 1 S2, #5211, but it was too light for some of the switches<br>in Fewpoint yard,and was sold to FurrX, who promptly patched it ane<br>let it rust.
+bap4tim:description.alcos2.drgw=19 were ordered by the Denver & Rio Grande Western Railroad.
+bap4tim:description.alcos2.drgw2=The Denver & Rio Grande Western Railroad did a few modifications to their<br>S-2 over the course of their time on the DRGW, this example represents how the<br>DRGW S-2's looked in the later years of their use.
 
 bap4tim:description.b23dash7.up= Union Pacific ended up with 68 B23s from several railroads its ate,<br>mostly from SP and MP. some became CCRCLs, others became funny RP gensets,<br>but most were sold or scrapped.
 bap4tim:description.b23dash7.furrx=Sometime in the 1980s FurrX ordered several High-Hood B23s new from GE.
@@ -127,6 +129,7 @@ bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, n
 bap4tim:description.sw1200.drgw=10 SW1200s were ordered by the Denver & Rio Grande Western Railroad.
 bap4tim:description.sw1200.drgw2=The Denver & Rio Grande Western Railroad did some modifications to their<br>SW1200s over the course of their time on the DRGW,<br>this example represents how the DRGW SW1200 looked in the later<br>years of their use.
 bap4tim:description.sw1200.cnw=The Chicago and Northwestern purchased 12 SW1200s from EMD (numbered 310 - 321),<br>they lasted until the late 1980s, when they were sold to the Elgin, Joliet & Eastern
+bap4tim:description.sw1200.it=Following the abandonment of its passenger service and electrified trackage,<br>the Illinois Terminal Railroad was purchased by 9 class 1 railroads and operated as a diesel-powered short line.<br>It continued as such until bought out and absorbed by the Norfolk and Western in 1981.
 
 bap4tim:description.gp15.up=
 bap4tim:description.gp15.furrx=

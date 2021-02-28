@@ -74,6 +74,8 @@ public class SW1200 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/sw1200_drgw_late.png","textures/bogies/typeasmol_Black.png","Denver & Rio Grande Western (Late)", "description.sw1200.drgw2");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sw1200_cnw.png","textures/bogies/typeasmol_Black.png","Chicago Northwestern System", "description.sw1200.cnw");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/sw1200_it.png","textures/bogies/flexicoil2_Silver.png","Illinois Terminal", "description.sw1200.it");
 
     }
     @Override
@@ -100,7 +102,7 @@ public class SW1200 extends EntityTrainCore {
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
 
-        if(getCurrentSkin()==null || getCurrentSkin().name.equals("im gonna stab you through the heart with a fucking pencil")) {
+        if(getCurrentSkin()==null || getCurrentSkin().name.equals("Illinois Terminal")|| getCurrentSkin().name.equals("im gonna stab you through the heart with a fucking pencil")) {
             return new Bogie[]{new Bogie(new ModelFlexi2Axle(),1.0f,0f,0f),
                     new Bogie(new ModelFlexi2Axle(),-1.0f,0f,0f)};
         } else {

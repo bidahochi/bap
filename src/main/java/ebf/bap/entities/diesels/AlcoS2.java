@@ -59,13 +59,13 @@ public class AlcoS2 extends EntityTrainCore {
     @Override
     public ModelBase[] getModel(){return new ModelBase[]{new ModelAlcoS2()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{0.0f, 0.3f, 0.0f}};} //-0.1, 0.1, 0
+    public float[][] modelOffsets(){return new float[][]{{0.0f, 0.0f, 0.0f}};} //-0.1, 0.1, 0 originally, {0.0f, 0.3f, 0.0f} for the not dominik model
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID, "textures/diesels/alcos2_PC.png","textures/bogies/blunttruck_Black.png","Penn Central", "description.alcos2.pc");
+            BAP.MODID, "textures/diesels/alcos2_PC.png","textures/bogies/blunttruck_Black.png","Penn Central", "description.alcos2.pc");
         SkinRegistry.addSkin(this.getClass(),
             BAP.MODID,"textures/diesels/alcos2_NPTC.png","textures/bogies/blunttruck_Black.png","Northern Pacific Terminal Co", "description.alcos2.nptc");
         SkinRegistry.addSkin(this.getClass(),
@@ -84,6 +84,10 @@ public class AlcoS2 extends EntityTrainCore {
             BAP.MODID,"textures/diesels/alcos2_AMTK2.png","textures/bogies/blunttruck_Black.png","Amtrak Phase 2", "description.alcos2.amtk2");
         SkinRegistry.addSkin(this.getClass(),
             BAP.MODID,"textures/diesels/alcos2_CP.png","textures/bogies/blunttruck_Black.png","Canadian Pacific", "description.alcos2.cp");
+        SkinRegistry.addSkin(this.getClass(),
+            BAP.MODID,"textures/diesels/alcos2_DRGW.png","textures/bogies/blunttruck_Black.png","Denver & Rio Grande Western", "description.alcos2.drgw");
+        SkinRegistry.addSkin(this.getClass(),
+            BAP.MODID,"textures/diesels/alcos2_DRGW_late.png","textures/bogies/blunttruck_Black.png","Denver & Rio Grande Western (Late)", "description.alcos2.drgw2");
     }
     @Override
     public String getDefaultSkin(){
