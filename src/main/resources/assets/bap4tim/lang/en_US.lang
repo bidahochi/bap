@@ -83,6 +83,8 @@ bap4tim:description.b23dash7.up= Union Pacific ended up with 68 B23s from severa
 bap4tim:description.b23dash7.furrx=Sometime in the 1980s FurrX ordered several High-Hood B23s new from GE.
 bap4tim:description.b23dash7.furrx2=In the Early 2000s FurrX also bought up used B23s, mostly from BNSF.
 bap4tim:description.b23dash7.bnsf=BNSF got their B23s mostly from the ATSF.<br> however #4200 came from Metro-North Commuter railroad and<br>stayed in that scheme for quite some time.
+bap4tim:description.b23dash7.atsfblu=The ATSF Railroad in total have ordered a total of 65<br> of these units from General Electric from 1978 to 1984.<br>This B23-7 is painted in the famous "Freightbonnet"<br>as coined by railfans.
+bap4tim:description.b23dash7.atsfred=The ATSF Railroad in total have ordered a total of 65<br> of these units from General Electric from 1978 to 1984.<br>This B23-7 is painted in the "Kodachrome" livery as coined by railfans.
 
 bap4tim:description.u23b.sbd=General Electric build 481 U23Bs from 1968 to 1977. The Seaboard System got most of its Uboats from the L&N.
 bap4tim:description.u23b.furrx=In the early 70s FurrX aquired a small amount of High-Hood U23Bs from GE.<br> This was the 2nd BAP skin ever made, and the first FurrX skin.
@@ -92,6 +94,7 @@ bap4tim:description.c425.pc=Built in 1964 to 1966, 91 C425s were built.<br>Penn 
 bap4tim:description.c425.owo=The 'WO got its #22 from BCOL, and rebuilt it to change its form slightly.
 
 bap4tim:description.c424.owo=#21s story is a debate amongst people,<br> some think it came from the east coast like the #22 did,<br>others say it came from BN.
+bap4tim:description.c424.me=In 1983, the Morristown and Erie purchased two ALCO C424s from the<br>Toledo, Peoria, and Western. They operated on the M&E until 2018,<br>when both were sold to museums.
 
 bap4tim:description.sw1.snc=Seattle & North Coast owned a singular SW1, numbered 52.
 bap4tim:description.sw1.fkix=FKIX operates a lone SW1, which used to have a bell. The locomotive got into an accident,<br>and the bell fell off, leaving only a part of the frame.
@@ -106,10 +109,13 @@ bap4tim:description.h10.up=Union Pacific owned 5, numbered from DS1300 to DS1304
 bap4tim:description.h10.ap=Apache owned 2 H10s, numbers 100 and 200.
 bap4tim:description.h10.fur=The very first FurrX locomotive.<br>Originally from the PRR the H10 was rebuilt late after furrx obtained it into a<br>short long hood low emissions switcher.
 
-bap4tim:description.sd9.potb1=Port Of Tillamook Bay
+bap4tim:description.sd9.potb1=Port Of Tillamook Bays first few SD9s were actually SD9Es, from Southern Pacific.
 bap4tim:description.sd9.potb2=out of Port Of Tillamook Bay's vast collection of SD9s, only 2 did not<br>have dynamic breaks. One was used as a parts source and this one was<br>seldom used in general.
 bap4tim:description.sd9.bnsf=BNSF inherited quite a few SD9s from BN in its merger, however instead of<br>throwing them away like most class 1s would, they hung onto a handful for use<br>on the tight curves in the Pacific Northwest.
 bap4tim:description.sd9.wetx=Washaska Eastern Taconite bought out 8 of the defunct POTB,<br>sent them to the 'Wo for rebuilding, and then used them in their<br>open pit iron mine since then.
+bap4tim:description.sd9.drgw1=This example represents how the Denver & Rio Grande Western SD9 looked after a partial<br>repaint partway through their use by the DRGW.
+bap4tim:description.sd9.drgw2=10 were ordered by the Denver & Rio Grande Western Railroad.
+bap4tim:description.sd9.drgw3=The Denver & Rio Grande Western Railroad did a few modifications to their SD9 over<br>the course of their time on the DRGW, this example represents how the<br>DRGW SD9 looked in the later years of their use.
 
 bap4tim:description.25T.ps=The so-called loneliest locomotive in the west. It sits at the far far end of the<br>golden spike monument and only gets used to move the fancy show locomotives<br>around once a year if even that.<br>Only 3 known photos of it exist on the internet afaik.
 bap4tim:description.25T.pw=Providence & worchester #150, used as a shop goat.<br>https://www.railpictures.net/photo/20126/
@@ -139,19 +145,19 @@ bap4tim:description.gp15.owo=Washaska & Old Fox inherited their lone GP15 from t
 bap4tim:description.sd40t-2.drgw=
 bap4tim:description.sd40t-2.ane=The ANE purchased many tunnel motors for the undersea tunnel just beyond the<br>Chaoscades Mountains.
 
-bap4tim:description.sd40-2.awvr=
-bap4tim:description.sd40-2.fox=North Fox ordered 89 SD40-2s from EMD. the Early units were shipped with the Stripe Scheme,<br>while the later units had the DRGW-esque Quick scheme.
-bap4tim:description.sd40-2.fox2=North Fox ordered 89 SD40-2s from EMD. the Early units were shipped with the Stripe Scheme,<br>while the later units had the DRGW-esque Quick scheme.
-bap4tim:description.sd40-2.fox3=The North Fox & Cascades used a small amount of High Hood SD40-2s,<br>equipped with a modified steam boiler and transmission system called TrainHeat. The system uses warm steam to heat<br>all brakes on snowfleet stock, and it melts snow and ice buildup ahead of<br>the wheels on the tracks.
+bap4tim:description.sd40-2.awvr=its not 1206
+bap4tim:description.sd40-2.fox=North Fox ordered 89 SD40-2s from EMD. the Early units were shipped with the<br>Stripe Scheme, while the later units had the DRGW-esque Quick scheme.
+bap4tim:description.sd40-2.fox2=North Fox ordered 89 SD40-2s from EMD. the Early units were shipped with the<br>Stripe Scheme, while the later units had the DRGW-esque Quick scheme.
+bap4tim:description.sd40-2.fox3=The North Fox & Cascades used a small amount of High Hood SD40-2s,<br>equipped with a modified steam boiler and transmission system called TrainHeat.<br>The system uses warm steam to heat all brakes on snowfleet stock,<br>and it melts snow and ice buildup ahead of the wheels on the tracks.
 
 bap4tim:description.ml4000.sp=15 were built by Krauss-Maffei for the Southern Pacific Railroad,<br>these locomotives used diesel-hydraulic transmission instead of diesel-electric transmission.
 bap4tim:description.ml4000.sp2=The Southern Pacific Railroad did many modifications to their KM ML-4000 hood units<br>throughout their short lives, this example represents the four most modified units.
 bap4tim:description.ml4000.sp3=Of the 15 Southern Pacific KM ML-4000 hood units only one survived, SP 9010,<br>this example represents the current condition of SP 9010 after being<br>restored to operational condition.
 
-bap4tim:description.peobserve.waw=
-bap4tim:description.peobserve.wawnt=
-bap4tim:description.pecoach.waw=
-bap4tim:description.pecoach.wawnt=
+bap4tim:description.peobserve.waw=The observation coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
+bap4tim:description.peobserve.wawnt=The observation coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
+bap4tim:description.pecoach.waw=An ordinary coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
+bap4tim:description.pecoach.wawnt=An ordinary coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
 
 bap4tim:description.owo60.verticube=OWO Designed the Verticube Boxcars in the early 2000's<br>to meet a growing demand for constant capacity of light objects,<br>such as Models. However, over time,<br>the Verticubes became reinforced to carry even the mightiest of loads.
 bap4tim:description.owo60.wr=A Coproate Subsidary of OWO, WR exports<br>Washaskain Spruce and other wood Products.

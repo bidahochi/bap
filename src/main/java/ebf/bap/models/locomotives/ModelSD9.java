@@ -16,7 +16,7 @@ public class ModelSD9 extends ModelConverter //Same as Filename
 
 	public ModelSD9() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[358];
+		bodyModel = new ModelRendererTurbo[360];
 
 		initbodyModel_1();
 
@@ -386,6 +386,8 @@ public class ModelSD9 extends ModelConverter //Same as Filename
 		bodyModel[355] = new ModelRendererTurbo(this, 74, 155, textureX, textureY); // Box 86 control b
 		bodyModel[356] = new ModelRendererTurbo(this, 55, 150, textureX, textureY); // Box 87 control b
 		bodyModel[357] = new ModelRendererTurbo(this, 67, 149, textureX, textureY); // Box 86 control b
+		bodyModel[358] = new ModelRendererTurbo(this, 16, 88, textureX, textureY); // Box 176 glow marker
+		bodyModel[359] = new ModelRendererTurbo(this, 16, 91, textureX, textureY); // Box 176 glow marker
 
 		bodyModel[0].addBox(0F, 0F, 0F, 76, 4, 22, 0F); // Box 1
 		bodyModel[0].setRotationPoint(-38F, -1F, -11F);
@@ -1477,5 +1479,13 @@ public class ModelSD9 extends ModelConverter //Same as Filename
 		bodyModel[357].addBox(0F, 0F, 0F, 4, 2, 2, 0F); // Box 86 control b
 		bodyModel[357].setRotationPoint(-22F, -14F, -1F);
 		bodyModel[357].rotateAngleY = -0.38397244F;
+
+		bodyModel[358].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 176 glow marker
+		bodyModel[358].setRotationPoint(-36.9F, -11.5F, 5.5F);
+		bodyModel[358].rotateAngleY = -0.43633231F;
+
+		bodyModel[359].addBox(0F, 0F, -1F, 1, 1, 1, 0F); // Box 176 glow marker
+		bodyModel[359].setRotationPoint(-36.9F, -11.5F, -5.5F);
+		bodyModel[359].rotateAngleY = 0.43633231F;
 	}
 }
