@@ -123,7 +123,7 @@ bap4tim:description.gp38.ARR=One of Alaska Railroad's main 4 axle locomotive mod
 bap4tim:description.gp38.bap=The Butte, Anaconda & Pacific owned 2 GP38s, both of which were sold to the ARR.
 bap4tim:description.gp38.pc=Penn Central Time *derails and dies*<br>remind bida to give this an actual desc.
 bap4tim:description.gp38.furrx=FurrX owns some GP38s. Not really interesting in the slightest.
-bap4tim:description.gp38.fox=owo
+bap4tim:description.gp38.fox=North Fox aquired a large about of GP38s both new and used,<br>to assist road frieghts and yard duties.
 
 bap4tim:description.sw1200.sp=SP and SSW owned a total of 44 SW1200's, numbers 2250-2293.
 bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, number 52.<br>It was often paired with the railroads only other locomotives, a pair of NW2s.
@@ -140,7 +140,9 @@ bap4tim:description.sd40t-2.drgw=
 bap4tim:description.sd40t-2.ane=The ANE purchased many tunnel motors for the undersea tunnel just beyond the<br>Chaoscades Mountains.
 
 bap4tim:description.sd40-2.awvr=
-bap4tim:description.sd40-2.fox=
+bap4tim:description.sd40-2.fox=North Fox ordered 89 SD40-2s from EMD. the Early units were shipped with the Stripe Scheme,<br>while the later units had the DRGW-esque Quick scheme.
+bap4tim:description.sd40-2.fox2=North Fox ordered 89 SD40-2s from EMD. the Early units were shipped with the Stripe Scheme,<br>while the later units had the DRGW-esque Quick scheme.
+bap4tim:description.sd40-2.fox3=The North Fox & Cascades used a small amount of High Hood SD40-2s,<br>equipped with a modified steam boiler and transmission system called TrainHeat. The system uses warm steam to heat<br>all brakes on snowfleet stock, and it melts snow and ice buildup ahead of<br>the wheels on the tracks.
 
 bap4tim:description.ml4000.sp=15 were built by Krauss-Maffei for the Southern Pacific Railroad,<br>these locomotives used diesel-hydraulic transmission instead of diesel-electric transmission.
 bap4tim:description.ml4000.sp2=The Southern Pacific Railroad did many modifications to their KM ML-4000 hood units<br>throughout their short lives, this example represents the four most modified units.
