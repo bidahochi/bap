@@ -76,11 +76,11 @@ public class GP38dash2 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/gp38dash2_PC.png","textures/bogies/blombergB_Black.png","Penn Central", "description.gp38.pc");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/gp38dash2_ATSF1.png","textures/bogies/blombergB_LightGrey.png","AT&SF Freightbonnet", "description.gp30.atsf1");
+                BAP.MODID,"textures/diesels/gp38dash2_ATSF1.png","textures/bogies/blombergB_LightGrey.png","AT&SF Freightbonnet", "description.gp38.atsf1");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/gp38dash2_ATSF2.png","textures/bogies/blombergB_Black.png","AT&SF Pinstripe", "description.gp30.atsf2");
+                BAP.MODID,"textures/diesels/gp38dash2_ATSF2.png","textures/bogies/blombergB_Black.png","AT&SF Pinstripe", "description.gp38.atsf2");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/gp38dash2_ATSF3.png","textures/bogies/blombergB_LightGrey.png","AT&SF Kodachrome", "description.gp30.atsf3");
+                BAP.MODID,"textures/diesels/gp38dash2_ATSF3.png","textures/bogies/blombergB_LightGrey.png","AT&SF Kodachrome", "description.gp38.atsf3");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/gp38dash2_MKT.png","textures/bogies/blombergB_Black.png","Missouri–Kansas–Texas", "description.gp38.mkt");
         SkinRegistry.addSkin(this.getClass(),

@@ -100,7 +100,7 @@ public class BAP {
                 new Highcube40foot(null), new OWO60Verticube(null), new MILW40boxcar(null),
                 new DOT11111000(null), new DOT11120600(null), new DOT11129080(null), new MechanicalReefer64(null),
                 new VersaLongi(null), new VersaTrans(null), new WoodchipHopper(null), new MillGondola(null),
-                new OreJenny(null)};
+                new OreJenny(null), new HuskyStack53Wellcar(null)};
     }
 
     public static GenericRailTransport[] listPassenger() {
