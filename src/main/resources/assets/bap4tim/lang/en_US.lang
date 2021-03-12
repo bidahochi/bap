@@ -30,6 +30,8 @@ item.SW1200.name=EMD SW1200
 item.SD40-2.name=EMD SD40-2
 item.SD40T-2.name=EMD SD40T-2
 item.ML4000.name=KM ML4000
+item.Dash8-40B.name=GE Dash 8-40B
+item.Dash8-40B_B.name=GE Dash 8-40B B-unit
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -81,6 +83,11 @@ bap4tim:description.alcos2.furrx=Originally, the OWO had 1 S2, #5211, but it was
 bap4tim:description.alcos2.drgw=19 were ordered by the Denver & Rio Grande Western Railroad.
 bap4tim:description.alcos2.drgw2=The Denver & Rio Grande Western Railroad did a few modifications to their<br>S-2 over the course of their time on the DRGW, this example represents how the<br>DRGW S-2's looked in the later years of their use.
 
+bap4tim:description.b40-8.csxyn2=
+bap4tim:description.b40-8.foxyboi=North Fox purchased 98 B40-8s for use on mainline freight runs, and in yard duty.
+bap4tim:description.b40-8b.foxyboi=North Fox purchased 82 B40-8Bs to acompany the A units.<br>The Bs were also equipped with RCL equipment, and often found working<br>in yards, interestingly enough, by themselves,<br>or with other power.
+bap4tim:description.b40-8bw.atsf=wide nose go brr
+
 bap4tim:description.b23dash7.up= Union Pacific ended up with 68 B23s from several railroads its ate,<br>mostly from SP and MP. some became CCRCLs, others became funny RP gensets,<br>but most were sold or scrapped.
 bap4tim:description.b23dash7.furrx=Sometime in the 1980s FurrX ordered several High-Hood B23s new from GE.
 bap4tim:description.b23dash7.furrx2=In the Early 2000s FurrX also bought up used B23s, mostly from BNSF.
@@ -88,7 +95,7 @@ bap4tim:description.b23dash7.bnsf=BNSF got their B23s mostly from the ATSF.<br> 
 bap4tim:description.b23dash7.atsfblu=The ATSF Railroad in total have ordered a total of 65<br> of these units from General Electric from 1978 to 1984.<br>This B23-7 is painted in the famous "Freightbonnet"<br>as coined by railfans.
 bap4tim:description.b23dash7.atsfred=The ATSF Railroad in total have ordered a total of 65<br> of these units from General Electric from 1978 to 1984.<br>This B23-7 is painted in the "Kodachrome" livery as coined by railfans.
 
-bap4tim:description.u23b.sbd=General Electric build 481 U23Bs from 1968 to 1977. The Seaboard System got most of its Uboats from the L&N.
+bap4tim:description.u23b.sbd=General Electric build 481 U23Bs from 1968 to 1977.<br>The Seaboard System got most of its Uboats from the L&N.
 bap4tim:description.u23b.furrx=In the early 70s FurrX aquired a small amount of High-Hood U23Bs from GE.<br> This was the 2nd BAP skin ever made, and the first FurrX skin.
 bap4tim:description.u23b.furrxb=In the FurrX U23B Order, several were to be B units.<br>However, only one was built this way.
 
@@ -127,6 +134,13 @@ bap4tim:description.hh660.re606=Relco operated this unit for some time, and it w
 
 bap4tim:description.3gs21b.up=Union Pacific bought a boatload of 3GS21Bs from NRE in 2006-07.<br>They didnt last very long, having since been sidelined in 2017.
 
+bap4tim:description.gp7.drgw1=14 were ordered by the Denver & Rio Grande Western Railroad.
+bap4tim:description.gp7.drgw2=This example represents how the Denver & Rio Grande Western GP7's<br>looked after a partial repaint partway through their use by the DRGW.
+bap4tim:description.gp7.drgw3=The Denver & Rio Grande Western Railroad did a few modifications to their<br>GP7's over the course of their time on the DRGW, this example represents how the DRGW GP7's<br>looked in the later years of their use.
+
+bap4tim:description.gp30.CGW=CGW ordered 8 GP30s from EMD. All 8 were repainted and<br>renumbered to CNW upon merging.
+bap4tim:description.gp30.CNW=CNW purchased 14 GP30s from EMD, and later acquired a further 8 upon merger with the CGW.
+
 bap4tim:description.gp38.ARR=One of Alaska Railroad's main 4 axle locomotive models.
 bap4tim:description.gp38.bap=The Butte, Anaconda & Pacific owned 2 GP38s, both of which were sold to the ARR.
 bap4tim:description.gp38.pc=Penn Central Time *derails and dies*<br>remind bida to give this an actual desc.
@@ -138,7 +152,7 @@ bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, n
 bap4tim:description.sw1200.drgw=10 SW1200s were ordered by the Denver & Rio Grande Western Railroad.
 bap4tim:description.sw1200.drgw2=The Denver & Rio Grande Western Railroad did some modifications to their<br>SW1200s over the course of their time on the DRGW,<br>this example represents how the DRGW SW1200 looked in the later<br>years of their use.
 bap4tim:description.sw1200.cnw=The Chicago and Northwestern purchased 12 SW1200s from EMD (numbered 310 - 321),<br>they lasted until the late 1980s, when they were sold to the Elgin, Joliet & Eastern
-bap4tim:description.sw1200.it=Following the abandonment of its passenger service and electrified trackage,<br>the Illinois Terminal Railroad was purchased by 9 class 1 railroads and operated as a diesel-powered short line.<br>It continued as such until bought out and absorbed by the Norfolk and Western in 1981.
+bap4tim:description.sw1200.it=Following the abandonment of its passenger service and electrified trackage,<br>the Illinois Terminal Railroad was purchased by 9 class 1 railroads<br>and operated as a diesel-powered short line.<br>It continued as such until bought out and absorbed by the<br>Norfolk and Western in 1981.
 
 bap4tim:description.gp15.up=
 bap4tim:description.gp15.furrx=
@@ -152,7 +166,7 @@ bap4tim:description.sd40-2.fox=North Fox ordered 89 SD40-2s from EMD. the Early 
 bap4tim:description.sd40-2.fox2=North Fox ordered 89 SD40-2s from EMD. the Early units were shipped with the<br>Stripe Scheme, while the later units had the DRGW-esque Quick scheme.
 bap4tim:description.sd40-2.fox3=The North Fox & Cascades used a small amount of High Hood SD40-2s,<br>equipped with a modified steam boiler and transmission system called TrainHeat.<br>The system uses warm steam to heat all brakes on snowfleet stock,<br>and it melts snow and ice buildup ahead of the wheels on the tracks.
 
-bap4tim:description.ml4000.sp=15 were built by Krauss-Maffei for the Southern Pacific Railroad,<br>these locomotives used diesel-hydraulic transmission instead of diesel-electric transmission.
+bap4tim:description.ml4000.sp=15 were built by Krauss-Maffei for the Southern Pacific Railroad,<br>these locomotives used diesel-hydraulic transmission instead of<br>diesel-electric transmission.
 bap4tim:description.ml4000.sp2=The Southern Pacific Railroad did many modifications to their KM ML-4000 hood units<br>throughout their short lives, this example represents the four most modified units.
 bap4tim:description.ml4000.sp3=Of the 15 Southern Pacific KM ML-4000 hood units only one survived, SP 9010,<br>this example represents the current condition of SP 9010 after being<br>restored to operational condition.
 

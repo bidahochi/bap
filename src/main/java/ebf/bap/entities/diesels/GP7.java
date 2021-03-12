@@ -86,6 +86,12 @@ public class GP7 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/gp7_ssw.png","textures/bogies/blombergB_Black.png","Cotton Belt", "description.gp7.ssw");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/gp7_FurrX.png","textures/bogies/typea_LightGrey.png","FurrX", "description.gp7.fur");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/gp7_DRGW_EARLY.png","textures/bogies/blombergB_Black.png","Denver & Rio Grande Western (Early)", "description.gp7.drgw1");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/gp7_DRGW.png","textures/bogies/blombergB_Black.png","Denver & Rio Grande Western", "description.gp7.drgw2");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/gp7_DRGW_LATE.png","textures/bogies/blombergB_Black.png","Denver & Rio Grande Western (Late)", "description.gp7.drgw3");
 
     }
     @Override

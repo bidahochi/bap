@@ -88,6 +88,10 @@ public class GP30 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/gp30_ATSF3.png","textures/bogies/blombergB_LightGrey.png","AT&SF Kodachrome", "description.gp30.atsf3");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/gp30_CP.png","textures/bogies/blombergB_Black.png","Canadian Pacific", "description.gp30.cp");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/gp30_CNW.png","textures/bogies/blombergB_Black.png","Chicago North Western", "description.gp30.cnw");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/gp30_CGW.png","textures/bogies/blombergB_Black.png","Chicago Great Western Railway", "description.gp30.cgw");
     }
     @Override
     public String getDefaultSkin(){

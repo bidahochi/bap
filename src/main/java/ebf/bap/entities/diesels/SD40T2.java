@@ -73,7 +73,7 @@ public class SD40T2 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sd40t2_sp.png","textures/bogies/flexicoil_c2h_Black.png","Southern Pacific", "description.sd40t-2.sp");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/sd40t2_ssw.png","textures/bogies/flexicoil_ch2_Black.png","Cotton Belt", "description.sd40t-2.ssw");
+                BAP.MODID,"textures/diesels/sd40t2_ssw.png","textures/bogies/flexicoil_c2h_Black.png","Cotton Belt", "description.sd40t-2.ssw");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sd40t2_ane.png","textures/bogies/flexicoil_c2h_Black.png","Avanste Northeastern", "description.sd40t-2.ane");
         SkinRegistry.addSkin(this.getClass(),
