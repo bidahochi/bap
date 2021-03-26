@@ -3,8 +3,7 @@ package ebf.bap.entities.diesels;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.locomotives.ModelB23dash7;
-import ebf.bap.models.locomotives.Modeldash8_40B;
+import ebf.bap.models.locomotives.Modeldash8_40b;
 import ebf.bap.models.trucks.ModelFB2;
 import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
@@ -12,6 +11,7 @@ import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
+import ebf.tim.registry.TiMItems;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -54,7 +54,7 @@ public class Dash8_40B extends EntityTrainCore {
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40B()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40b()};}
     @Override
     public float[][] modelOffsets(){return new float[][]{{-0f, -0.0f, 0.0f}};}
     @Override
@@ -109,7 +109,7 @@ public class Dash8_40B extends EntityTrainCore {
     public float transportTopSpeed(){return 113;}
     @Override
     public ItemStackSlot fuelSlot(){
-        return super.fuelSlot().setOverlay(Items.coal);
+        return super.fuelSlot().setOverlay(TiMItems.mediumDieselEngine);
     }
     @Override
     public int[] getTankCapacity(){return new int[]{8000};}

@@ -3,7 +3,7 @@ package ebf.bap.entities.diesels;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.locomotives.Modeldash8_40B;
+import ebf.bap.models.locomotives.Modeldash8_40bw;
 import ebf.bap.models.trucks.ModelFB2;
 import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
@@ -53,7 +53,7 @@ public class Dash8_40BW extends EntityTrainCore {
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40B()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40bw()};}
     @Override
     public float[][] modelOffsets(){return new float[][]{{-0f, -0.0f, 0.0f}};}
     @Override
@@ -61,11 +61,11 @@ public class Dash8_40BW extends EntityTrainCore {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/dash8_40b_CSX_YN2.png","textures/bogies/fb2_Black.png","CSX (YN2)", "description.b40-8.csxyn2");
-}
+                BAP.MODID,"textures/diesels/dash8_40bw_atsf.png","textures/bogies/fb2_Grey.png","AT&SF", "description.b40-8w.atsf");
+    }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"CSX (YN2)";
+        return BAP.MODID+":"+"AT&SF";
     }
 
     //recipe
@@ -79,7 +79,7 @@ public class Dash8_40BW extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-1.7f,1.4f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.65f,1.4f, -0.3f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{5.95f,2.1f,1.1f};}
     @Override

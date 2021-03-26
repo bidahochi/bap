@@ -32,6 +32,7 @@ item.SD40T-2.name=EMD SD40T-2
 item.ML4000.name=KM ML4000
 item.Dash8-40B.name=GE Dash 8-40B
 item.Dash8-40B_B.name=GE Dash 8-40B B-unit
+item.Dash8-40BW.name=GE Dash 8-40BW
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->

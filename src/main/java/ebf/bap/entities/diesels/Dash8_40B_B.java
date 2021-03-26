@@ -3,8 +3,7 @@ package ebf.bap.entities.diesels;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.locomotives.Modeldash8_40B;
-import ebf.bap.models.locomotives.Modeldash8_40B_B;
+import ebf.bap.models.locomotives.Modeldash8_40b_b;
 import ebf.bap.models.trucks.ModelFB2;
 import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
@@ -58,7 +57,7 @@ public class Dash8_40B_B extends EntityTrainCore {
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40B_B()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40b_b()};}
     @Override
     public float[][] modelOffsets(){return new float[][]{{-0f, -0.0f, 0.0f}};}
     @Override
@@ -66,12 +65,15 @@ public class Dash8_40B_B extends EntityTrainCore {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/dash8_40b_b_atsf.png","textures/bogies/fb2_Grey.png","AT&SF", "description.b40-8b.atsf");
+        SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/dash8_40b_b_fox.png","textures/bogies/fb2_Grey.png","North Fox & Cascades (Road Version)", "description.b40-8b.foxyboi");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/dash8_40b_b_fox_yard.png","textures/bogies/fb2_Grey.png","North Fox & Cascades (Yard Version)", "description.b40-8b.foxyboi");}
+                BAP.MODID,"textures/diesels/dash8_40b_b_fox_yard.png","textures/bogies/fb2_Grey.png","North Fox & Cascades (Yard Version)", "description.b40-8b.foxyboi");
+    }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"North Fox & Cascades (Road Version)";
+        return BAP.MODID+":"+"AT&SF";
     }
 
     //recipe
