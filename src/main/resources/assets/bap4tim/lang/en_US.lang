@@ -33,6 +33,10 @@ item.ML4000.name=KM ML4000
 item.Dash8-40B.name=GE Dash 8-40B
 item.Dash8-40B_B.name=GE Dash 8-40B B-unit
 item.Dash8-40BW.name=GE Dash 8-40BW
+item.Beep.name= AT&SF Beep
+item.F45.name=EMD F45
+item.FP45.name=EMD FP45
+item.SDP40F.name=EMD SDP40F
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
