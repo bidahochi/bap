@@ -80,6 +80,8 @@ public class SD40dash2 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/sd40_fox_snow.png","textures/bogies/flexicoil_c2h_LightGrey2.png","North Fox & Cascades (Snow Fleet Service)", "description.sd40-2.fox3");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sd40_bnsf_h1.png","textures/bogies/flexicoil_c2h_Black.png","Burlington Northern Santa Fe (H1)", "description.sd40-2.bnsf");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/sd40_r8.png","textures/bogies/flexicoil_c2h_Black.png","Run8 Western", "description.sd40-2.r8w");
     }
     @Override
     public String getDefaultSkin(){

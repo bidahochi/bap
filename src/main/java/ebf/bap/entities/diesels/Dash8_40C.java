@@ -3,17 +3,19 @@ package ebf.bap.entities.diesels;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.locomotives.Modeldash8_40bw;
+import ebf.bap.models.locomotives.Modeldash8_40C;
+import ebf.bap.models.locomotives.Modeldash8_40b;
 import ebf.bap.models.trucks.ModelFB2;
+import ebf.bap.models.trucks.ModelFB3;
 import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
+import ebf.tim.registry.TiMItems;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -21,25 +23,25 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.UUID;
 
-public class Dash8_40BW extends EntityTrainCore {
+public class Dash8_40C extends EntityTrainCore {
 
-    public Dash8_40BW(World worldObj) {
+    public Dash8_40C(World worldObj) {
         super(worldObj);
     }
 
-    public Dash8_40BW(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public Dash8_40C(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new Dash8_40BW((World)null), BAP.MODID, BAP.creativeTabDiesel);
+    public static final Item thisItem = new ItemTransport(new Dash8_40C((World)null), BAP.MODID, BAP.creativeTabDiesel);
 
     //main stats
     @Override
-    public String transportName(){return "Dash8-40BW";}
+    public String transportName(){return "Dash8-40C";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "1988-1990";}
+    public String transportYear(){return "1988-1989";}
     @Override
     public boolean isFictional(){return false;}
     @Override
@@ -49,11 +51,11 @@ public class Dash8_40BW extends EntityTrainCore {
         return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
     @Override
-    public float weightKg(){return 127006f;}
+    public float weightKg(){return 127006f;} //phat herobrine life
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40bw()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new Modeldash8_40C()};}
     @Override
     public float[][] modelOffsets(){return new float[][]{{-0f, -0.0f, 0.0f}};}
     @Override
@@ -61,13 +63,11 @@ public class Dash8_40BW extends EntityTrainCore {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/dash8_40bw_atsf.png","textures/bogies/fb2_Grey.png","AT&SF", "description.b40-8w.atsf");
-        SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/dash8_40bw_fox.png","textures/bogies/fb2_Grey.png","North Fox & Cascades", "description.b40-8w.foxyboi");
+                BAP.MODID,"textures/diesels/dash8_40c_fox.png","textures/bogies/fb3_Grey.png","North Fox & Cascades", "description.c40-8.foxyboi");
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"AT&SF";
+        return BAP.MODID+":"+"North Fox & Cascades";
     }
 
     //recipe
@@ -81,21 +81,17 @@ public class Dash8_40BW extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-1.65f,1.45f, -0.35f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.9f,1.4f, -0.3f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{5.95f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.65f, -1.65f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.8f, -1.8f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
-
-        if(getCurrentSkin()==null || getCurrentSkin().name.equals("m")) {
-            return new Bogie[]{new Bogie(new ModelTypeB(),1.55f,0f,0f),
-                    new Bogie(new ModelTypeB(),-1.55f,0f,0f)};
-        } else {
-            return new Bogie[]{new Bogie(new ModelFB2(),1.65f,0f,0f),
-                    new Bogie(new ModelFB2(),-1.65f,0f,0f)};
-        }
+        return new Bogie[]{
+                new Bogie(new ModelFB3(), 1.8f,0f,0f),
+                new Bogie(new ModelFB3(),-1.8f,0f,0f),
+        };
     }
 
     //Train specific stuff
@@ -107,7 +103,7 @@ public class Dash8_40BW extends EntityTrainCore {
     public float transportTopSpeed(){return 113;}
     @Override
     public ItemStackSlot fuelSlot(){
-        return super.fuelSlot().setOverlay(Items.coal);
+        return super.fuelSlot().setOverlay(TiMItems.mediumDieselEngine);
     }
     @Override
     public int[] getTankCapacity(){return new int[]{8000};}
