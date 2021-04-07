@@ -106,7 +106,8 @@ public class BAP {
     }
 
     public static GenericRailTransport[] listPassenger() {
-        return new GenericRailTransport[]{new PEcoach(null), new PEobserve(null)};
+        return new GenericRailTransport[]{new PEcoach(null), new PEobserve(null), new BilevelCoach(null),
+               new BilevelCab(null)};
     }
 
     public static GenericRailTransport[] listOther() {

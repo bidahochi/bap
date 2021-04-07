@@ -41,7 +41,7 @@ public class Dash8_40C extends EntityTrainCore {
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "1988-1989";}
+    public String transportYear(){return "1987-1992";}
     @Override
     public boolean isFictional(){return false;}
     @Override
@@ -51,7 +51,7 @@ public class Dash8_40C extends EntityTrainCore {
         return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
     @Override
-    public float weightKg(){return 127006f;} //phat herobrine life
+    public float weightKg(){return 177600f;}
 
     //Model stuff
     @Override
