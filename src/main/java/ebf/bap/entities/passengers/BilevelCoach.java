@@ -87,12 +87,12 @@ public class BilevelCoach extends GenericRailTransport {
     @Override
     public float[] getHitboxSize(){return new float[]{7.7f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{2.1f, -2.1f};}
+    public float[] bogieLengthFromCenter() {return new float[]{2.6f, -2.6f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Modelbilevel_bogie(), 2.1f,0f,0f),
-                new Bogie(new Modelbilevel_bogie(),-2.1f,0f,0f),
+                new Bogie(new Modelbilevel_bogie(), 2.6f,0f,0f),
+                new Bogie(new Modelbilevel_bogie(),-2.6f,0f,0f),
         };
     }
 

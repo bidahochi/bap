@@ -98,12 +98,12 @@ public class F45 extends EntityTrainCore {
     @Override
     public float[] getHitboxSize(){return new float[]{6.35f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.8f, -1.8f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.75f, -1.75f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new ModelFlexicoilC2H(), 1.8f,-0.05f,0f),
-                new Bogie(new ModelFlexicoilC2H(), 1.8f,-0.05f,0f).setRotation(0,180,0),
+                new Bogie(new ModelFlexicoilC2H(), 1.75f,-0.0f,0f),
+                new Bogie(new ModelFlexicoilC2H(), 1.75f,-0.0f,0f).setRotation(0,180,0),
         };
     }
     //Train specific stuff

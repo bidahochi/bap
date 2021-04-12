@@ -83,14 +83,14 @@ public class Dash8_40C extends EntityTrainCore {
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{-1.9f,1.4f, -0.3f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{5.95f,2.1f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{6.5f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.8f, -1.8f};}
+    public float[] bogieLengthFromCenter() {return new float[]{1.7f, -1.7f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new ModelFB3(), 1.8f,0f,0f),
-                new Bogie(new ModelFB3(),-1.8f,0f,0f),
+                new Bogie(new ModelFB3(), 1.7f,0f,0f),
+                new Bogie(new ModelFB3(),-1.7f,0f,0f),
         };
     }
 

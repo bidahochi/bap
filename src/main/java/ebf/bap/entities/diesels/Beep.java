@@ -64,7 +64,7 @@ public class Beep extends EntityTrainCore {
     @Override
     public ModelBase[] getModel(){return new ModelBase[]{new Modelbeep()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{-0f, -0.0f, 0.0f}};}
+    public float[][] modelOffsets(){return new float[][]{{-0f, 0.1f, 0.0f}};}
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override
@@ -90,7 +90,7 @@ public class Beep extends EntityTrainCore {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.3f, -0.45f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.2f, -0.45f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{4.3f,2.1f,1.1f};}
     @Override
