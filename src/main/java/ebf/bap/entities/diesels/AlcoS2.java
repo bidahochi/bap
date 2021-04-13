@@ -43,7 +43,7 @@ public class AlcoS2 extends EntityTrainCore {
     @Override
     public String transportcountry(){return "North America";}
     @Override
-    public String transportYear(){return "1940 - 1950";}
+    public String transportYear(){return "1940-1950";}
     @Override
     public boolean isFictional(){return false;}
     @Override

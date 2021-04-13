@@ -96,6 +96,8 @@ public class CF7 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/cf7_OWO20.png","textures/bogies/typeb_Black.png","Washaska & Old Fox 20", "description.cf7.owo20");// needs type b trucc
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/cf7_MTS.png","textures/bogies/blombergB_Black.png","Messicrew Tenneva & Southern", "description.cf7.mts");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/cf7_LAJ.png","textures/bogies/blombergB_LightGrey.png","Los Angeles Junction Ry", "description.cf7.laj");
     }
     @Override
     public String getDefaultSkin(){
