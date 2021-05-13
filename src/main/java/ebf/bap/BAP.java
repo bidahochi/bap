@@ -86,7 +86,7 @@ public class BAP {
                 new MP15DCW9(null), new NRE3gs21b(null), new HH660(null), new GE25Ton(null), new SW1200(null),
                 new SD40dash2(null), new SD40T2(null), new ML4000(null), new Dash8_40B(null), new Dash8_40B_B(null),
                 new Dash8_40BW(null), new Beep(null), new F45(null), new FP45(null), new SDP40F(null),
-                new Dash8_40C(null)};
+                new Dash8_40C(null), new SB23R(null), new SD70Ace(null)};
     }
 
     public static GenericRailTransport[] listSteam() {
@@ -103,7 +103,7 @@ public class BAP {
                 new DOT11111000(null), new DOT11120600(null), new DOT11129080(null), new MechanicalReefer64(null),
                 new VersaLongi(null), new VersaTrans(null), new WoodchipHopper(null), new MillGondola(null),
                 new OreJenny(null), new HuskyStack53Wellcar(null), new Centerbeam60ft(null), new Centerbeam66ft(null),
-                new Centerbeam73ft(null)};
+                new Centerbeam73ft(null), new Hopper5201(null), new Hopper6260(null)};
     }
 
     public static GenericRailTransport[] listPassenger() {

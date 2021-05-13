@@ -67,6 +67,8 @@ public class ML4000 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/ML4000.png","textures/bogies/ML4000_Truck.png","Southern Pacific", "description.ml4000.sp");
         SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/ML4000_late.png","textures/bogies/ML4000_Truck.png","Southern Pacific (Late)", "description.ml4000.sp4");
+        SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/ML4000_rebuilt.png","textures/bogies/ML4000_Truck.png","Southern Pacific (Rebuilt)", "description.ml4000.sp2");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/ML4000_SP9010.png","textures/bogies/ML4000_Truck_SP9010.png","Southern Pacific (9010)", "description.ml4000.sp3");

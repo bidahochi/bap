@@ -81,6 +81,8 @@ public class B23 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/b23_Beansniff_furrbi.png","textures/bogies/typeb_bnsf_h1.png","BNSF FurrX Patch", "description.b23dash7.furrx2");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/b23_bnl.png","textures/bogies/fb2_Black.png","Buy N Large Lines", "description.b23dash7.bnl");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/b23_fox.png","textures/bogies/typeb_LightGrey.png","North Fox & Cascades", "description.b23dash7.fox");
     }
     @Override
     public String getDefaultSkin(){
@@ -100,7 +102,7 @@ public class B23 extends EntityTrainCore {
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{-1.7f,1.3f, -0.3f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{5.500000047683716f,2.1f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{5.9f,2.1f,1.1f};}
     @Override
     public float[] bogieLengthFromCenter() {return new float[]{1.5f, -1.5f};}
 
@@ -116,10 +118,11 @@ public class B23 extends EntityTrainCore {
         };
     }*/
     @SideOnly(Side.CLIENT)
-    public Bogie[] bogies(){
+    public Bogie[] bogies(){//
 
         if(getCurrentSkin()==null || getCurrentSkin().name.equals("Atchison Topeka & Santa Fe Kodachrome") || getCurrentSkin().name.equals("FurrX")
-                || getCurrentSkin().name.equals("Burlington Northern Santa Fe H1") || getCurrentSkin().name.equals("BNSF FurrX Patch")) {
+                || getCurrentSkin().name.equals("Burlington Northern Santa Fe H1") || getCurrentSkin().name.equals("BNSF FurrX Patch") ||
+                getCurrentSkin().name.equals("North Fox & Cascades")) {
             return new Bogie[]{new Bogie(new ModelTypeB(),1.55f,0f,0f),
                     new Bogie(new ModelTypeB(),-1.55f,0f,0f)};
         } else {

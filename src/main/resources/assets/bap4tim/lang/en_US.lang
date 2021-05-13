@@ -38,6 +38,8 @@ item.F45.name=EMD F45
 item.FP45.name=EMD FP45
 item.SDP40F.name=EMD SDP40F
 item.Dash8-40C.name=GE Dash 8-40C
+item.SB23R.name=North Fox SB23R
+item.SD70Ace.name=EMD SD70ACe
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -58,6 +60,8 @@ item.VersaLongi.name=Versaflood Longitudinal Aggregate Hopper
 item.VersaTrans.name=Versaflood Transverse Aggregate Hopper
 item.52footMillGondola.name=52 Foot Mill Gondola
 item.OreJenny.name=1930s Ore Jenny
+item.6260CuFootJumboHopper.name=6260 Cubic Foot Jumbo Hopper
+item.5201CuFootHopper.name=5201 Cubic Foot Hopper
 
 item.HuskyStack53Wellcar.name=Gunderson 53 Foot Husky Stack Wellcar
 item.60centerbeam.name=60 Foot Centerbeam
@@ -97,7 +101,8 @@ bap4tim:description.alcos2.drgw2=The Denver & Rio Grande Western Railroad did a 
 bap4tim:description.b40-8.csxyn2=
 bap4tim:description.b40-8.foxyboi=North Fox purchased 98 B40-8s for use on mainline freight runs, and in yard duty.
 bap4tim:description.b40-8b.foxyboi=North Fox purchased 82 B40-8Bs to acompany the A units.<br>The Bs were also equipped with RCL equipment, and often found working<br>in yards, interestingly enough, by themselves,<br>or with other power.
-bap4tim:description.b40-8bw.atsf=wide nose go brr
+bap4tim:description.b40-8w.atsf=wide nose go brr
+bap4tim:description.b40-8w.foxyboi=During the late 1980s, the railroads were expiramenting with wide-nose cabs.<br>The AT&SF bought a large amount of wide nose B40-8s, and the North Fox soon followed.<br>These were the first wide nose units on the North Fox's roster.
 
 bap4tim:description.c40-8.foxyboi=North Fox's 510 series C40-8s were purchased in the early 80s to replace<br>ageing Dash 7s and Universal series locomotives.
 
@@ -107,6 +112,11 @@ bap4tim:description.b23dash7.furrx2=In the Early 2000s FurrX also bought up used
 bap4tim:description.b23dash7.bnsf=BNSF got their B23s mostly from the ATSF.<br> however #4200 came from Metro-North Commuter railroad and<br>stayed in that scheme for quite some time.
 bap4tim:description.b23dash7.atsfblu=The ATSF Railroad in total have ordered a total of 65<br> of these units from General Electric from 1978 to 1984.<br>This B23-7 is painted in the famous "Freightbonnet"<br>as coined by railfans.
 bap4tim:description.b23dash7.atsfred=The ATSF Railroad in total have ordered a total of 65<br> of these units from General Electric from 1978 to 1984.<br>This B23-7 is painted in the "Kodachrome" livery as coined by railfans.
+bap4tim:description.b23dash7.fox=In the North Fox's beginning years the roster was dominated by a strange and<br>ragtag assortment of power, mostly EMD.<br>But everything changed when the GE nation attacked,<br>with the then old Uboats being joined with the 300 series B23-7s in 1977.
+
+bap4tim:description.sb23r.fox27=In the Early 80s some B23-7s were converted into higher visibility yard units.<br>However, they still performed well as Road Switchers<br>and were used on branch services.
+bap4tim:description.sb23r.fox21=Most of the rebuilt SB23Rs became assigned to yard duties.
+bap4tim:description.sb23r.fox17=Out of the 14 rebuilt, only 2 were equipped with R/C equipment, #17 and #18.
 
 bap4tim:description.u23b.sbd=General Electric build 481 U23Bs from 1968 to 1977.<br>The Seaboard System got most of its Uboats from the L&N.
 bap4tim:description.u23b.furrx=In the early 70s FurrX aquired a small amount of High-Hood U23Bs from GE.<br> This was the 2nd BAP skin ever made, and the first FurrX skin.
@@ -117,9 +127,18 @@ bap4tim:description.c425.owo=The 'WO got its #22 from BCOL, and rebuilt it to ch
 
 bap4tim:description.c424.owo=#21s story is a debate amongst people,<br> some think it came from the east coast like the #22 did,<br>others say it came from BN.
 bap4tim:description.c424.me=In 1983, the Morristown and Erie purchased two ALCO C424s from the<br>Toledo, Peoria, and Western. They operated on the M&E until 2018,<br>when both were sold to museums.
+bap4tim:description.c424.fox=After the railroads merger, EMDs and ALcOs were common.<br>Most alcos were quickly painted into the Stripe Scheme and sent to work,<br>but only the C424s and C415s lasted long.
 
 bap4tim:description.sw1.snc=Seattle & North Coast owned a singular SW1, numbered 52.
 bap4tim:description.sw1.fkix=FKIX operates a lone SW1, which used to have a bell. The locomotive got into an accident,<br>and the bell fell off, leaving only a part of the frame.
+
+bap4tim:description.sw1200.sp=SP and SSW owned a total of 44 SW1200's, numbers 2250-2293.
+bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, number 52.<br>It was often paired with the railroads only other locomotives, a pair of NW2s.
+bap4tim:description.sw1200.drgw=10 SW1200s were ordered by the Denver & Rio Grande Western Railroad.
+bap4tim:description.sw1200.drgw2=The Denver & Rio Grande Western Railroad did some modifications to their<br>SW1200s over the course of their time on the DRGW,<br>this example represents how the DRGW SW1200 looked in the later<br>years of their use.
+bap4tim:description.sw1200.cnw=The Chicago and Northwestern purchased 12 SW1200s from EMD (numbered 310 - 321),<br>they lasted until the late 1980s, when they were sold to the Elgin, Joliet & Eastern
+bap4tim:description.sw1200.it=Following the abandonment of its passenger service and electrified trackage,<br>the Illinois Terminal Railroad was purchased by 9 class 1 railroads<br>and operated as a diesel-powered short line.<br>It continued as such until bought out and absorbed by the<br>Norfolk and Western in 1981.
+bap4tim:description.sw1200.fox=When the North Fox was formed in 1969, most of its power was ragtag from the<br>several railroads that merged. 5 "stock" SW1200s of ANE decent were painted into<br>the railroads first "Switcher Scheme".
 
 bap4tim:description.sw1500.drir1=Denver Rock Island 1083 was an ex-SP unit,<br>and is still in use in downtown Denver, Colorado.
 bap4tim:description.sw1500.drir2=Denver Rock Island Y1211 was an ex-SP unit,<br>and is still in use in downtown Denver, Colorado.
@@ -137,10 +156,13 @@ bap4tim:description.sd9.bnsf=BNSF inherited quite a few SD9s from BN in its merg
 bap4tim:description.sd9.wetx=Washaska Eastern Taconite bought out 8 of the defunct POTB,<br>sent them to the 'Wo for rebuilding, and then used them in their<br>open pit iron mine since then.
 bap4tim:description.sd9.drgw1=This example represents how the Denver & Rio Grande Western SD9 looked after a partial<br>repaint partway through their use by the DRGW.
 bap4tim:description.sd9.drgw2=10 were ordered by the Denver & Rio Grande Western Railroad.
-bap4tim:description.sd9.drgw3=The Denver & Rio Grande Western Railroad did a few modifications to their SD9 over<br>the course of their time on the DRGW, this example represents how the<br>DRGW SD9 looked in the later years of their use.
+bap4tim:description.sd9.drgw3=The Denver & Rio Grande Western Railroad did a few modifications to their SD9s over<br>the course of their time on the DRGW, this example represents how the<br>DRGW SD9s looked in the later years of their use.
+bap4tim:description.sd9.fox2=During the late 70s-early 80s North Fox decided to rebuild some of its vintage power,<br>such as U23bs, B23-7s, and SD9s. The SD9s retained their distinctive Gyralight,<br>and were mostly assigned to yard service.
 
 bap4tim:description.25T.ps=The so-called loneliest locomotive in the west. It sits at the far far end of the<br>golden spike monument and only gets used to move the fancy show locomotives<br>around once a year if even that.<br>Only 3 known photos of it exist on the internet afaik.
 bap4tim:description.25T.pw=Providence & worchester #150, used as a shop goat.<br>https://www.railpictures.net/photo/20126/
+
+bap4tim:description.mp15dcw.wfr=Developed by the Wolf Fox Locomotive Works (WFLW) in 2020 to fit the<br>desires of the Wolf Fox Railroad (WFR).<br>One unit was sold to the WFR, #24, and one to the Sneaky Steve Transit (SST).<br>The MP15DCW-9 acts as both a road locomotive and a switching locomotive.<br>It is quick, fast, and comfortable for operators.
 
 bap4tim:description.hh660.re601=Relco obtained this unit from MILW at some point.
 bap4tim:description.hh660.re606=Relco operated this unit for some time, and it was recently<br>restored to its original owner, as Buffalo Creek #43.
@@ -159,13 +181,7 @@ bap4tim:description.gp38.bap=The Butte, Anaconda & Pacific owned 2 GP38s, both o
 bap4tim:description.gp38.pc=Penn Central Time *derails and dies*<br>remind bida to give this an actual desc.
 bap4tim:description.gp38.furrx=FurrX owns some GP38s. Not really interesting in the slightest.
 bap4tim:description.gp38.fox=North Fox aquired a large about of GP38s both new and used,<br>to assist road frieghts and yard duties.
-
-bap4tim:description.sw1200.sp=SP and SSW owned a total of 44 SW1200's, numbers 2250-2293.
-bap4tim:description.sw1200.wvn=The West Virginia Northern only owned 1 SW1200, number 52.<br>It was often paired with the railroads only other locomotives, a pair of NW2s.
-bap4tim:description.sw1200.drgw=10 SW1200s were ordered by the Denver & Rio Grande Western Railroad.
-bap4tim:description.sw1200.drgw2=The Denver & Rio Grande Western Railroad did some modifications to their<br>SW1200s over the course of their time on the DRGW,<br>this example represents how the DRGW SW1200 looked in the later<br>years of their use.
-bap4tim:description.sw1200.cnw=The Chicago and Northwestern purchased 12 SW1200s from EMD (numbered 310 - 321),<br>they lasted until the late 1980s, when they were sold to the Elgin, Joliet & Eastern
-bap4tim:description.sw1200.it=Following the abandonment of its passenger service and electrified trackage,<br>the Illinois Terminal Railroad was purchased by 9 class 1 railroads<br>and operated as a diesel-powered short line.<br>It continued as such until bought out and absorbed by the<br>Norfolk and Western in 1981.
+bap4tim:description.gp38.wfr=In 2020, the Wolf Fox Railroad (WFR) ordered one GP38 locomotive numbered 3008.<br>It is the only locomotive of its type in the WFR fleet to this date.<br>The locomotive is normally used for local trains.
 
 bap4tim:description.gp15.up=
 bap4tim:description.gp15.furrx=
@@ -182,6 +198,8 @@ bap4tim:description.sd40-2.fox3=The North Fox & Cascades used a small amount of 
 bap4tim:description.ml4000.sp=15 were built by Krauss-Maffei for the Southern Pacific Railroad,<br>these locomotives used diesel-hydraulic transmission instead of<br>diesel-electric transmission.
 bap4tim:description.ml4000.sp2=The Southern Pacific Railroad did many modifications to their KM ML-4000 hood units<br>throughout their short lives, this example represents the four most modified units.
 bap4tim:description.ml4000.sp3=Of the 15 Southern Pacific KM ML-4000 hood units only one survived, SP 9010,<br>this example represents the current condition of SP 9010 after being<br>restored to operational condition.
+
+bap4tim:description.ace.peetah=nyeheheh, hey louis i turned myself into an ACe
 
 bap4tim:description.peobserve.waw=The observation coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
 bap4tim:description.peobserve.wawnt=The observation coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.

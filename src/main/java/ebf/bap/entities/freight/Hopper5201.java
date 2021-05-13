@@ -3,47 +3,39 @@ package ebf.bap.entities.freight;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.rollingstock.ModelMillGondola;
+import ebf.bap.models.rollingstock.ModelHopper5201;
+import ebf.bap.models.rollingstock.Modelmechanicalreefer64;
 import ebf.bap.models.trucks.Model70TonTruck;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
-import ebf.tim.api.TransportSkin;
-import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
 import ebf.tim.registry.TiMItems;
-import ebf.tim.utility.ItemStackSlot;
+import ebf.tim.registry.TiMOres;
 import fexcraft.tmt.slim.ModelBase;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
-import train.render.models.*;
-import train.Traincraft;
-import train.library.Info;
-import train.library.ItemIDs;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-public class MillGondola extends GenericRailTransport {
+public class Hopper5201 extends GenericRailTransport {
 
-    public MillGondola(World worldObj) {
+    public Hopper5201(World worldObj) {
         super(worldObj);
     }
 
-    public MillGondola(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public Hopper5201(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new MillGondola((World)null), BAP.MODID, BAP.creativeTabFreight);
+    public static final Item thisItem = new ItemTransport(new Hopper5201((World)null), BAP.MODID, BAP.creativeTabFreight);
 
     //main stats
     @Override
-    public String transportName(){return "52footMillGondola";}
+    public String transportName(){return "5201 Cu Foot Hopper";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
@@ -51,17 +43,17 @@ public class MillGondola extends GenericRailTransport {
     @Override
     public boolean isFictional(){return false;}
     @Override
-    public int getInventoryRows(){return 5;}
+    public int getInventoryRows(){return 6;}
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
-        return Arrays.asList(TrainsInMotion.transportTypes.FREIGHT, TrainsInMotion.transportTypes.HOPPER);
+        return TrainsInMotion.transportTypes.FREIGHT.singleton();
     }
     @Override
-    public float weightKg(){return 30980f;}
+    public float weightKg(){return 26535f;}
 
     //Model stuff
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelMillGondola()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelHopper5201()};}
     @Override
     public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}
     @Override
@@ -69,33 +61,29 @@ public class MillGondola extends GenericRailTransport {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/MillGondola_WCRC.png","textures/bogies/70TonTruck_Black.png","Washington Central Railway Co.", "description.millgondal.wcrc");
+                "textures/freight/5201_Generic.png","textures/bogies/70TonTruck_Black.png","Generic", "description.5201.generic");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/MillGondola_RBX.png","textures/bogies/70TonTruck_Black.png","Railbox Inc", "description.millgondal.rbx");
-        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/MillGondola_OWO.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "description.millgondal.owo");
-        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
-                "textures/freight/MillGondola_MTS.png","textures/bogies/70TonTruck_Black.png","Messicrew Tenneva & Southern", "description.millgondal.mts");
-
+                "textures/freight/5201_GBRX.png","textures/bogies/70TonTruck_Black.png","Greenbrier Companies", "description.5201.gbrx");
     }
     @Override
     public String getDefaultSkin(){
-        return BAP.MODID+":"+"Washington Central Railway Co.";
+        return BAP.MODID+":"+"Generic";
     }
 
     //recipe
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
-                new ItemStack(Blocks.planks, 6), new ItemStack(TiMItems.wheelIron, 4), new ItemStack(TiMItems.frameIron, 3),
-                new ItemStack(Items.iron_ingot, 2), null, null, null, null, new ItemStack(Blocks.hopper, 3)        };
-    }//623 200 003
+                new ItemStack(TiMOres.ingotSteel, 5), new ItemStack(TiMItems.wheelSteel, 4), new ItemStack(TiMItems.frameSteel, 4),
+                new ItemStack(TiMOres.ingotSteel, 2), null, null,
+                null, null, null        };
+    }
 
     //these are separated for being fiddly.
     @Override
     public float[][] getRiderOffsets(){return null;}
     @Override
-    public float[] getHitboxSize(){return new float[]{4.8f,2.1f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{4.4f,2.1f,1.3f};}
     @Override
     public float[] bogieLengthFromCenter() {return new float[]{1.55f, -1.55f};}
     @SideOnly(Side.CLIENT)
@@ -115,4 +103,5 @@ public class MillGondola extends GenericRailTransport {
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
+
 }

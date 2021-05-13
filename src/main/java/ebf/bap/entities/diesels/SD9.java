@@ -90,6 +90,8 @@ public class SD9 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/SD9_DRGW_early.png","textures/bogies/Flexi_C1_black.png","Denver & Rio Grande Western (Early)", "description.sd9.drgw2");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/SD9_DRGW_late.png","textures/bogies/Flexi_C1_black.png","Denver & Rio Grande Western (Late)", "description.sd9.drgw3");
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/SD9_fox.png","textures/bogies/Flexi_C1_LightGrey.png","North Fox & Cascades (Late)", "description.sd9.fox2");
     }
     @Override
     public String getDefaultSkin(){

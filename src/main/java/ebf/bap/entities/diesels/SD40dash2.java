@@ -73,12 +73,12 @@ public class SD40dash2 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sd40_awvr_5624.png","textures/bogies/flexicoil_c2h_Black.png","Allegheny & West Virginia", "description.sd40-2.awvr");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/sd40_fox.png","textures/bogies/flexicoil_c2h_LightGrey2.png","North Fox & Cascades", "description.sd40-2.fox");
+                BAP.MODID,"textures/diesels/sd40_fox.png","textures/bogies/flexicoil_c2h_LightGrey2.png","North Fox & Cascades (Stripe Logo)", "description.sd40-2.fox");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/diesels/sd40_fox_biglogo.png","textures/bogies/flexicoil_c2h_LightGrey2.png","North Fox & Cascades (Modern Logo)", "description.sd40-2.fox2");
-        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/sd40_fox_biglogo.png","textures/bogies/flexicoil_c2h_LightGrey2.png","North Fox & Cascades (Quick Logo)", "description.sd40-2.fox2");
+        /*SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sd40_fox_snow.png","textures/bogies/flexicoil_c2h_LightGrey2.png","North Fox & Cascades (Snow Fleet Service)", "description.sd40-2.fox3");
-        SkinRegistry.addSkin(this.getClass(),
+        */SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sd40_bnsf_h1.png","textures/bogies/flexicoil_c2h_Black.png","Burlington Northern Santa Fe (H1)", "description.sd40-2.bnsf");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sd40_r8.png","textures/bogies/flexicoil_c2h_Black.png","Run8 Western", "description.sd40-2.r8w");
