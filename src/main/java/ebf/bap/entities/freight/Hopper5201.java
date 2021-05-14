@@ -64,6 +64,8 @@ public class Hopper5201 extends GenericRailTransport {
                 "textures/freight/5201_Generic.png","textures/bogies/70TonTruck_Black.png","Generic", "description.5201.generic");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
                 "textures/freight/5201_GBRX.png","textures/bogies/70TonTruck_Black.png","Greenbrier Companies", "description.5201.gbrx");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/5201_fox.png","textures/bogies/70TonTruck_Black.png","North Fox & Cascades", "description.5201.fox");
     }
     @Override
     public String getDefaultSkin(){

@@ -64,7 +64,7 @@ public class WoodchipHopper extends GenericRailTransport {
     @Override
     public ModelBase[] getModel(){return new ModelBase[]{new ModelWoodchipHopper()};}
     @Override
-    public float[][] modelOffsets(){return new float[][]{{0.0f, -0.0f, 0.0f}};}//-0.15f
+    public float[][] modelOffsets(){return new float[][]{{0.0f, 0.05f, 0.0f}};}//-0.15f
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 0.0f, 0.0f}};}
     @Override

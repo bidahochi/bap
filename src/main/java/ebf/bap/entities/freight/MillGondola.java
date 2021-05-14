@@ -76,7 +76,10 @@ public class MillGondola extends GenericRailTransport {
                 "textures/freight/MillGondola_OWO.png","textures/bogies/70TonTruck_Black.png","Washaska & Old Fox", "description.millgondal.owo");
         SkinRegistry.addSkin(this.getClass(), BAP.MODID,
                 "textures/freight/MillGondola_MTS.png","textures/bogies/70TonTruck_Black.png","Messicrew Tenneva & Southern", "description.millgondal.mts");
-
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/MillGondola_fox_test.png","textures/bogies/70TonTruck_Black.png","North Fox & Cascades (Larger Logo)", "description.millgondal.fox");
+        SkinRegistry.addSkin(this.getClass(), BAP.MODID,
+                "textures/freight/MillGondola_fox_test2.png","textures/bogies/70TonTruck_Black.png","North Fox & Cascades (Smaller Logo)", "description.millgondal.fox");
     }
     @Override
     public String getDefaultSkin(){
