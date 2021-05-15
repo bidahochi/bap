@@ -105,7 +105,7 @@ public class GE25Ton extends EntityTrainCore {
         return super.fuelSlot().setOverlay(Items.coal);
     }
     @Override
-    public int[] getTankCapacity(){return new int[]{1000};}
+    public int[] getTankCapacity(){return new int[]{5000};}
 
     //these only change in very specific use cases.
     @Override

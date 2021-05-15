@@ -90,11 +90,13 @@ public class BAP {
     }
 
     public static GenericRailTransport[] listSteam() {
+
         return new GenericRailTransport[]{new Tankenstein(null)};
     }
 
     public static GenericRailTransport[] listElectric() {
-        return new GenericRailTransport[]{new EF1(null)};
+
+        return new GenericRailTransport[]{new EF1(null), new GM6C(null)};
     }
 
     public static GenericRailTransport[] listFreight() {

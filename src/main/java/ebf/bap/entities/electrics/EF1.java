@@ -128,7 +128,7 @@ public class EF1 extends EntityTrainCore {
     public float transportTopSpeed(){return 64;}
     @Override
     public ItemStackSlot fuelSlot(){
-        return super.fuelSlot().setOverlay(Items.coal);
+        return super.fuelSlot().setOverlay(Items.redstone);
     }
     @Override
     public int[] getTankCapacity(){return new int[]{12500};}
