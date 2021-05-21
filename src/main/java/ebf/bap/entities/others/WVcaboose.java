@@ -53,13 +53,13 @@ public class WVcaboose extends GenericRailTransport {
     @Override
     public boolean isFictional(){return false;}
     @Override
-    public int getInventoryRows(){return 4;}
+    public int getInventoryRows(){return 0;}
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
         return TrainsInMotion.transportTypes.PASSENGER.singleton();
     }
     @Override
-    public float weightKg(){return 10f;}
+    public float weightKg(){return 22000f;}
 
     //Model stuff
     @Override
@@ -71,11 +71,11 @@ public class WVcaboose extends GenericRailTransport {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/others/wvcaboose_atsf.png","textures/bogies/cb_Black.png","AT&SF CE-11", "description.wvboose.atsf");
+                BAP.MODID,"textures/others/wvcaboose_atsf.png","textures/bogies/Caboose_truck_Black.png","AT&SF CE-11", "description.wvboose.atsf");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/others/wvcaboose_bn.png","textures/bogies/cb_Black.png","Burlington Northern", "description.wvboose.bn");
+                BAP.MODID,"textures/others/wvcaboose_bn.png","textures/bogies/Caboose_truck_Black.png","Burlington Northern", "description.wvboose.bn");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/others/wvcaboose_owo.png","textures/bogies/cb_Black.png","Washaska & old Fox", "description.wvboose.owo");
+                BAP.MODID,"textures/others/wvcaboose_owo.png","textures/bogies/Caboose_truck_Black.png","Washaska & old Fox", "description.wvboose.owo");
     }
     @Override
     public String getDefaultSkin(){
@@ -93,16 +93,18 @@ public class WVcaboose extends GenericRailTransport {
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0.2f,1.4f, 0.5f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{0.2f,1.4f, 0.5f},{0.2f,1.4f, -0.5f}};}
     @Override
     public float[] getHitboxSize(){return new float[]{3.875f,2.1f,1.1f};}
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{1.0f, -1.0f};}
+    public float[] bogieLengthFromCenter() {return new float[]{0.9f, -0.9f};}
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
         return new Bogie[]{
-                new Bogie(new Modelcaboosetruck(), 1.05f,-0.55f,0.35f),//FIX THIS
-                new Bogie(new Modelcaboosetruck(),-0.75f,-0.55f,0.35f),//TRUCKS NO CENTERED
+                //new Bogie(new Modelcaboosetruck(), 1.05f,-0.55f,0.35f),//FIX THIS
+                //new Bogie(new Modelcaboosetruck(),-0.75f,-0.55f,0.35f),//TRUCKS NO CENTERED
+                new Bogie(new Modelcaboosetruck(), 0.9f,-0.0f,0.0f),
+                new Bogie(new Modelcaboosetruck(),-0.9f,-0.0f,0.0f),
         };
     }
 

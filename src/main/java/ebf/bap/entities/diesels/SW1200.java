@@ -78,7 +78,9 @@ public class SW1200 extends EntityTrainCore {
                 BAP.MODID,"textures/diesels/sw1200_cnw.png","textures/bogies/typeasmol_Black.png","Chicago Northwestern System", "description.sw1200.cnw");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/diesels/sw1200_it.png","textures/bogies/flexicoil2_Silver.png","Illinois Terminal", "description.sw1200.it");
-        }
+        SkinRegistry.addSkin(this.getClass(),
+                BAP.MODID,"textures/diesels/sw1200_wcp.png","textures/bogies/flexicoil2_Black.png","West Creek Pacific RR", "description.sw1200.bigjungus");
+    }
     @Override
     public String getDefaultSkin(){
         return BAP.MODID+":"+"Southern Pacific";
@@ -103,7 +105,7 @@ public class SW1200 extends EntityTrainCore {
     @SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
 
-        if(getCurrentSkin()==null || getCurrentSkin().name.equals("Illinois Terminal")|| getCurrentSkin().name.equals("im gonna stab you through the heart with a fucking pencil")) {
+        if(getCurrentSkin()==null || getCurrentSkin().name.equals("Illinois Terminal")|| getCurrentSkin().name.equals("West Creek Pacific RR")|| getCurrentSkin().name.equals("im gonna stab you through the heart with a fucking pencil")) {
             return new Bogie[]{new Bogie(new ModelFlexi2Axle(),1.0f,0f,0f),
                     new Bogie(new ModelFlexi2Axle(),-1.0f,0f,0f)};
         } else {

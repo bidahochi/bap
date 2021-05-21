@@ -71,11 +71,13 @@ item.73centerbeam.name=73 Foot Centerbeam
 
 item.PEcoach.name=Polar Express Coach Car
 item.PEobserve.name=Polar Express Observation Car
-item.BilevelCoach.name= Bombardier Bi-level Coach
-item.BilevelCab.name= Bombardier Bi-level Cab Car
+item.BilevelCoach.name=Bombardier Bi-level Coach
+item.BilevelCab.name=Bombardier Bi-level Cab Car
+item.PS_lightweight_52seat_coach.name=Pullman-Standard Lightweight 52 Seat Coach
 
 item.Payload.name=TF2 Bombcart
 item.WVcaboose.name=International Car Co. Wide Vision Caboose
+item.DRGW01400Caboose.name=DRGW 01400 Series Caboose
 
 <!-- ## Descriptions ## -->
 bap4tim:description.cf7.atsf=Between 1970 and 1978 the Santa Fe Shops in Cleburne, Texas rebuilt 233<br>F3, F7, and F9 units into carbody Road Switchers to<br>increase Visibility and service life
@@ -209,6 +211,10 @@ bap4tim:description.peobserve.wawnt=The observation coach from the 2004<br> anim
 bap4tim:description.pecoach.waw=An ordinary coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
 bap4tim:description.pecoach.wawnt=An ordinary coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
 
+bap4tim:description.PSLightweight52.drgw=The Denver & Rio Grande Western Railroad bought 8 Pullman Standard lightweight<br>52 seat coaches that were originally meant to be part of a larger order by the<br>Chesapeake & Ohio Railroad that ended up being downsized.
+bap4tim:description.PSLightweight52.nkp=The New York, Chicago and St. Louis Railroad (Nickel Plate Road) bought 10 Pullman Standard<br>lightweight 52 seat coaches based on the Chesapeake & Ohio design<br>of the coach but with some changes.
+bap4tim:description.PSLightweight52.co=The Chesapeake & Ohio Railroad ordered 80 Pullman Standard lightweight 52 seat coaches<br>as part of a massive order to reequip their passenger fleet.<br>Due to a downturn in passenger traffic, this part of the order was downsized to 67,<br>of which 8 were shifted to the Denver & Rio Grande Western Railroad before being built;<br>the C&O ended up with 59 lightweight 52 seat coaches total.
+
 bap4tim:description.owo60.verticube=OWO Designed the Verticube Boxcars in the early 2000's<br>to meet a growing demand for constant capacity of light objects,<br>such as Models. However, over time,<br>the Verticubes became reinforced to carry even the mightiest of loads.
 bap4tim:description.owo60.wr=A Coproate Subsidary of OWO, WR exports<br>Washaskain Spruce and other wood Products.
 bap4tim:description.owo60.biglogo=In the Late 2010s, the Railroad began to apply its<br>new Logo onto its Rollingstock.
@@ -241,6 +247,20 @@ bap4tim:description.5201.fox=A standard 3 Bay hopper used for plastics service.
 bap4tim:description.millgondal.fox=North Fox deployed a large fleet of Gons on lease to the<br>Fawx Foundry Co for metal services.
 
 bap4tim:description.wvboose.owo=OWOs only Wide Vision Caboose, #7009, was obtained from BN and remanufactured.
+
+bap4tim:description.drgw01400.1=91 01400 series end cupola cabooses were built by the<br>Denver & Rio Grande Western Railroad.<br>This example represents D&RGW 01400-01449 as built.
+bap4tim:description.drgw01400.2=The Denver & Rio Grande Western cabooses<br>01450-01459 were built with rooftop induction antenna.<br>This example represents D&RGW 01450 as built.
+bap4tim:description.drgw01400.3=The Denver & Rio Grande Western cabooses<br>01450-01459 were built with rooftop induction antenna.<br>This example represents D&RGW 01451-01459 as built.
+bap4tim:description.drgw01400.4=Relatively early in their working lives Denver & Rio Grande Western cabooses<br>01400-01449 received safety stripes at their ends.<br>This example represents D&RGW 01400-01449 after receiving safety stripes.
+bap4tim:description.drgw01400.5=Denver & Rio Grande Western cabooses 01450-01459<br>had their rooftop induction antennas replaced with firecracker antennas.<br>D&RGW Firecracker antennas were added to D&RGW 01440-01449 and 01460-01469.<br>This example represents D&RGW 01440-01469 after receiving firecracker antennas.
+bap4tim:description.drgw01400.6=Denver & Rio Grande Western cabooses 01407-01439
+bap4tim:description.drgw01400.7=Lacking generators, Denver & Rio Grande Western cabooses 01400-01406<br>were used as switch cabooses.<br>This example represents D&RGW 01400-01406 after receiving the switch caboose<br>paint scheme.
+bap4tim:description.drgw01400.8=Denver & Rio Grande Western cabooses 01470-01490 were built with single<br>pane windows instead of 4 pane windows.<br>This example represents D&RGW 01470-01479 after receiving firecracker antennas.
+bap4tim:description.drgw01400.9=Starting in 1956 Denver & Rio Grande Western repainted some 01400<br>series cabooses to Aspen Gold with 4 stripes.
+bap4tim:description.drgw01400.10=Starting in 1959 Denver & Rio Grande Western repainted most 01400<br>series cabooses to Aspen Gold with 1 stripe.<br>This example also represents D&RGW 01480-01490 as built.
+bap4tim:description.drgw01400.11=Starting in 1972 Denver & Rio Grande Western repainted most 01400<br>series caboose to orange with "Action Road" logo.
+bap4tim:description.drgw01400.12=Due to a FRA safety ruling, the Denver & Rio Grande Western blanked<br>out the side windows of the remaining 01400 series cabooses, this was completed by 1986.<br>This example also represents D&RGW 01400 series cabooses in<br>Aspen Gold with 1 stripe paint scheme that recived blanked out side windows.
+bap4tim:description.drgw01400.13=Due to a FRA safety ruling, the Denver & Rio Grande Western blanked<br>out the side windows of the remaining 01400 series cabooses, this was completed by 1986.<br>This example also represents D&RGW 01400 series cabooses in<br>orange with "Action Road" logo paint scheme that recived blanked out side windows.
 
 <!-- ## Other ## -->
 menu.item.north america=North America
