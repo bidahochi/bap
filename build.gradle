@@ -20,7 +20,7 @@ def timversion
 def bapversion
 def mcversion
 
-version = "0.02_work-in-progress"
+version = "0.04_work-in-progress"
 group= "ebf.bap"
 archivesBaseName = "BAPforTiM"
 

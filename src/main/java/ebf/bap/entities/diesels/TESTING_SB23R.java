@@ -3,40 +3,42 @@ package ebf.bap.entities.diesels;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.locomotives.ModelB23dash7;
 import ebf.bap.models.locomotives.ModelSB23R;
 import ebf.bap.models.trucks.ModelFB2;
 import ebf.bap.models.trucks.ModelTypeB;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
+import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
 import ebf.tim.utility.ItemStackSlot;
 import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
-public class SB23R extends EntityTrainCore {
+public class TESTING_SB23R extends EntityTrainCore {
 
-    public SB23R(World worldObj) {
+    public TESTING_SB23R(World worldObj) {
         super(worldObj);
     }
 
-    public SB23R(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public TESTING_SB23R(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new SB23R((World)null), BAP.MODID, BAP.creativeTabDiesel);
+    public static final Item thisItem = new ItemTransport(new TESTING_SB23R((World)null), BAP.MODID, BAP.creativeTabOther);
 
     //main stats
     @Override
-    public String transportName(){return "SB23R";}
+    public String transportName(){return "TESTING_SB23R";}
     @Override
     public String transportcountry(){return "North America";}
     @Override
@@ -45,6 +47,14 @@ public class SB23R extends EntityTrainCore {
     public boolean isFictional(){return true;}
     @Override
     public int getInventoryRows(){return 1;}
+    /*@Override
+    public List<TrainsInMotion.transportTypes> getTypes(){
+        if(getCurrentSkin()==null || getCurrentSkinName().equals("North Fox & Cascades (Road Version)")){
+            return TrainsInMotion.transportTypes.STEAM.singleton();
+        } else {
+            return TrainsInMotion.transportTypes.DIESEL.singleton();
+        }
+    }*/
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
         return TrainsInMotion.transportTypes.DIESEL.singleton();
@@ -90,7 +100,7 @@ public class SB23R extends EntityTrainCore {
     @Override
     public float[] bogieLengthFromCenter() {return new float[]{1.5f, -1.5f};}
 
-    @SideOnly(Side.CLIENT)
+    /*@SideOnly(Side.CLIENT)
     public Bogie[] bogies(){
 
         if(getCurrentSkin()==null || getCurrentSkin().name.equals("North Fox & Cascades (Road Version)")) {
@@ -100,7 +110,7 @@ public class SB23R extends EntityTrainCore {
             return new Bogie[]{new Bogie(new ModelTypeB(),1.55f,0f,0f),
                     new Bogie(new ModelTypeB(),-1.55f,0f,0f)};
         }
-    }
+    }*/
 
     //Train specific stuff
     @Override
@@ -126,5 +136,20 @@ public class SB23R extends EntityTrainCore {
     public Item getItem(){return thisItem;}
     @Override
     public float getMaxFuel(){return 1;}
+
+    @Override
+    public Map<String, TransportSkin> getSkinList(EntityPlayer viewer, boolean isPaintBucket){
+        if(!isPaintBucket && viewer !=null && viewer.getUniqueID()!=null && viewer.getUniqueID().equals(UUID.fromString("d46213e9-ea09-40e7-9ec9-595903d98e17")) || viewer.getUniqueID().equals(UUID.fromString("dd87ba2c-c38a-4fbf-b836-25b940123c11"))) {//can use || viewer.getUniqueID().equals(SOMEUUID) for adding more people to it
+            return SkinRegistry.getTransportSkins(getClass());
+        } else {
+            Map<String, TransportSkin> tempMap = SkinRegistry.getTransportSkins(getClass());
+            if(SkinRegistry.getTransportSkins(getClass())!=null){
+                tempMap.remove("North Fox & Cascades (Yard Version)");
+                tempMap.remove("North Fox & Cascades (Remote Control Version)");
+                //tempMap.remove("mySkin"); //can clone this more
+            }
+            return tempMap;
+        }
+    }
 
 }

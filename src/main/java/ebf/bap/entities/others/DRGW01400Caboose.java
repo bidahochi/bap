@@ -3,8 +3,7 @@ package ebf.bap.entities.others;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.bap.BAP;
-import ebf.bap.models.ModelDRGW01400Caboose;
-import ebf.bap.models.ModelWVcaboose;
+import ebf.bap.models.rollingstock.ModelDRGW01400Caboose;
 import ebf.bap.models.trucks.Modelcaboosetruck;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -33,27 +32,7 @@ public class DRGW01400Caboose extends GenericRailTransport {
     }
 
     public static final Item thisItem = new ItemTransport(new DRGW01400Caboose((World)null),  BAP.MODID, BAP.creativeTabOther);
-/*
 
-
-
-
-
-
-THE CABOOSE MODEL NEEDS TO BE FIXED
-IT IS WAY TOO TALL
-
-
-
-
-
-
-
-
-
-
-
- */
     //main stats
     @Override
     public String transportName(){return "DRGW01400Caboose";}
@@ -88,7 +67,7 @@ IT IS WAY TOO TALL
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_01451-01459.png","textures/bogies/Caboose_truck_Black_journal_boxes.png","D&RGW 01451-01459", "description.drgw01400.3");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_early_mid_01400-01449.png","textures/bogies/Caboose_truck_Black_journal_boxes.png","D&RGW (early mid) 01400-01449", "description.drgw01400.4");
+                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_early-mid_01400-01449.png","textures/bogies/Caboose_truck_Black_journal_boxes.png","D&RGW (early mid) 01400-01449", "description.drgw01400.4");
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_mid_01440-01469.png","textures/bogies/Caboose_truck_Black_journal_boxes.png","D&RGW (mid) 01440-01469", "description.drgw01400.5");
         SkinRegistry.addSkin(this.getClass(),
@@ -102,11 +81,11 @@ IT IS WAY TOO TALL
         SkinRegistry.addSkin(this.getClass(),
                 BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW 01400_one-stripe.png","textures/bogies/Caboose_truck_Black_journal_boxes.png","D&RGW 01400 series one stripe", "description.drgw01400.10");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_orange.png","textures/bogies/Caboose_truck_Black.png","D&RGW 01400 series orange caboose", "description.drgw01400.11");
+                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_orange.png","textures/bogiesCaboose_truck_Black_left-generator.png","D&RGW 01400 series orange caboose", "description.drgw01400.11");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_one-stripe-removed-windows.png","textures/bogies/Caboose_truck_Black_journal_boxes.png","D&RGW 01400 series one stripe removed windows caboose", "description.drgw01400.12");
+                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_one-stripe_removed-windows.png","textures/bogies/Caboose_truck_Black_journal_boxes.png","D&RGW 01400 series one stripe removed windows caboose", "description.drgw01400.12");
         SkinRegistry.addSkin(this.getClass(),
-                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_orange-removed-windows.png","textures/bogies/Caboose_truck_Black.png","BAP D&RGW 01400 series orange removed windows caboose", "description.drgw01400.13");
+                BAP.MODID,"textures/others/stupid_drgw_caboose_shit/BAP_D&RGW_01400_orange_removed-windows.png","textures/bogies/Caboose_truck_Black_left-generator.png","D&RGW 01400 series orange removed windows caboose", "description.drgw01400.13");
     }
     @Override
     public String getDefaultSkin(){
@@ -124,9 +103,9 @@ IT IS WAY TOO TALL
 
     //these are separated for being fiddly.
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.1f,1.9f, 0.45f},{1.1f,1.9f, -0.45f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.05f,1.5f, 0.45f},{1.05f,1.5f, -0.45f}};}
     @Override
-    public float[] getHitboxSize(){return new float[]{4.8f,2.1f,1.1f};}
+    public float[] getHitboxSize(){return new float[]{4.6f,2.1f,1.1f};}
     @Override
     public float[] bogieLengthFromCenter() {return new float[]{1.25f, -1.25f};}
     @SideOnly(Side.CLIENT)

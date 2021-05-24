@@ -17,7 +17,7 @@ import ebf.tim.registry.TiMGenericRegistry;
 @Mod(modid = BAP.MODID, version = BAP.MOD_VERSION, name = "Bida's American Pack for TiM")
 public class BAP {
     public static final String MODID = "bap4tim";
-    public static final String MOD_VERSION = "0.03_work-in-progress";
+    public static final String MOD_VERSION = "0.04_work-in-progress";
 
     private static ItemTransport tabItem;
 
@@ -114,7 +114,7 @@ public class BAP {
     }
 
     public static GenericRailTransport[] listOther() {
-        return new GenericRailTransport[]{new BombCart(null), new WVcaboose(null)};
+        return new GenericRailTransport[]{new BombCart(null), new WVcaboose(null), new DRGW01400Caboose(null), new TESTING_SB23R(null)};
     }
 
 }
