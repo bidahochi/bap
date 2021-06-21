@@ -42,6 +42,7 @@ item.SB23R.name=North Fox SB23R
 item.TESTING_SB23R.name=SB23R Testing Element
 item.SD70Ace.name=EMD SD70ACe
 item.GF6C.name=EMD Gf6C Electric
+item.EP1A.name=ALCo-GE Rebuilt EP-1A Boxcab
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -206,6 +207,9 @@ bap4tim:description.ml4000.sp3=Of the 15 Southern Pacific KM ML-4000 hood units 
 bap4tim:description.ace.peetah=nyeheheh, hey louis i turned myself into an ACe
 
 bap4tim:description.gm6c.fox=The North Fox electrification project was created in an attempt to preserve<br>heavy haulage through several long tunnels and steep grades, which beforehand were<br>limited to short trains with a lot of motors on both ends. Due to the lack of innovative<br>electric locomotives at the time, North Fox started out electric operations with<br>aging boxcabs and double ended units designed from MILW and GN electrics.<br>The overheads supply power at 50kV at 60Hz,<br>and different design changes had to be made to accomodate that.<br>When the GM6Cs were being prototyped in the mid 70s, North Fox was quick to buy 35,<br>numbered in the E600 series.
+
+bap4tim:description.ep1a.milwpassengerA=In 1953 the Milwaukee Road converted 2 sets of EF-1 engines<br>to passenger service to assist the Bi-Polars (EP-2s).<br>This is the streamlined cab that they paired with a standard cabbed boxcab.<br>They did this for visual appeal.
+bap4tim:description.ep1a.milwpassengerB=In 1953 the Milwaukee Road converted 2 sets of EF-1 engines<br>to passenger service to assist the Bi-Polars (EP-2s).<br>This is the standard cab that they paired with a streamlined boxcab.
 
 bap4tim:description.peobserve.waw=The observation coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
 bap4tim:description.peobserve.wawnt=The observation coach from the 2004<br> animated Christmas movie "The Polar Express".<br> Starring A list celebrity Tom Hanks.<br> (As well as being a C list conductor).<br>It follow a young boy in his pursuit to finding<br> and understanding the true meaning of Christmas.
